@@ -1,0 +1,23 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "This IP is used in collapse hierarchy feature and calls getCartsProducts API to find child products.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "SearchChildProducts",
+    "OmniProcessElement": "CPQ_SearchChildProducts_Element_GetCartsProducts.json",
+    "OmniProcessKey": "CPQ_SearchChildProducts",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_SearchChildProducts_PropertySetConfig.json",
+    "SubType": "SearchChildProducts",
+    "Type": "CPQ",
+    "UniqueName": "CPQ_SearchChildProducts_Procedure_1",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/SearchChildProducts/Procedure",
+    "WebComponentKey": "475a6b2f-6ff6-adf6-a682-0047d02f05b8"
+}
