@@ -1,0 +1,4202 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Recordset Filter Criteria Rule ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Recordset Filter Criteria Rule Number",
+      "name": "RecordsetFilterCriteriaRuleNumber",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Viewed Date",
+      "name": "LastViewedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Referenced Date",
+      "name": "LastReferencedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Recordset Filter Criteria ID",
+      "name": "RecordsetFilterCriteriaId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "RecordsetFilterCriteria"
+      ],
+      "relationshipName": "RecordsetFilterCriteria",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Criteria Field",
+      "name": "CriteriaField",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account ID",
+          "validFor": null,
+          "value": "Asset.AccountId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account ID",
+          "validFor": null,
+          "value": "ServiceAppointment.AccountId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Action",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__Action__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activation Date",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ActivationDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activation Name",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ActivationName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Duration (Minutes)",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualDuration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual End",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Grade",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Appointment_Grade__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Number",
+          "validFor": null,
+          "value": "ServiceAppointment.AppointmentNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window End",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset ID",
+          "validFor": null,
+          "value": "Asset.Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Name",
+          "validFor": null,
+          "value": "Asset.Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Provided By ID",
+          "validFor": null,
+          "value": "Asset.AssetProvidedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Reference Id",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__AssetReferenceId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Serviced By ID",
+          "validFor": null,
+          "value": "Asset.AssetServicedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Auto Schedule",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Auto_Schedule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Base One Time Charge",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BaseOneTimeCharge__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Base One Time Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BaseOneTimeTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Base Recurring Charge",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BaseRecurringCharge__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Base Recurring Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BaseRecurringTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Billing Account",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BillingAccountId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Billing Hold",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BillingHold__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bundle",
+          "validFor": null,
+          "value": "ServiceAppointment.IsBundle"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bundle Member",
+          "validFor": null,
+          "value": "ServiceAppointment.IsBundleMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "Asset.City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "ServiceAppointment.City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Competitor Asset",
+          "validFor": null,
+          "value": "Asset.IsCompetitorProduct"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Connect Date",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ConnectDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact ID",
+          "validFor": null,
+          "value": "Asset.ContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact ID",
+          "validFor": null,
+          "value": "ServiceAppointment.ContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ContractId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Number",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ContractNumber__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Country",
+          "validFor": null,
+          "value": "Asset.Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Country",
+          "validFor": null,
+          "value": "ServiceAppointment.Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created By ID",
+          "validFor": null,
+          "value": "Asset.CreatedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created By ID",
+          "validFor": null,
+          "value": "ServiceAppointment.CreatedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created Date",
+          "validFor": null,
+          "value": "Asset.CreatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created Date",
+          "validFor": null,
+          "value": "ServiceAppointment.CreatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Currency Payment Mode",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__CurrencyPaymentMode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Deregulation Status",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__DeregulationStatus__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Disconnect Date",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__DisconnectDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Due Date",
+          "validFor": null,
+          "value": "ServiceAppointment.DueDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration",
+          "validFor": null,
+          "value": "ServiceAppointment.Duration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration in Minutes",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationInMinutes"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration Type",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Earliest Start Permitted",
+          "validFor": null,
+          "value": "ServiceAppointment.EarliestStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Base One Time Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveBaseOneTimeTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Base Recurring Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveBaseRecurringTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective One Time Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveOneTimeCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective One Time Loyalty Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveOneTimeLoyaltyTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective One Time Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveOneTimeTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Quantity",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveQuantity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Recurring Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveRecurringCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Recurring Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveRecurringTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Usage Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveUsageCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Usage Price Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveUsagePriceTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Usage Quantity",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveUsageQuantity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Emergency",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Emergency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Financed Amount",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__FinancedAmount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Financed Amount Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__FinancedAmountTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Financed Installment Amount",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__FinancedInstallmentAmount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Color",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__GanttColor__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Display Date",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Gantt_Display_Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Label",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__GanttLabel__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Geocode Accuracy",
+          "validFor": null,
+          "value": "Asset.GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Geocode Accuracy",
+          "validFor": null,
+          "value": "ServiceAppointment.GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In Jeopardy",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InJeopardy__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In Jeopardy Reason",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InJeopardyReason__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Install Date",
+          "validFor": null,
+          "value": "Asset.InstallDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal Asset",
+          "validFor": null,
+          "value": "Asset.IsInternal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal SLR Geolocation (Latitude)",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InternalSLRGeolocation__Latitude__s"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal SLR Geolocation (Longitude)",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InternalSLRGeolocation__Longitude__s"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inventory Item",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__InventoryItemId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is Fill In Candidate",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__IsFillInCandidate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is MultiDay",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__IsMultiDay__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Item Name",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ItemName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified By ID",
+          "validFor": null,
+          "value": "Asset.LastModifiedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified By ID",
+          "validFor": null,
+          "value": "ServiceAppointment.LastModifiedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified Date",
+          "validFor": null,
+          "value": "Asset.LastModifiedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified Date",
+          "validFor": null,
+          "value": "ServiceAppointment.LastModifiedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Updated Epoch",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Last_Updated_Epoch__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "Asset.Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Line Number",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__LineNumber__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Location ID",
+          "validFor": null,
+          "value": "Asset.LocationId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "Asset.Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Manually Bundled",
+          "validFor": null,
+          "value": "ServiceAppointment.IsManuallyBundled"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Multiday Work Calculated length",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__MDS_Calculated_length__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Offsite Appointment",
+          "validFor": null,
+          "value": "ServiceAppointment.IsOffsiteAppointment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Calculated Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeCalculatedPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Charge",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeCharge__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Cost",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeCost__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Discount Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeDiscountPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Loyalty Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeLoyaltyPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Loyalty Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeLoyaltyTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Manual Discount",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeManualDiscount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Margin",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeMargin__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OrderId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Product",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OrderProductId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner ID",
+          "validFor": null,
+          "value": "Asset.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Parent Asset ID",
+          "validFor": null,
+          "value": "Asset.ParentId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ParentItemId",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ParentItemId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pinned",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Pinned__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Postal Code",
+          "validFor": null,
+          "value": "Asset.PostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Premises",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__PremisesId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prevent Geocoding For Chatter Actions",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Prevent_Geocoding_For_Chatter_Actions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Price",
+          "validFor": null,
+          "value": "Asset.Price"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pricebook Entry Id",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__PricebookEntryId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Price List",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__PriceListId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Attribute",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ProductAttribXN__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Group Key",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ProductGroupKey__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Hierarchy Path",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ProductHierarchyPath__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product ID",
+          "validFor": null,
+          "value": "Asset.Product2Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Provisioning Status",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ProvisioningStatus__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Purchase Date",
+          "validFor": null,
+          "value": "Asset.PurchaseDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quantity",
+          "validFor": null,
+          "value": "Asset.Quantity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Calculated Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringCalculatedPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Charge",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringCharge__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Cost",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringCost__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Discount Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringDiscountPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Manual Discount",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringManualDiscount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Margin",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringMargin__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring UOM",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringUOM__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reference Time",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__CatalogItemReferenceDateTime__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Related Bundle ID",
+          "validFor": null,
+          "value": "ServiceAppointment.RelatedBundleId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Related Service",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Related_Service__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relies on Item",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ReliesOnItemId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Root Asset ID",
+          "validFor": null,
+          "value": "Asset.RootAssetId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RootItemId",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RootItemId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Same Day",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Same_Day__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Same Resource",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Same_Resource__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled Duration",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Duration_In_Minutes__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled End",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled Start",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Schedule Mode",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Schedule_Mode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Schedule Over Lower Priority Appointment",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Schedule_over_lower_priority_appointment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduling Policy Used",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Scheduling_Policy_Used__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sequence Number",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__SequenceNumber__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serial Number",
+          "validFor": null,
+          "value": "Asset.SerialNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Account",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ServiceAccountId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Appointment ID",
+          "validFor": null,
+          "value": "ServiceAppointment.Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Identifier",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ServiceIdentifier__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Point",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ServicePointId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State",
+          "validFor": null,
+          "value": "Asset.State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State/Province",
+          "validFor": null,
+          "value": "ServiceAppointment.State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Asset.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "ServiceAppointment.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status Category",
+          "validFor": null,
+          "value": "ServiceAppointment.StatusCategory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "Asset.Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "ServiceAppointment.Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "ServiceAppointment.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subscription",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__SubscriptionId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Territory ID",
+          "validFor": null,
+          "value": "ServiceAppointment.ServiceTerritoryId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Time Dependency",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Time_Dependency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UpdatedByOptimization",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__UpdatedByOptimization__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Cost",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageUnitCost__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage End Date",
+          "validFor": null,
+          "value": "Asset.UsageEndDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Margin",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageMargin__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageUnitPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Price Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsagePriceTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Quantity",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageQuantity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Unit of Measure",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageMeasurementId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Use Async Logic",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Use_Async_Logic__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User Name",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__Username__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User Password",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__Password__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Virtual Service For Chatter Action (SLR)",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Virtual_Service_For_Chatter_Action__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Type ID",
+          "validFor": null,
+          "value": "ServiceAppointment.WorkTypeId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zip/Postal Code",
+          "validFor": null,
+          "value": "ServiceAppointment.PostalCode"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "Equals",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Operator",
+      "name": "Operator",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Equals",
+          "validFor": null,
+          "value": "Equals"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Greater than",
+          "validFor": null,
+          "value": "GreaterThan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Greater than or equal",
+          "validFor": null,
+          "value": "GreaterOrEqual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Less than",
+          "validFor": null,
+          "value": "LessThan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Less than or equal",
+          "validFor": null,
+          "value": "LessOrEqual"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Value",
+      "name": "Value",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "Criteria",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Recordset Filter Criteria Type",
+      "name": "Type",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Criteria",
+          "validFor": null,
+          "value": "Criteria"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage",
+          "validFor": null,
+          "value": "Usage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage(Duration)",
+          "validFor": null,
+          "value": "UsageDuration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage(Counter)",
+          "validFor": null,
+          "value": "UsageCounter"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Set the start value. To determine if the rule is true, this value is compared to the Usage Field value.",
+      "label": "First Occurrence",
+      "name": "FirstOccurrence",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Occurrence",
+      "name": "LastOccurrence",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Set the frequency of maintenance. For example if this field is “1000”, this will schedule at every 1000 increments. This can either be a positive value for an incrementing Usage Field, or a negative value for a decreasing Usage Field.",
+      "label": "Frequency",
+      "name": "Frequency",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "This field’s value is compared to the Usage Field to determine if the rule is true.",
+      "label": "Next Occurrence Field",
+      "name": "NextOccurrenceField",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account ID",
+          "validFor": null,
+          "value": "Asset.AccountId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account ID",
+          "validFor": null,
+          "value": "ServiceAppointment.AccountId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Action",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__Action__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activation Date",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ActivationDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activation Name",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ActivationName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Duration (Minutes)",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualDuration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual End",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Grade",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Appointment_Grade__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Number",
+          "validFor": null,
+          "value": "ServiceAppointment.AppointmentNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window End",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset ID",
+          "validFor": null,
+          "value": "Asset.Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Name",
+          "validFor": null,
+          "value": "Asset.Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Provided By ID",
+          "validFor": null,
+          "value": "Asset.AssetProvidedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Reference Id",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__AssetReferenceId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Serviced By ID",
+          "validFor": null,
+          "value": "Asset.AssetServicedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Auto Schedule",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Auto_Schedule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Base One Time Charge",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BaseOneTimeCharge__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Base One Time Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BaseOneTimeTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Base Recurring Charge",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BaseRecurringCharge__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Base Recurring Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BaseRecurringTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Billing Account",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BillingAccountId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Billing Hold",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BillingHold__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bundle",
+          "validFor": null,
+          "value": "ServiceAppointment.IsBundle"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bundle Member",
+          "validFor": null,
+          "value": "ServiceAppointment.IsBundleMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "Asset.City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "ServiceAppointment.City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Competitor Asset",
+          "validFor": null,
+          "value": "Asset.IsCompetitorProduct"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Connect Date",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ConnectDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact ID",
+          "validFor": null,
+          "value": "Asset.ContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact ID",
+          "validFor": null,
+          "value": "ServiceAppointment.ContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ContractId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Number",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ContractNumber__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Country",
+          "validFor": null,
+          "value": "Asset.Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Country",
+          "validFor": null,
+          "value": "ServiceAppointment.Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created By ID",
+          "validFor": null,
+          "value": "Asset.CreatedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created By ID",
+          "validFor": null,
+          "value": "ServiceAppointment.CreatedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created Date",
+          "validFor": null,
+          "value": "Asset.CreatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created Date",
+          "validFor": null,
+          "value": "ServiceAppointment.CreatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Currency Payment Mode",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__CurrencyPaymentMode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Deregulation Status",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__DeregulationStatus__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Disconnect Date",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__DisconnectDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Due Date",
+          "validFor": null,
+          "value": "ServiceAppointment.DueDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration",
+          "validFor": null,
+          "value": "ServiceAppointment.Duration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration in Minutes",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationInMinutes"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration Type",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Earliest Start Permitted",
+          "validFor": null,
+          "value": "ServiceAppointment.EarliestStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Base One Time Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveBaseOneTimeTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Base Recurring Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveBaseRecurringTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective One Time Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveOneTimeCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective One Time Loyalty Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveOneTimeLoyaltyTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective One Time Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveOneTimeTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Quantity",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveQuantity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Recurring Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveRecurringCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Recurring Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveRecurringTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Usage Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveUsageCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Usage Price Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveUsagePriceTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Usage Quantity",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveUsageQuantity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Emergency",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Emergency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Financed Amount",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__FinancedAmount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Financed Amount Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__FinancedAmountTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Financed Installment Amount",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__FinancedInstallmentAmount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Color",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__GanttColor__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Display Date",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Gantt_Display_Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Label",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__GanttLabel__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Geocode Accuracy",
+          "validFor": null,
+          "value": "Asset.GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Geocode Accuracy",
+          "validFor": null,
+          "value": "ServiceAppointment.GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In Jeopardy",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InJeopardy__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In Jeopardy Reason",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InJeopardyReason__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Install Date",
+          "validFor": null,
+          "value": "Asset.InstallDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal Asset",
+          "validFor": null,
+          "value": "Asset.IsInternal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal SLR Geolocation (Latitude)",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InternalSLRGeolocation__Latitude__s"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal SLR Geolocation (Longitude)",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InternalSLRGeolocation__Longitude__s"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inventory Item",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__InventoryItemId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is Fill In Candidate",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__IsFillInCandidate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is MultiDay",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__IsMultiDay__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Item Name",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ItemName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified By ID",
+          "validFor": null,
+          "value": "Asset.LastModifiedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified By ID",
+          "validFor": null,
+          "value": "ServiceAppointment.LastModifiedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified Date",
+          "validFor": null,
+          "value": "Asset.LastModifiedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified Date",
+          "validFor": null,
+          "value": "ServiceAppointment.LastModifiedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Updated Epoch",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Last_Updated_Epoch__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "Asset.Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Line Number",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__LineNumber__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Location ID",
+          "validFor": null,
+          "value": "Asset.LocationId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "Asset.Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Manually Bundled",
+          "validFor": null,
+          "value": "ServiceAppointment.IsManuallyBundled"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Multiday Work Calculated length",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__MDS_Calculated_length__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Offsite Appointment",
+          "validFor": null,
+          "value": "ServiceAppointment.IsOffsiteAppointment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Calculated Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeCalculatedPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Charge",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeCharge__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Cost",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeCost__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Discount Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeDiscountPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Loyalty Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeLoyaltyPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Loyalty Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeLoyaltyTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Manual Discount",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeManualDiscount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Margin",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeMargin__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OrderId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Product",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OrderProductId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner ID",
+          "validFor": null,
+          "value": "Asset.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Parent Asset ID",
+          "validFor": null,
+          "value": "Asset.ParentId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ParentItemId",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ParentItemId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pinned",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Pinned__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Postal Code",
+          "validFor": null,
+          "value": "Asset.PostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Premises",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__PremisesId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prevent Geocoding For Chatter Actions",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Prevent_Geocoding_For_Chatter_Actions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Price",
+          "validFor": null,
+          "value": "Asset.Price"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pricebook Entry Id",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__PricebookEntryId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Price List",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__PriceListId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Attribute",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ProductAttribXN__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Group Key",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ProductGroupKey__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Hierarchy Path",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ProductHierarchyPath__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product ID",
+          "validFor": null,
+          "value": "Asset.Product2Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Provisioning Status",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ProvisioningStatus__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Purchase Date",
+          "validFor": null,
+          "value": "Asset.PurchaseDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quantity",
+          "validFor": null,
+          "value": "Asset.Quantity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Calculated Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringCalculatedPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Charge",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringCharge__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Cost",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringCost__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Discount Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringDiscountPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Manual Discount",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringManualDiscount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Margin",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringMargin__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring UOM",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringUOM__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reference Time",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__CatalogItemReferenceDateTime__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Related Bundle ID",
+          "validFor": null,
+          "value": "ServiceAppointment.RelatedBundleId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Related Service",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Related_Service__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relies on Item",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ReliesOnItemId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Root Asset ID",
+          "validFor": null,
+          "value": "Asset.RootAssetId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RootItemId",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RootItemId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Same Day",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Same_Day__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Same Resource",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Same_Resource__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled Duration",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Duration_In_Minutes__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled End",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled Start",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Schedule Mode",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Schedule_Mode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Schedule Over Lower Priority Appointment",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Schedule_over_lower_priority_appointment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduling Policy Used",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Scheduling_Policy_Used__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sequence Number",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__SequenceNumber__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serial Number",
+          "validFor": null,
+          "value": "Asset.SerialNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Account",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ServiceAccountId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Appointment ID",
+          "validFor": null,
+          "value": "ServiceAppointment.Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Identifier",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ServiceIdentifier__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Point",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ServicePointId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State",
+          "validFor": null,
+          "value": "Asset.State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State/Province",
+          "validFor": null,
+          "value": "ServiceAppointment.State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Asset.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "ServiceAppointment.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status Category",
+          "validFor": null,
+          "value": "ServiceAppointment.StatusCategory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "Asset.Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "ServiceAppointment.Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "ServiceAppointment.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subscription",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__SubscriptionId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Territory ID",
+          "validFor": null,
+          "value": "ServiceAppointment.ServiceTerritoryId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Time Dependency",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Time_Dependency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UpdatedByOptimization",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__UpdatedByOptimization__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Cost",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageUnitCost__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage End Date",
+          "validFor": null,
+          "value": "Asset.UsageEndDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Margin",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageMargin__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageUnitPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Price Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsagePriceTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Quantity",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageQuantity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Unit of Measure",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageMeasurementId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Use Async Logic",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Use_Async_Logic__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User Name",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__Username__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User Password",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__Password__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Virtual Service For Chatter Action (SLR)",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Virtual_Service_For_Chatter_Action__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Type ID",
+          "validFor": null,
+          "value": "ServiceAppointment.WorkTypeId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zip/Postal Code",
+          "validFor": null,
+          "value": "ServiceAppointment.PostalCode"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Index in the Recordset Filter Criteria Rule",
+      "label": "Index",
+      "name": "Index",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "This field stores the daily usage rate of the asset. The unit for the usage rate must be per day.",
+      "label": "Usage Rate Field",
+      "name": "UsageRateField",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account ID",
+          "validFor": null,
+          "value": "Asset.AccountId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account ID",
+          "validFor": null,
+          "value": "ServiceAppointment.AccountId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Action",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__Action__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activation Date",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ActivationDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activation Name",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ActivationName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Duration (Minutes)",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualDuration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual End",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Grade",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Appointment_Grade__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Number",
+          "validFor": null,
+          "value": "ServiceAppointment.AppointmentNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window End",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset ID",
+          "validFor": null,
+          "value": "Asset.Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Name",
+          "validFor": null,
+          "value": "Asset.Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Provided By ID",
+          "validFor": null,
+          "value": "Asset.AssetProvidedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Reference Id",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__AssetReferenceId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Serviced By ID",
+          "validFor": null,
+          "value": "Asset.AssetServicedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Auto Schedule",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Auto_Schedule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Base One Time Charge",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BaseOneTimeCharge__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Base One Time Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BaseOneTimeTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Base Recurring Charge",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BaseRecurringCharge__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Base Recurring Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BaseRecurringTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Billing Account",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BillingAccountId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Billing Hold",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__BillingHold__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bundle",
+          "validFor": null,
+          "value": "ServiceAppointment.IsBundle"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bundle Member",
+          "validFor": null,
+          "value": "ServiceAppointment.IsBundleMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "Asset.City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "ServiceAppointment.City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Competitor Asset",
+          "validFor": null,
+          "value": "Asset.IsCompetitorProduct"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Connect Date",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ConnectDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact ID",
+          "validFor": null,
+          "value": "Asset.ContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact ID",
+          "validFor": null,
+          "value": "ServiceAppointment.ContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ContractId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Number",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ContractNumber__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Country",
+          "validFor": null,
+          "value": "Asset.Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Country",
+          "validFor": null,
+          "value": "ServiceAppointment.Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created By ID",
+          "validFor": null,
+          "value": "Asset.CreatedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created By ID",
+          "validFor": null,
+          "value": "ServiceAppointment.CreatedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created Date",
+          "validFor": null,
+          "value": "Asset.CreatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created Date",
+          "validFor": null,
+          "value": "ServiceAppointment.CreatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Currency Payment Mode",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__CurrencyPaymentMode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Deregulation Status",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__DeregulationStatus__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Disconnect Date",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__DisconnectDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Due Date",
+          "validFor": null,
+          "value": "ServiceAppointment.DueDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration",
+          "validFor": null,
+          "value": "ServiceAppointment.Duration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration in Minutes",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationInMinutes"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration Type",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Earliest Start Permitted",
+          "validFor": null,
+          "value": "ServiceAppointment.EarliestStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Base One Time Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveBaseOneTimeTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Base Recurring Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveBaseRecurringTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective One Time Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveOneTimeCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective One Time Loyalty Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveOneTimeLoyaltyTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective One Time Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveOneTimeTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Quantity",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveQuantity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Recurring Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveRecurringCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Recurring Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveRecurringTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Usage Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveUsageCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Usage Price Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveUsagePriceTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effective Usage Quantity",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__EffectiveUsageQuantity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Emergency",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Emergency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Financed Amount",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__FinancedAmount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Financed Amount Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__FinancedAmountTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Financed Installment Amount",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__FinancedInstallmentAmount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Color",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__GanttColor__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Display Date",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Gantt_Display_Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Label",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__GanttLabel__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Geocode Accuracy",
+          "validFor": null,
+          "value": "Asset.GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Geocode Accuracy",
+          "validFor": null,
+          "value": "ServiceAppointment.GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In Jeopardy",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InJeopardy__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In Jeopardy Reason",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InJeopardyReason__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Install Date",
+          "validFor": null,
+          "value": "Asset.InstallDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal Asset",
+          "validFor": null,
+          "value": "Asset.IsInternal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal SLR Geolocation (Latitude)",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InternalSLRGeolocation__Latitude__s"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal SLR Geolocation (Longitude)",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InternalSLRGeolocation__Longitude__s"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inventory Item",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__InventoryItemId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is Fill In Candidate",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__IsFillInCandidate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is MultiDay",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__IsMultiDay__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Item Name",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ItemName__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified By ID",
+          "validFor": null,
+          "value": "Asset.LastModifiedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified By ID",
+          "validFor": null,
+          "value": "ServiceAppointment.LastModifiedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified Date",
+          "validFor": null,
+          "value": "Asset.LastModifiedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified Date",
+          "validFor": null,
+          "value": "ServiceAppointment.LastModifiedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Updated Epoch",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Last_Updated_Epoch__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "Asset.Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Line Number",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__LineNumber__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Location ID",
+          "validFor": null,
+          "value": "Asset.LocationId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "Asset.Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Manually Bundled",
+          "validFor": null,
+          "value": "ServiceAppointment.IsManuallyBundled"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Multiday Work Calculated length",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__MDS_Calculated_length__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Offsite Appointment",
+          "validFor": null,
+          "value": "ServiceAppointment.IsOffsiteAppointment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Calculated Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeCalculatedPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Charge",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeCharge__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Cost",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeCost__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Discount Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeDiscountPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Loyalty Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeLoyaltyPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Loyalty Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeLoyaltyTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Manual Discount",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeManualDiscount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Margin",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeMargin__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "One Time Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OneTimeTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OrderId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Product",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__OrderProductId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner ID",
+          "validFor": null,
+          "value": "Asset.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Parent Asset ID",
+          "validFor": null,
+          "value": "Asset.ParentId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ParentItemId",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ParentItemId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pinned",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Pinned__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Postal Code",
+          "validFor": null,
+          "value": "Asset.PostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Premises",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__PremisesId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prevent Geocoding For Chatter Actions",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Prevent_Geocoding_For_Chatter_Actions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Price",
+          "validFor": null,
+          "value": "Asset.Price"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pricebook Entry Id",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__PricebookEntryId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Price List",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__PriceListId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Attribute",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ProductAttribXN__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Group Key",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ProductGroupKey__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Hierarchy Path",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ProductHierarchyPath__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product ID",
+          "validFor": null,
+          "value": "Asset.Product2Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Provisioning Status",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ProvisioningStatus__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Purchase Date",
+          "validFor": null,
+          "value": "Asset.PurchaseDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quantity",
+          "validFor": null,
+          "value": "Asset.Quantity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Calculated Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringCalculatedPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Charge",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringCharge__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Cost",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringCost__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Discount Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringDiscountPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Manual Discount",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringManualDiscount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Margin",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringMargin__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recurring UOM",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RecurringUOM__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reference Time",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__CatalogItemReferenceDateTime__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Related Bundle ID",
+          "validFor": null,
+          "value": "ServiceAppointment.RelatedBundleId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Related Service",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Related_Service__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relies on Item",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ReliesOnItemId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Root Asset ID",
+          "validFor": null,
+          "value": "Asset.RootAssetId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RootItemId",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__RootItemId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Same Day",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Same_Day__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Same Resource",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Same_Resource__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled Duration",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Duration_In_Minutes__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled End",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled Start",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Schedule Mode",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Schedule_Mode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Schedule Over Lower Priority Appointment",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Schedule_over_lower_priority_appointment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduling Policy Used",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Scheduling_Policy_Used__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sequence Number",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__SequenceNumber__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serial Number",
+          "validFor": null,
+          "value": "Asset.SerialNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Account",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ServiceAccountId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Appointment ID",
+          "validFor": null,
+          "value": "ServiceAppointment.Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Identifier",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ServiceIdentifier__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Point",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__ServicePointId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State",
+          "validFor": null,
+          "value": "Asset.State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State/Province",
+          "validFor": null,
+          "value": "ServiceAppointment.State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Asset.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "ServiceAppointment.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status Category",
+          "validFor": null,
+          "value": "ServiceAppointment.StatusCategory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "Asset.Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "ServiceAppointment.Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "ServiceAppointment.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subscription",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__SubscriptionId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Territory ID",
+          "validFor": null,
+          "value": "ServiceAppointment.ServiceTerritoryId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Time Dependency",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Time_Dependency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UpdatedByOptimization",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__UpdatedByOptimization__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Cost",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageUnitCost__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Cost Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageCostTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage End Date",
+          "validFor": null,
+          "value": "Asset.UsageEndDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Margin",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageMargin__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Price",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageUnitPrice__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Price Total",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsagePriceTotal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Quantity",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageQuantity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage Unit of Measure",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__UsageMeasurementId__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Use Async Logic",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Use_Async_Logic__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User Name",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__Username__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User Password",
+          "validFor": null,
+          "value": "Asset.vlocity_cmt__Password__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Virtual Service For Chatter Action (SLR)",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Virtual_Service_For_Chatter_Action__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Type ID",
+          "validFor": null,
+          "value": "ServiceAppointment.WorkTypeId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zip/Postal Code",
+          "validFor": null,
+          "value": "ServiceAppointment.PostalCode"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "Day",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "This enum value that define different options for Usage Rate Field.",
+      "label": "Usage Rate Unit",
+      "name": "UsageRateUnit",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Day",
+          "validFor": null,
+          "value": "Day"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "label": "Recordset Filter Criteria Rule",
+  "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIInsightValue",
+      "deprecatedAndHidden": false,
+      "field": "SobjectLookupValueId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AIRecordInsight",
+      "deprecatedAndHidden": false,
+      "field": "TargetId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowExecutionErrorEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "RecordsetFilterCriteriaRule",
+  "queryable": true
+}

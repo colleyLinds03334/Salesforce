@@ -1,0 +1,709 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "DialerCallUsage ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Owner ID",
+      "name": "OwnerId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Group",
+        "User"
+      ],
+      "relationshipName": "Owner",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "DialerCallUsage Name",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Voice Call ID",
+      "name": "VoiceCallId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "VoiceCall"
+      ],
+      "relationshipName": "VoiceCall",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Call Duration",
+      "name": "DurationInSeconds",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "From Country",
+      "name": "FromCountry",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "United States of America",
+          "validFor": null,
+          "value": "US"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Canada",
+          "validFor": null,
+          "value": "CA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ireland",
+          "validFor": null,
+          "value": "IE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "France",
+          "validFor": null,
+          "value": "FR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Germany",
+          "validFor": null,
+          "value": "DE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "United Kingdom",
+          "validFor": null,
+          "value": "GB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Belgium",
+          "validFor": null,
+          "value": "BE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Denmark",
+          "validFor": null,
+          "value": "DK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finland",
+          "validFor": null,
+          "value": "FI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Italy",
+          "validFor": null,
+          "value": "IT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Netherlands",
+          "validFor": null,
+          "value": "NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spain",
+          "validFor": null,
+          "value": "ES"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sweden",
+          "validFor": null,
+          "value": "SE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Switzerland",
+          "validFor": null,
+          "value": "CH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Luxembourg",
+          "validFor": null,
+          "value": "LU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Norway",
+          "validFor": null,
+          "value": "NO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portugal",
+          "validFor": null,
+          "value": "PT"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "To Country",
+      "name": "ToCountry",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "United States of America",
+          "validFor": null,
+          "value": "US"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Canada",
+          "validFor": null,
+          "value": "CA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ireland",
+          "validFor": null,
+          "value": "IE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "France",
+          "validFor": null,
+          "value": "FR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Germany",
+          "validFor": null,
+          "value": "DE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "United Kingdom",
+          "validFor": null,
+          "value": "GB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Belgium",
+          "validFor": null,
+          "value": "BE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Denmark",
+          "validFor": null,
+          "value": "DK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finland",
+          "validFor": null,
+          "value": "FI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Italy",
+          "validFor": null,
+          "value": "IT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Netherlands",
+          "validFor": null,
+          "value": "NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spain",
+          "validFor": null,
+          "value": "ES"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sweden",
+          "validFor": null,
+          "value": "SE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Switzerland",
+          "validFor": null,
+          "value": "CH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Luxembourg",
+          "validFor": null,
+          "value": "LU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Norway",
+          "validFor": null,
+          "value": "NO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portugal",
+          "validFor": null,
+          "value": "PT"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "VendorType",
+      "name": "VendorType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Twilio",
+          "validFor": null,
+          "value": "Twilio"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Custom",
+          "validFor": null,
+          "value": "Custom"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TwilioTrial",
+          "validFor": null,
+          "value": "TwilioTrial"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ContactCenter",
+          "validFor": null,
+          "value": "ContactCenter"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RingCentral",
+          "validFor": null,
+          "value": "RingCentral"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DialPad",
+          "validFor": null,
+          "value": "DialPad"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AmazonConnect",
+          "validFor": null,
+          "value": "AmazonConnect"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AirCall",
+          "validFor": null,
+          "value": "AirCall"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Call Type",
+      "name": "CallType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal",
+          "validFor": null,
+          "value": "Internal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inbound",
+          "validFor": null,
+          "value": "Inbound"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Outbound",
+          "validFor": null,
+          "value": "Outbound"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coach",
+          "validFor": null,
+          "value": "Coach"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bridge",
+          "validFor": null,
+          "value": "Bridge"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transfer",
+          "validFor": null,
+          "value": "Transfer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Callback",
+          "validFor": null,
+          "value": "Callback"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal Call",
+          "validFor": null,
+          "value": "InternalCall"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Call Started",
+      "name": "CallStartDateTime",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Recipient Number",
+      "name": "ToPhoneNumber",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "phone"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Caller Number",
+      "name": "FromPhoneNumber",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "phone"
+    }
+  ],
+  "label": "Dialer Call Usage",
+  "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "DialerCallUsageShare",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Shares",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowExecutionErrorEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "DialerCallUsage",
+  "queryable": true
+}

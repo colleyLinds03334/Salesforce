@@ -1,0 +1,94 @@
+// This file is generated as an Apex representation of the
+//     corresponding sObject and its fields.
+// This read-only file is used by the Apex Language Server to
+//     provide code smartness, and is deleted each time you
+//     refresh your sObject definitions.
+// To edit your sObjects and their fields, edit the corresponding
+//     .object-meta.xml and .field-meta.xml files.
+
+global class vlocity_cmt__VlocityUITemplate__c {
+    global Id Id;
+    global SObject Owner;
+    global Id OwnerId;
+    global Boolean IsDeleted;
+    global String Name;
+    global Datetime CreatedDate;
+    global User CreatedBy;
+    global Id CreatedById;
+    global Datetime LastModifiedDate;
+    global User LastModifiedBy;
+    global Id LastModifiedById;
+    global Datetime SystemModstamp;
+    /* Set the template as active and ready to be used
+    */
+    global Boolean vlocity_cmt__Active__c;
+    /* The author of the UI Template.
+    */
+    global String vlocity_cmt__Author__c;
+    global String vlocity_cmt__CSS__c;
+    global String vlocity_cmt__CustomJavascript__c;
+    global String vlocity_cmt__Definition__c;
+    /* This field holds a description of the template.
+    */
+    global String vlocity_cmt__Description__c;
+    global String vlocity_cmt__DisplayOn__c;
+    global String vlocity_cmt__ExternalID__c;
+    global String vlocity_cmt__HTML__c;
+    global String vlocity_cmt__ParentID__c;
+    global String vlocity_cmt__SampleJson__c;
+    global String vlocity_cmt__Sass__c;
+    global String vlocity_cmt__Type__c;
+    /* Version number of the template.
+    */
+    global Double vlocity_cmt__Version__c;
+    global List<AttachedContentDocument> AttachedContentDocuments;
+    global List<AttachedContentNote> AttachedContentNotes;
+    global List<Attachment> Attachments;
+    global List<CollaborationGroupRecord> RecordAssociatedGroups;
+    global List<CombinedAttachment> CombinedAttachments;
+    global List<ContactRequest> ContactRequests;
+    global List<ContentDocumentLink> ContentDocumentLinks;
+    global List<DuplicateRecordItem> DuplicateRecordItems;
+    global List<EngagementTopic> EngagementInitiatedTopic;
+    global List<EntitySubscription> FeedSubscriptionsForEntity;
+    global List<EventRelation> EventRelations;
+    global List<FlowOrchestrationWorkItem> FlowOrchestrationWorkItems;
+    global List<Note> Notes;
+    global List<NoteAndAttachment> NotesAndAttachments;
+    global List<ProcessException> ProcessExceptions;
+    global List<ProcessInstance> ProcessInstances;
+    global List<ProcessInstanceHistory> ProcessSteps;
+    global List<RecordAction> RecordActions;
+    global List<RecordActionHistory> RecordActionHistories;
+    global List<RecordAlert> RecordAlertParent;
+    global List<RecordAlert> RecordAlertWhat;
+    global List<TaskRelation> TaskRelations;
+    global List<TopicAssignment> TopicAssignments;
+    global List<VideoCall> VideoRelatedRecords;
+    global List<VoiceCall> RelatedRecords;
+    global List<vlocity_cmt__VlocityUITemplate__Share> Shares;
+    global List<AIInsightValue> SobjectLookupValue;
+    global List<AIRecordInsight> Target;
+    global List<BusinessAlert> AlertRecord;
+    global List<ContentDistribution> RelatedRecord;
+    global List<ContentDocumentLinkChangeEvent> LinkedEntity;
+    global List<ContentVersion> FirstPublishLocation;
+    global List<EmailMessageChangeEvent> RelatedTo;
+    global List<EngagementTopicChangeEvent> Topic;
+    global List<EventChangeEvent> What;
+    global List<EventRelationChangeEvent> Relation;
+    global List<FeedComment> Parent;
+    global List<FlowExecutionErrorEvent> ContextRecord;
+    global List<FlowRecordRelation> RelatedRecord;
+    global List<ForecastingItem__hd> Parent;
+    global List<ProcessExceptionEvent> AttachedTo;
+    global List<SvcCatalogReqExtdAttrVal> ReferenceRecord;
+    global List<SvcCatalogReqRelatedItem> RelatedInternalRecord;
+    global List<TaskChangeEvent> What;
+    global List<TaskRelationChangeEvent> Relation;
+    global List<VideoCallChangeEvent> RelatedRecord;
+
+    global vlocity_cmt__VlocityUITemplate__c () 
+    {
+    }
+}

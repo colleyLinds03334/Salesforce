@@ -1,0 +1,1657 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Record ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Owner ID",
+      "name": "OwnerId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Group",
+        "User"
+      ],
+      "relationshipName": "Owner",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Jurisdiction Name",
+      "name": "Name",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "City",
+      "name": "vlocity_cmt__City__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Country Code",
+      "name": "vlocity_cmt__CountryCode__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "County Code",
+      "name": "vlocity_cmt__CountyCode__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "County",
+      "name": "vlocity_cmt__County__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Parent Jurisdiction",
+      "name": "vlocity_cmt__ParentJurisdictionId__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "vlocity_cmt__Jurisdiction__c"
+      ],
+      "relationshipName": "vlocity_cmt__ParentJurisdictionId__r",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Postal Code",
+      "name": "vlocity_cmt__PostalCode__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "State Code",
+      "name": "vlocity_cmt__StateCode__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AK",
+          "validFor": null,
+          "value": "AK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AL",
+          "validFor": null,
+          "value": "AL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AR",
+          "validFor": null,
+          "value": "AR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AZ",
+          "validFor": null,
+          "value": "AZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CA",
+          "validFor": null,
+          "value": "CA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CO",
+          "validFor": null,
+          "value": "CO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CT",
+          "validFor": null,
+          "value": "CT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DE",
+          "validFor": null,
+          "value": "DE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "FL",
+          "validFor": null,
+          "value": "FL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GA",
+          "validFor": null,
+          "value": "GA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HI",
+          "validFor": null,
+          "value": "HI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "IA",
+          "validFor": null,
+          "value": "IA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ID",
+          "validFor": null,
+          "value": "ID"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "IL",
+          "validFor": null,
+          "value": "IL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "IN",
+          "validFor": null,
+          "value": "IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KS",
+          "validFor": null,
+          "value": "KS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KY",
+          "validFor": null,
+          "value": "KY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LA",
+          "validFor": null,
+          "value": "LA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MA",
+          "validFor": null,
+          "value": "MA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MD",
+          "validFor": null,
+          "value": "MD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ME",
+          "validFor": null,
+          "value": "ME"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MI",
+          "validFor": null,
+          "value": "MI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MN",
+          "validFor": null,
+          "value": "MN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MO",
+          "validFor": null,
+          "value": "MO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MS",
+          "validFor": null,
+          "value": "MS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MT",
+          "validFor": null,
+          "value": "MT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NC",
+          "validFor": null,
+          "value": "NC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ND",
+          "validFor": null,
+          "value": "ND"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NE",
+          "validFor": null,
+          "value": "NE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NH",
+          "validFor": null,
+          "value": "NH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NJ",
+          "validFor": null,
+          "value": "NJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NM",
+          "validFor": null,
+          "value": "NM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NV",
+          "validFor": null,
+          "value": "NV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NY",
+          "validFor": null,
+          "value": "NY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "OH",
+          "validFor": null,
+          "value": "OH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "OK",
+          "validFor": null,
+          "value": "OK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "OR",
+          "validFor": null,
+          "value": "OR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PA",
+          "validFor": null,
+          "value": "PA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RI",
+          "validFor": null,
+          "value": "RI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SC",
+          "validFor": null,
+          "value": "SC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SD",
+          "validFor": null,
+          "value": "SD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TN",
+          "validFor": null,
+          "value": "TN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TX",
+          "validFor": null,
+          "value": "TX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UT",
+          "validFor": null,
+          "value": "UT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VA",
+          "validFor": null,
+          "value": "VA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VT",
+          "validFor": null,
+          "value": "VT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "WA",
+          "validFor": null,
+          "value": "WA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "WI",
+          "validFor": null,
+          "value": "WI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "WV",
+          "validFor": null,
+          "value": "WV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "WY",
+          "validFor": null,
+          "value": "WY"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "States/Provinces",
+      "name": "vlocity_cmt__StatesProvinces__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AA",
+          "validFor": null,
+          "value": "AA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AE",
+          "validFor": null,
+          "value": "AE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AK",
+          "validFor": null,
+          "value": "AK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AL",
+          "validFor": null,
+          "value": "AL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AP",
+          "validFor": null,
+          "value": "AP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AR",
+          "validFor": null,
+          "value": "AR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AS",
+          "validFor": null,
+          "value": "AS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AZ",
+          "validFor": null,
+          "value": "AZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CA",
+          "validFor": null,
+          "value": "CA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CO",
+          "validFor": null,
+          "value": "CO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CT",
+          "validFor": null,
+          "value": "CT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DC",
+          "validFor": null,
+          "value": "DC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DE",
+          "validFor": null,
+          "value": "DE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "FL",
+          "validFor": null,
+          "value": "FL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "FM",
+          "validFor": null,
+          "value": "FM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GA",
+          "validFor": null,
+          "value": "GA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GU",
+          "validFor": null,
+          "value": "GU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HI",
+          "validFor": null,
+          "value": "HI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "IA",
+          "validFor": null,
+          "value": "IA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ID",
+          "validFor": null,
+          "value": "ID"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "IL",
+          "validFor": null,
+          "value": "IL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "IN",
+          "validFor": null,
+          "value": "IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KS",
+          "validFor": null,
+          "value": "KS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KY",
+          "validFor": null,
+          "value": "KY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LA",
+          "validFor": null,
+          "value": "LA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MA",
+          "validFor": null,
+          "value": "MA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MD",
+          "validFor": null,
+          "value": "MD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ME",
+          "validFor": null,
+          "value": "ME"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MH",
+          "validFor": null,
+          "value": "MH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MI",
+          "validFor": null,
+          "value": "MI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MN",
+          "validFor": null,
+          "value": "MN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MO",
+          "validFor": null,
+          "value": "MO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MP",
+          "validFor": null,
+          "value": "MP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MS",
+          "validFor": null,
+          "value": "MS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MT",
+          "validFor": null,
+          "value": "MT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NC",
+          "validFor": null,
+          "value": "NC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ND",
+          "validFor": null,
+          "value": "ND"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NE",
+          "validFor": null,
+          "value": "NE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NH",
+          "validFor": null,
+          "value": "NH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NJ",
+          "validFor": null,
+          "value": "NJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NM",
+          "validFor": null,
+          "value": "NM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NV",
+          "validFor": null,
+          "value": "NV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NY",
+          "validFor": null,
+          "value": "NY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "OH",
+          "validFor": null,
+          "value": "OH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "OK",
+          "validFor": null,
+          "value": "OK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "OR",
+          "validFor": null,
+          "value": "OR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PA",
+          "validFor": null,
+          "value": "PA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PR",
+          "validFor": null,
+          "value": "PR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PW",
+          "validFor": null,
+          "value": "PW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RI",
+          "validFor": null,
+          "value": "RI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SC",
+          "validFor": null,
+          "value": "SC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SD",
+          "validFor": null,
+          "value": "SD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TN",
+          "validFor": null,
+          "value": "TN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TX",
+          "validFor": null,
+          "value": "TX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UM",
+          "validFor": null,
+          "value": "UM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UT",
+          "validFor": null,
+          "value": "UT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VA",
+          "validFor": null,
+          "value": "VA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VI",
+          "validFor": null,
+          "value": "VI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VT",
+          "validFor": null,
+          "value": "VT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "WA",
+          "validFor": null,
+          "value": "WA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "WI",
+          "validFor": null,
+          "value": "WI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "WV",
+          "validFor": null,
+          "value": "WV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "WY",
+          "validFor": null,
+          "value": "WY"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "multipicklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Type",
+      "name": "vlocity_cmt__Type__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Federal",
+          "validFor": null,
+          "value": "Federal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State",
+          "validFor": null,
+          "value": "State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "County",
+          "validFor": null,
+          "value": "County"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "City"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "label": "Jurisdiction",
+  "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIInsightValue",
+      "deprecatedAndHidden": false,
+      "field": "SobjectLookupValueId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AIRecordInsight",
+      "deprecatedAndHidden": false,
+      "field": "TargetId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AttachedContentDocument",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AttachedContentDocuments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AttachedContentNote",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AttachedContentNotes",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Attachment",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Attachments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "BusinessAlert",
+      "deprecatedAndHidden": false,
+      "field": "AlertRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "CollaborationGroupRecord",
+      "deprecatedAndHidden": false,
+      "field": "RecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RecordAssociatedGroups",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "CombinedAttachment",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "CombinedAttachments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContactRequest",
+      "deprecatedAndHidden": false,
+      "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ContactRequests",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ContentDistribution",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ContentDocumentLink",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ContentDocumentLinks",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentDocumentLinkChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentVersion",
+      "deprecatedAndHidden": false,
+      "field": "FirstPublishLocationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentVersionChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "FirstPublishLocationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "DuplicateRecordItem",
+      "deprecatedAndHidden": false,
+      "field": "RecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "DuplicateRecordItems",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EmailMessageChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EngagementTopic",
+      "deprecatedAndHidden": false,
+      "field": "TopicId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "EngagementInitiatedTopic",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EngagementTopicChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "TopicId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "EntitySubscription",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FeedSubscriptionsForEntity",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EventChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "EventRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "EventRelations",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EventRelationChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FeedComment",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "FeedItem",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowExecutionErrorEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowOrchestrationWorkItem",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FlowOrchestrationWorkItems",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ForecastingItem__hd",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Note",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Notes",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "NoteAndAttachment",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "NotesAndAttachments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Opportunity__hd",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ProcessException",
+      "deprecatedAndHidden": false,
+      "field": "AttachedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProcessExceptions",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProcessExceptionEvent",
+      "deprecatedAndHidden": false,
+      "field": "AttachedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ProcessInstance",
+      "deprecatedAndHidden": false,
+      "field": "TargetObjectId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProcessInstances",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProcessInstanceHistory",
+      "deprecatedAndHidden": false,
+      "field": "TargetObjectId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProcessSteps",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "RecordAction",
+      "deprecatedAndHidden": false,
+      "field": "RecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RecordActions",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "RecordActionHistory",
+      "deprecatedAndHidden": false,
+      "field": "ParentRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RecordActionHistories",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "RecordAlert",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RecordAlertParent",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "RecordAlert",
+      "deprecatedAndHidden": false,
+      "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RecordAlertWhat",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "SvcCatalogReqExtdAttrVal",
+      "deprecatedAndHidden": false,
+      "field": "ReferenceRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "SvcCatalogReqRelatedItem",
+      "deprecatedAndHidden": false,
+      "field": "RelatedInternalRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "TaskChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "TaskRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "TaskRelations",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "TaskRelationChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "TopicAssignment",
+      "deprecatedAndHidden": false,
+      "field": "EntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "TopicAssignments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VideoCall",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "VideoRelatedRecords",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VideoCallChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCall",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RelatedRecords",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCallChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "vlocity_cmt__Jurisdiction__Share",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Shares",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "vlocity_cmt__Jurisdiction__c",
+      "deprecatedAndHidden": false,
+      "field": "vlocity_cmt__ParentJurisdictionId__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "vlocity_cmt__Jurisdictions__r",
+      "restrictedDelete": false
+    }
+  ],
+  "custom": true,
+  "name": "vlocity_cmt__Jurisdiction__c",
+  "queryable": true
+}

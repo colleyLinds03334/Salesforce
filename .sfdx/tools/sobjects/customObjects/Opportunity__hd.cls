@@ -1,0 +1,36 @@
+// This file is generated as an Apex representation of the
+//     corresponding sObject and its fields.
+// This read-only file is used by the Apex Language Server to
+//     provide code smartness, and is deleted each time you
+//     refresh your sObject definitions.
+// To edit your sObjects and their fields, edit the corresponding
+//     .object-meta.xml and .field-meta.xml files.
+
+global class Opportunity__hd {
+    global Id Id;
+    global Opportunity Parent;
+    global Id ParentId;
+    global Boolean IsDeleted;
+    global Datetime ValidFromDate;
+    global Datetime ValidToDate;
+    global Datetime CreatedDate;
+    global User CreatedBy;
+    global Id CreatedById;
+    global Datetime SystemModstamp;
+    global Decimal Amount__hpr;
+    global Decimal Amount__hst;
+    global Date CloseDate__hpr;
+    global Date CloseDate__hst;
+    global String StageName__hpr;
+    global String StageName__hst;
+    global Double Probability__hpr;
+    global Double Probability__hst;
+    global String ForecastCategoryName__hpr;
+    global String ForecastCategoryName__hst;
+    global String NextStep__hpr;
+    global String NextStep__hst;
+
+    global Opportunity__hd () 
+    {
+    }
+}

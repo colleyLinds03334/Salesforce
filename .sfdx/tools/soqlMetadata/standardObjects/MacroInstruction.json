@@ -1,0 +1,5707 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Macro Instruction ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Macro Instruction Name",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Macro ID",
+      "name": "MacroId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Macro"
+      ],
+      "relationshipName": "Macro",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Operation",
+      "name": "Operation",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "select",
+          "validFor": null,
+          "value": "Select"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "set",
+          "validFor": null,
+          "value": "Set"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "insert",
+          "validFor": null,
+          "value": "Insert"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "submit",
+          "validFor": null,
+          "value": "Submit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "close",
+          "validFor": null,
+          "value": "Close"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "if",
+          "validFor": null,
+          "value": "If"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "elseif",
+          "validFor": null,
+          "value": "ElseIf"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "else",
+          "validFor": null,
+          "value": "Else"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "endif",
+          "validFor": null,
+          "value": "EndIf"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Target",
+      "name": "Target",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Access Type",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.CollaborationType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account Name",
+          "validFor": null,
+          "value": "Field.Opportunity.AccountId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account Name",
+          "validFor": null,
+          "value": "Field.Contact.AccountId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Account Ad Server Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AccountAdServer__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Account Balance Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AccountBalance__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Account Contact Relationship Tab",
+          "validFor": null,
+          "value": "Tab.AccountContactRelation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Account Discount Item Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AccountDiscountItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Account Discount Pricing Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AccountDiscountPricing__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Account Discount Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AccountDiscount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Account Hold Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AccountHold__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Account Offer Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AccountOffer__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Account Pricing Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AccountPriceAdjustment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Account Product Rollup Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AccountProductRollup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Account Tab",
+          "validFor": null,
+          "value": "Tab.Account"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Activity Content Document Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ActivityContentDocument__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Activity Template Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ActivityTemplate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Ad Creative SizeType Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AdCreativeSizeType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Admin Tab Layout Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AdminTabLayout__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Ad Server Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AdServer__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Ad Space Creative SizeType Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AdSpaceCreativeSizeType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Ad Space Group Member Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AdSpaceGroupMember__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Ad Space Specification Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AdSpaceSpecification__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Application Party Relationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ApplicationPartyRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Application Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Application__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Application Template Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ApplicationTemplate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Applied Promotion Affected Asset Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AccountAppliedPromotionItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Applied Promotion Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AccountAppliedPromotion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Appointment Bundle Aggregation Duration Downscale Tab",
+          "validFor": null,
+          "value": "Tab.ApptBundleAggrDurDnscale"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Appointment Bundle Aggregation Policy Tab",
+          "validFor": null,
+          "value": "Tab.ApptBundleAggrPolicy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Appointment Bundle Config Tab",
+          "validFor": null,
+          "value": "Tab.ApptBundleConfig"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Appointment Bundle Policy Service Territory Tab",
+          "validFor": null,
+          "value": "Tab.ApptBundlePolicySvcTerr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Appointment Bundle Policy Tab",
+          "validFor": null,
+          "value": "Tab.ApptBundlePolicy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Appointment Bundle Propagation Policy Tab",
+          "validFor": null,
+          "value": "Tab.ApptBundlePropagatePolicy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Appointment Bundle Restriction Policy Tab",
+          "validFor": null,
+          "value": "Tab.ApptBundleRestrictPolicy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Appointment Bundle Sort Policy Tab",
+          "validFor": null,
+          "value": "Tab.ApptBundleSortPolicy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Appointment Dependency Tab",
+          "validFor": null,
+          "value": "Tab.FSL__Time_Dependency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Appointment Topic Time Slot Tab",
+          "validFor": null,
+          "value": "Tab.AppointmentTopicTimeSlot"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Assessment Answer Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AssessmentAnswer__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Assessment Question Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AssessmentQuestion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Assessment Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Assessment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Asset Downtime Period Tab",
+          "validFor": null,
+          "value": "Tab.AssetDowntimePeriod"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Asset Pricing Adjustment Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AssetPricingAdjustment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Asset Relationship Tab",
+          "validFor": null,
+          "value": "Tab.AssetRelationship"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Asset Tab",
+          "validFor": null,
+          "value": "Tab.Asset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Asset Warranty Tab",
+          "validFor": null,
+          "value": "Tab.AssetWarranty"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Assigned Resource Tab",
+          "validFor": null,
+          "value": "Tab.AssignedResource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Async Operation Result Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Async_Operation_Result__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Async Process Job Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AsyncProcessJob__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Async Process Step Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AsyncProcessStep__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Async Process Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AsyncProcess__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Attribute Assignment Export Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AttributeAssignmentExport__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Attribute Assignment Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AttributeAssignment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Attribute Definition Tab",
+          "validFor": null,
+          "value": "Tab.AttributeDefinition"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Attribute Picklist Tab",
+          "validFor": null,
+          "value": "Tab.AttributePicklist"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Attribute Picklist Value Tab",
+          "validFor": null,
+          "value": "Tab.AttributePicklistValue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Authorization Form Consent Tab",
+          "validFor": null,
+          "value": "Tab.AuthorizationFormConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Authorization Form Data Use Tab",
+          "validFor": null,
+          "value": "Tab.AuthorizationFormDataUse"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Authorization Form Tab",
+          "validFor": null,
+          "value": "Tab.AuthorizationForm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Authorization Form Text Tab",
+          "validFor": null,
+          "value": "Tab.AuthorizationFormText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Back Sync Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Back_Sync__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Branch Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Branch__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active CachedAPIChangeEntry Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CachedAPIChangeEntry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active CachedAPIChange Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CachedAPIChange__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active CachedAPIMigrate Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CachedAPIMigrate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active CachedAPIResponseOffers Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CachedAPIResponseOffers__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active CachedAPIResponse Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CachedAPIResponse__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Cached Data Set Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CachedDataSet__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Cached Filterable Attribute Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CachedFilterableAttribute__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active CachedKeyMapping Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CachedKeyMapping__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Cached Pricebook Entry Attribute Value Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CachedPriceBookEntryAttributeValue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Cached Product Translation Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CachedProduct2Translation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Cached Promotion Translation Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CachedPromotionTranslation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Calculation Procedure Tab",
+          "validFor": null,
+          "value": "Tab.CalculationProcedure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active CallbackURI Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CallbackURI__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Campaign Content Document Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CampaignContentDocument__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Campaign Member Action Log Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CampaignMemberActionLog__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Cart Item Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CartItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Cart Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Cart__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Case Related Issue Tab",
+          "validFor": null,
+          "value": "Tab.CaseRelatedIssue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Case Service Process Tab",
+          "validFor": null,
+          "value": "Tab.CaseServiceProcess"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Case Tab",
+          "validFor": null,
+          "value": "Tab.Case"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Catalog Product Relationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CatalogProductRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Catalog Relationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CatalogRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Catalog Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Catalog__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Change Bundle Install Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Change_Bundle_Install__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Change Bundle Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Change_Bundle__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Change Request Related Issue Tab",
+          "validFor": null,
+          "value": "Tab.ChangeRequestRelatedIssue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Change Request Related Item Tab",
+          "validFor": null,
+          "value": "Tab.ChangeRequestRelatedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Change Request Tab",
+          "validFor": null,
+          "value": "Tab.ChangeRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Change Submission Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Change_Submission__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Charge Measurement Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ChargeMeasurement__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Collaboration Room Tab",
+          "validFor": null,
+          "value": "Tab.CollaborationRoom"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Collections Activity Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Dunning__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Communication Subscription Channel Type Tab",
+          "validFor": null,
+          "value": "Tab.CommSubscriptionChannelType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Communication Subscription Consent Tab",
+          "validFor": null,
+          "value": "Tab.CommSubscriptionConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Communication Subscription Tab",
+          "validFor": null,
+          "value": "Tab.CommSubscription"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Communication Subscription Timing Tab",
+          "validFor": null,
+          "value": "Tab.CommSubscriptionTiming"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Compiled Attribute Override Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CompiledAttributeOverride__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Configuration Snapshot Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ConfigurationSnapshot__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Console Action Log Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ConsoleActionLog__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contact Point Address Tab",
+          "validFor": null,
+          "value": "Tab.ContactPointAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contact Point Email Tab",
+          "validFor": null,
+          "value": "Tab.ContactPointEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contact Point Phone Tab",
+          "validFor": null,
+          "value": "Tab.ContactPointPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contact Tab",
+          "validFor": null,
+          "value": "Tab.Contact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Context Action Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContextAction__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Context Scope Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContextScope__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contract Document Discount Item Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContractVersionDiscountItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contract Document Discount Pricing Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContractVersionDiscountPricing__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contract Document Discount Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContractVersionDiscount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contract Document Element Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContractDocumentCollection__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contract Document Envelope Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContractEnvelope__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contract Document Section Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContractSection__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contract Document Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContractVersion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contract Group Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContractGroup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contract Line Item Tab",
+          "validFor": null,
+          "value": "Tab.ContractLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contract Line Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContractLineItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contract Recipient Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContractRecipient__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contract Tab",
+          "validFor": null,
+          "value": "Tab.Contract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contract Term Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContractTerm__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contract Type Setting Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContractTypeSetting__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contract Type Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContractType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Contract Type Term Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContractTypeTerm__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Crew Management User Settings Tab",
+          "validFor": null,
+          "value": "Tab.FSL__Crew_Management_User_Settings__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Crew Management User Settings Territory Tab",
+          "validFor": null,
+          "value": "Tab.FSL__Crew_Management_User_Settings_Territory__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Criteria Tab",
+          "validFor": null,
+          "value": "Tab.FSL__Criteria__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Customer Interaction Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CustomerInteraction__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Customer Interaction Topic Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CustomerInteractionTopic__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active DataRaptor Bulk Data Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__DRBulkData__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Data Use Purpose Tab",
+          "validFor": null,
+          "value": "Tab.DataUsePurpose"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Decision Matrix Tab",
+          "validFor": null,
+          "value": "Tab.CalculationMatrix"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Decomposition Relationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__DecompositionRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Deploy Component Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Deploy_Component__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Deployment Result Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Deployment_Result__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Document Clause Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__DocumentClause__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Document Section Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__DocumentSection__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Document Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Document__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Document Template Element Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__DocumentTemplateElement__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Document Template Section Condition Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__DocumentTemplateSectionCondition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Document Template Section Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__DocumentTemplateSection__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Document Template Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__DocumentTemplate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Document Token Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__DocumentToken__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Employee Tab",
+          "validFor": null,
+          "value": "Tab.Employee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Engagement Attendee Tab",
+          "validFor": null,
+          "value": "Tab.EngagementAttendee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Engagement Channel Type Tab",
+          "validFor": null,
+          "value": "Tab.EngagementChannelType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Engagement Interaction Tab",
+          "validFor": null,
+          "value": "Tab.EngagementInteraction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Engagement Topic Tab",
+          "validFor": null,
+          "value": "Tab.EngagementTopic"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Environment Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Environment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Error Code Namespace Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ErrorCodeNamespace__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Error Code Namespace Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Error_Code_Namespace__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Error Code Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ErrorCode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Error Code Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Error_Code__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Event During Interaction Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__EventDuringInteraction__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Event Tab",
+          "validFor": null,
+          "value": "Tab.Event"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Expanded Interaction Log Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ExpandedInteractionLog__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Expense Report Entry Tab",
+          "validFor": null,
+          "value": "Tab.ExpenseReportEntry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Expense Report Tab",
+          "validFor": null,
+          "value": "Tab.ExpenseReport"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Expense Tab",
+          "validFor": null,
+          "value": "Tab.Expense"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Expression Set Tab",
+          "validFor": null,
+          "value": "Tab.ExpressionSet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Feed Item Tab",
+          "validFor": null,
+          "value": "Tab.FeedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active FRL Source Bundle Relationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__FulfilmentRequestLineSourceRootOrderItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active FSL Operation Tab",
+          "validFor": null,
+          "value": "Tab.FSL__FSL_Operation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Fulfilment Diagram OPD Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__FulfilmentDiagramOPD__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Fulfilment Diagram Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__FulfilmentDiagram__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Fulfilment Request Decomposition Rel Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__FulfilmentRequestDecompRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active FulfilmentRequestLineDecompRelationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__FulfilmentRequestLineDecompRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Fulfilment Request Line Relationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__FulfilmentRequestLineRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Fulfilment Request Line Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__FulfilmentRequestLine__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Fulfilment Request Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__FulfilmentRequest__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Gantt Filter Tab",
+          "validFor": null,
+          "value": "Tab.FSL__Gantt_Filter__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Gantt Palette Tab",
+          "validFor": null,
+          "value": "Tab.FSL__GanttPalette__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Generic DocuSign Document Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__GenericDocument__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Generic DocuSign Envelope Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__GenericEnvelope__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Generic DocuSign Recipient Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__GenericRecipient__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Graph Clone Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__GraphClone__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Group Tab",
+          "validFor": null,
+          "value": "Tab.CollaborationGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Hidden Remote Change Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Hidden_Remote_Change__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Household Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Household__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Image Tab",
+          "validFor": null,
+          "value": "Tab.Image"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Inbound REST Interface Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__InboundRESTInterface__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Incident Related Item Tab",
+          "validFor": null,
+          "value": "Tab.IncidentRelatedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Incident Tab",
+          "validFor": null,
+          "value": "Tab.Incident"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Individual Tab",
+          "validFor": null,
+          "value": "Tab.Individual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Integration Retry Policy Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__IntegrationRetryPolicy__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Interface_BillingInfo Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Interface_BillingInfo__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Interface Implementation Detail Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__InterfaceImplementationDetail__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Interface Implementation Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__InterfaceImplementation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Internal Organization Unit Tab",
+          "validFor": null,
+          "value": "Tab.InternalOrganizationUnit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Inventory Item DecompositionRelationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__InventoryItemDecompositionRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Inventory Item Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__InventoryItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Item Implementation Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ItemImplementation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Job Profile Tab",
+          "validFor": null,
+          "value": "Tab.JobProfile"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Jurisdiction Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Jurisdiction__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Landing Page Tab",
+          "validFor": null,
+          "value": "Tab.LandingPage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Large Data Store Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__LargeDataStore__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Lead Tab",
+          "validFor": null,
+          "value": "Tab.Lead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Line of Business Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__LineOfBusiness__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Location Tab",
+          "validFor": null,
+          "value": "Tab.Location"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Location Trust Measure Tab",
+          "validFor": null,
+          "value": "Tab.LocationTrustMeasure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Maintenance Asset Tab",
+          "validFor": null,
+          "value": "Tab.MaintenanceAsset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Maintenance Plan Tab",
+          "validFor": null,
+          "value": "Tab.MaintenancePlan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Maintenance Work Rule Tab",
+          "validFor": null,
+          "value": "Tab.MaintenanceWorkRule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Manual Queue Assignment Rule Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AssignmentRule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Manual Queue Member Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ManualQueueMember__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Manual Queue Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ManualQueue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Map Polygon Tab",
+          "validFor": null,
+          "value": "Tab.FSL__Polygon__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Marketing Form Tab",
+          "validFor": null,
+          "value": "Tab.MarketingForm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Marketing Link Tab",
+          "validFor": null,
+          "value": "Tab.MarketingLink"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Media Content Title Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__MediaContentTitle__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Media Plan Placement Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__QuoteLineItemAdPlacement__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Media Property Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__MediaProperty__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Merge Result Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Merge_Result__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Messaging Session Tab",
+          "validFor": null,
+          "value": "Tab.MessagingSession"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Messaging User Tab",
+          "validFor": null,
+          "value": "Tab.MessagingEndUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Notification Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__UserNotification__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Object Activity Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Object_Activity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Object Applied Result Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ObjectAppliedResult__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Object Milestone Tab",
+          "validFor": null,
+          "value": "Tab.EntityMilestone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Offer Migration Component Mapping Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OfferMigrationComponentMapping__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Offer Migration Plan Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OfferMigrationPlan__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Offer Pricing Component Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OfferPricingComponent__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Omni DataPack Tab",
+          "validFor": null,
+          "value": "Tab.OmniDataPack"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Omni Process Tab",
+          "validFor": null,
+          "value": "Tab.OmniProcess"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Omni Process Transient Data Tab",
+          "validFor": null,
+          "value": "Tab.OmniProcessTransientData"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active OmniScript Saved Session Tab",
+          "validFor": null,
+          "value": "Tab.OmniScriptSavedSession"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Omni UI Card Tab",
+          "validFor": null,
+          "value": "Tab.OmniUiCard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Omni User Session Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OmniUserSession__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Operating Hours and Exceptions Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OperatingHoursEntry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Operating Hours Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OperatingHours__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Operating Hours Tab",
+          "validFor": null,
+          "value": "Tab.OperatingHours"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Opportunity Applied Promotion Item Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OpportunityAppliedPromotionItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Opportunity Applied Promotion Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OpportunityAppliedPromotion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Opportunity Contact Role Tab",
+          "validFor": null,
+          "value": "Tab.OpportunityContactRole"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Opportunity Discount Item Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OpportunityDiscountItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Opportunity Discount Pricing Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OpportunityDiscountPricing__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Opportunity Discount Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OpportunityDiscount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Opportunity Group Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OpportunityGroup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Opportunity Member Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OpportunityMember__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Opportunity Pricing Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OpportunityPriceAdjustment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Opportunity Product Relationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OpportunityLineItemRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Opportunity Tab",
+          "validFor": null,
+          "value": "Tab.Opportunity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Optimization Data Tab",
+          "validFor": null,
+          "value": "Tab.FSL__Optimization_Data__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Optimization Request Queue Tab",
+          "validFor": null,
+          "value": "Tab.FSL__Optimization_Request_Queue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Optimization Request Tab",
+          "validFor": null,
+          "value": "Tab.FSL__Optimization_Request__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Orchestration Dependency Definition Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrchestrationDependencyDefinition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Orchestration Dependency Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrchestrationDependency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Orchestration Item Definition Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrchestrationItemDefinition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Orchestration Item Relationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrchestrationItemRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Orchestration Item Source Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrchestrationItemSource__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Orchestration Item Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrchestrationItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Orchestration Plan Definition Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrchestrationPlanDefinition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Orchestration Plan Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrchestrationPlan__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Orchestration Queue Assignment Rule Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrchestrationQueueAssignmentRule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Orchestration Queue Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrchestrationQueue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Orchestration Scenario Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrchestrationScenario__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Orchestration Scheduler Implementation Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrchestrationSchedulerImplementation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Order Ad Placement Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrderItemAdPlacement__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Order Applied Promotion Affected Item Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrderAppliedPromotionItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Order Applied Promotion Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrderAppliedPromotion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Order Discount Item Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrderDiscountItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Order Discount Pricing Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrderDiscountPricing__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Order Discount Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrderDiscount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Order Group Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrderGroup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Order Item Pricing Adjustment Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrderItemPriceAdjustment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Order Member Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrderMember__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Order Payment Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrderPayment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Order Pricing Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrderPriceAdjustment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Order Product Relationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrderItemRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Order Product Rollup Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrderProductRollup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Order Relationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OrderRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Order Tab",
+          "validFor": null,
+          "value": "Tab.Order"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Party Association Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Party_Association__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Party Consent Tab",
+          "validFor": null,
+          "value": "Tab.PartyConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Party Merge Request Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PartyMergeRequest__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Party Relationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PartyRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Party Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Party__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Payment Adjustment Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PaymentAdjustment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Payment Method Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PaymentMethod__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Payment Plan Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PaymentPlan__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Picklist Selection Entry Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PicklistSelectionEntry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Pipeline Stage Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Pipeline_Stage__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Pipeline Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Pipeline__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active PremisesPartyRelationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PremisesPartyRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Premises Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Premises__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Price List Entry Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PriceListEntry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active PriceList Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PriceList__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Pricing Component Relationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PricingComponentRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Pricing Component Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PricingComponent__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Pricing Element Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PricingElement__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Pricing Plan Step Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PricingPlanStep__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Pricing Plan Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PricingPlan__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Pricing Variable Binding Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PricingVariableBinding__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Pricing Variable Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PricingVariable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Problem Related Item Tab",
+          "validFor": null,
+          "value": "Tab.ProblemRelatedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Problem Tab",
+          "validFor": null,
+          "value": "Tab.Problem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Process Exception Tab",
+          "validFor": null,
+          "value": "Tab.ProcessException"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Attribute Interface Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Interface_ProductAttribute__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active ProductAttribXN Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ProductAttribXN__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Child Item Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ProductChildItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Configuration Procedure Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ProductConfigurationProcedure__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Consumed State Tab",
+          "validFor": null,
+          "value": "Tab.ProductConsumedState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Consumed Tab",
+          "validFor": null,
+          "value": "Tab.ProductConsumed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Item Tab",
+          "validFor": null,
+          "value": "Tab.ProductItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Item Transaction Tab",
+          "validFor": null,
+          "value": "Tab.ProductItemTransaction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Not Available Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ProductAvailability__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Not Eligible Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ProductEligibility__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Override Definition Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OverrideDefinition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Related Service Process Tab",
+          "validFor": null,
+          "value": "Tab.ProductRelatedServiceProcess"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Relationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ProductRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Relationship Type Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ProductRelationshipType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Request Line Item Tab",
+          "validFor": null,
+          "value": "Tab.ProductRequestLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Request Tab",
+          "validFor": null,
+          "value": "Tab.ProductRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Required Tab",
+          "validFor": null,
+          "value": "Tab.ProductRequired"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Service Campaign Item Tab",
+          "validFor": null,
+          "value": "Tab.ProductServiceCampaignItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Service Campaign Tab",
+          "validFor": null,
+          "value": "Tab.ProductServiceCampaign"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Tab",
+          "validFor": null,
+          "value": "Tab.Product2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Template Assignment Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ProfileCategoryAssignment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Template Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ProductTemplate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Transfer State Tab",
+          "validFor": null,
+          "value": "Tab.ProductTransferState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Transfer Tab",
+          "validFor": null,
+          "value": "Tab.ProductTransfer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Product Warranty Term Tab",
+          "validFor": null,
+          "value": "Tab.ProductWarrantyTerm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Profiling Segment Category Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ProfilingSegmentCategory__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Profiling Segment Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ProfilingSegment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Project Item Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ProjectItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Project Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Project__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Project Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Project__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Promotion Applicable Product Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PromotionApplicableProduct__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Promotion Included Product Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PromotionIncludedProduct__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Promotion Item Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PromotionItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Promotion Pricing Alteration Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PromotionPricingAlteration__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Promotion Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Promotion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Quote Applied Promotion Affected Item Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__QuoteAppliedPromotionItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Quote Applied Promotion Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__QuoteAppliedPromotion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Quote Discount Item Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__QuoteDiscountItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Quote Discount Pricing Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__QuoteDiscountPricing__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Quote Discount Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__QuoteDiscount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Quote Group Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__QuoteGroup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Quote Line Item Pricing Adjustment Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__QuoteLineItemPricingAdjustment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Quote Member Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__QuoteMember__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Quote Pricing Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__QuotePricingAdjustment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Quote Product Relationship Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__QuoteLineItemRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Quote Product Rollup Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__QuoteProductRollup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Quote Tab",
+          "validFor": null,
+          "value": "Tab.Quote"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Record Alert Tab",
+          "validFor": null,
+          "value": "Tab.RecordAlert"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Recordset Filter Criteria Monitor Tab",
+          "validFor": null,
+          "value": "Tab.RecordsetFltrCritMonitor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Recordset Filter Criteria Rule Tab",
+          "validFor": null,
+          "value": "Tab.RecordsetFilterCriteriaRule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Recordset Filter Criteria Tab",
+          "validFor": null,
+          "value": "Tab.RecordsetFilterCriteria"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Related Problem and Incident Tab",
+          "validFor": null,
+          "value": "Tab.ProblemIncident"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Relationship Graph Node Type Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__RelationshipGraphNodeType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Relationship Graph Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__RelationshipGraph__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Relationship Graph Traversal Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__RelationshipGraphTraversal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Remote Change Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Remote_Change__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Repository Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Repository__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Resource Absence Tab",
+          "validFor": null,
+          "value": "Tab.ResourceAbsence"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Resource Capacity Tab",
+          "validFor": null,
+          "value": "Tab.ServiceResourceCapacity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Return Order Line Item Tab",
+          "validFor": null,
+          "value": "Tab.ReturnOrderLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Return Order Tab",
+          "validFor": null,
+          "value": "Tab.ReturnOrder"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Saved OmniScript Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OmniScriptInstance__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Scheduling Policy Objective Tab",
+          "validFor": null,
+          "value": "Tab.FSL__Scheduling_Policy_Goal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Scheduling Policy Tab",
+          "validFor": null,
+          "value": "Tab.FSL__Scheduling_Policy__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Scheduling Policy Work Rule Tab",
+          "validFor": null,
+          "value": "Tab.FSL__Scheduling_Policy_Work_Rule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Scheduling Recipe Tab",
+          "validFor": null,
+          "value": "Tab.FSL__SchedulingRecipe__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Screening Rule Group Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ScreeningRuleGroup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Screening Rule Property Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__RuleProperty__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Screening Rule Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ScreeningRule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Security Deposit Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__SecurityDeposit__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Serialized Product Tab",
+          "validFor": null,
+          "value": "Tab.SerializedProduct"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Service Appointment Tab",
+          "validFor": null,
+          "value": "Tab.ServiceAppointment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Service Contract Tab",
+          "validFor": null,
+          "value": "Tab.ServiceContract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Service Crew Member Tab",
+          "validFor": null,
+          "value": "Tab.ServiceCrewMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Service Crew Tab",
+          "validFor": null,
+          "value": "Tab.ServiceCrew"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Service Objective Tab",
+          "validFor": null,
+          "value": "Tab.FSL__Service_Goal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Service Point Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ServicePoint__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Service Resource Preference Tab",
+          "validFor": null,
+          "value": "Tab.ServiceResourcePreference"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Service Resource Tab",
+          "validFor": null,
+          "value": "Tab.ServiceResource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Service Territory Location Tab",
+          "validFor": null,
+          "value": "Tab.ServiceTerritoryLocation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Service Territory Tab",
+          "validFor": null,
+          "value": "Tab.ServiceTerritory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Shift Pattern Entry Tab",
+          "validFor": null,
+          "value": "Tab.ShiftPatternEntry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Shift Pattern Tab",
+          "validFor": null,
+          "value": "Tab.ShiftPattern"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Shift Tab",
+          "validFor": null,
+          "value": "Tab.Shift"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Shipment Item Tab",
+          "validFor": null,
+          "value": "Tab.ShipmentItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Shipment Tab",
+          "validFor": null,
+          "value": "Tab.Shipment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Skill Tab",
+          "validFor": null,
+          "value": "Tab.ProfileSkill"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Skill User Tab",
+          "validFor": null,
+          "value": "Tab.ProfileSkillUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active SLR Cache Tab",
+          "validFor": null,
+          "value": "Tab.FSL__SLR_Cache__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Social Post Tab",
+          "validFor": null,
+          "value": "Tab.SocialPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Source Member Reference Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Source_Member_Reference__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Spec Template Attribute Mapping Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__SpecTemplateAttributeMapping__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Spec Template Mapping Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__SpecTemplateMapping__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Statement Line Item Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__StatementLineItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Statement Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Statement__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active State Transition Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__StateTransition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Store Location Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__BusinessSite__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Store Offering Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__BusinessSiteOffering__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Submit Component Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Submit_Component__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Subscription Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Subscription__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Swarm Member Tab",
+          "validFor": null,
+          "value": "Tab.SwarmMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Swarm Tab",
+          "validFor": null,
+          "value": "Tab.Swarm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Sync Delta Object Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__SyncDeltaObject__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Sync Delta Snapshot Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__SyncDeltaSnapshot__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active System Interface Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__SystemInterface__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active System Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__System__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Task Tab",
+          "validFor": null,
+          "value": "Tab.Task"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Territory Optimization Request Tab",
+          "validFor": null,
+          "value": "Tab.FSL__Territory_Optimization_Request__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Test Result Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__TestResult__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Thor Orchestration Queue Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ThorOrchestrationQueue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Time Plan Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__TimePlan__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Time Policy Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__TimePolicy__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Time Sheet Entry Tab",
+          "validFor": null,
+          "value": "Tab.TimeSheetEntry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Time Sheet Tab",
+          "validFor": null,
+          "value": "Tab.TimeSheet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Travel Mode Tab",
+          "validFor": null,
+          "value": "Tab.TravelMode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active User Ad Server Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__UserAdServer__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active User Calendar Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__UserCalendar__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active User Setting Tab",
+          "validFor": null,
+          "value": "Tab.FSL__UserSetting__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active User Setting Territory Tab",
+          "validFor": null,
+          "value": "Tab.FSL__User_Setting_Territory__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active User Tab",
+          "validFor": null,
+          "value": "Tab.User"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active User Territory Tab",
+          "validFor": null,
+          "value": "Tab.FSL__User_Territory__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active VCS Event Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Vcs_Event__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Video Call Tab",
+          "validFor": null,
+          "value": "Tab.VideoCall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Action Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityAction__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity API Metadata Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityAPIMetadata__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Attachment Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityAttachment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Attribute Assignment Rule Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AttributeAssignmentRule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Attribute Binding Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AttributeBinding__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Attribute Category Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__AttributeCategory__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Attribute Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Attribute__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Calculation Matrix Column Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CalculationMatrixColumn__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Calculation Matrix Dimension Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CalculationMatrixDimension__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Calculation Matrix Row Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CalculationMatrixRow__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Calculation Matrix Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CalculationMatrix__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Calculation Matrix Version Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CalculationMatrixVersion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Calculation Procedure Step Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CalculationProcedureStep__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Calculation Procedure Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CalculationProcedure__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Calculation Procedure Variable Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CalculationProcedureVariable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Calculation Procedure Version Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__CalculationProcedureVersion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Card Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityCard__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Context Dimension Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContextDimension__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Context Mapping Argument Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContextMappingArgument__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Context Mapping Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContextMapping__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Context Ruleset Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContextRuleset__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Context Rule Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ContextRule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Contract Service Log Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityContractServiceLog__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity DataPack Object Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityDataPack__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity DataRaptor Batch Queue Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__DRBatchQueue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity DataRaptor Bundle Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__DRBundle__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity DataRaptor Map Item Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__DRMapItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity DataRaptor Object Interface Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Interface_DRGeneric__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity DataRaptor Staged Data Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Stage__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Data Store Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Datastore__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity DocuSign Branding Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityDocuSignBranding__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity DocuSign Template Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityDocuSignTemplate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Entity Filter Condition Argument Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__EntityFilterConditionArgument__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Entity Filter Condition Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__EntityFilterCondition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Entity Filter Member Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__EntityFilterMember__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Entity Filter Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__EntityFilter__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Error Log Entry Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityErrorLogEntry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Event Message Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__EventMessage__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Function Argument Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityFunctionArgument__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Function Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityFunction__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Intelligence Machine Resource Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VqMachineResource__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Intelligence Machine Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VqMachine__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Intelligence Resource Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VqResource__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Interaction Launcher Action Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocitySearchWidgetActionsSetup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Interaction Launcher Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocitySearchWidgetSetup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Object Facet Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ObjectFacet__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Object Field Attribute Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ObjectFieldAttribute__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Object Layout Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ObjectLayout__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Object or Object Type Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ObjectClass__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Object Rule Assignment Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ObjectRuleAssignment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Object Section Element Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ObjectElement__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Object Section Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__ObjectSection__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Offering Procedure Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OfferingProcedure__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity OmniScript Compiled Definition Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OmniScriptDefinition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity OmniScript Element Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Element__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity OmniScript Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OmniScript__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Outbound Configuration Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__OutboundConfiguration__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Party Relationship Type Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PartyRelationshipType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Picklist Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Picklist__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Picklist Value Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__PicklistValue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Rule Action Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__RuleAction__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Rule Assignment Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__RuleAssignment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Rule Filter Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__RuleFilter__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Rule Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__Rule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Rule Variable Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__RuleVariable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Scheduled Job Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityScheduledJob__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity State Model Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityStateModel__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity State Model Version Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityStateModelVersion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity State Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityState__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity State Transition Rule Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityStateTransitionRule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity State Transition Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityStateTransition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity String Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__String__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity String Translation Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__StringTranslation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity System Log Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocitySystemLog__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Tracking Component Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityTrackingComponent__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Tracking Entry Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityTrackingEntry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Tracking Group Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityTrackingGroup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity UI Facet Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__UIFacet__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity UI Layout Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityUILayout__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity UI Section Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__UISection__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity UI Template Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityUITemplate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Web Tracking Configuration Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityWebTrackingConfiguration__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Vlocity Web Tracking Event Type Tab",
+          "validFor": null,
+          "value": "Tab.vlocity_cmt__VlocityWebTrackingEventType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Voice Call Tab",
+          "validFor": null,
+          "value": "Tab.VoiceCall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Warranty Term Tab",
+          "validFor": null,
+          "value": "Tab.WarrantyTerm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Work Item Promote Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Work_Item_Promote__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Work Item Tab",
+          "validFor": null,
+          "value": "Tab.sf_devops__Work_Item__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Work Order Line Item Tab",
+          "validFor": null,
+          "value": "Tab.WorkOrderLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Work Order Tab",
+          "validFor": null,
+          "value": "Tab.WorkOrder"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Work Plan Selection Rule Tab",
+          "validFor": null,
+          "value": "Tab.WorkPlanSelectionRule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Work Plan Tab",
+          "validFor": null,
+          "value": "Tab.WorkPlan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Work Plan Template Entry Tab",
+          "validFor": null,
+          "value": "Tab.WorkPlanTemplateEntry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Work Plan Template Tab",
+          "validFor": null,
+          "value": "Tab.WorkPlanTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Work Rule Entry Tab",
+          "validFor": null,
+          "value": "Tab.FSL__Work_Rule_Entry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Work Rule Tab",
+          "validFor": null,
+          "value": "Tab.FSL__Work_Rule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Work Step Tab",
+          "validFor": null,
+          "value": "Tab.WorkStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Work Step Template Tab",
+          "validFor": null,
+          "value": "Tab.WorkStepTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Work Type Group Member Tab",
+          "validFor": null,
+          "value": "Tab.WorkTypeGroupMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Work Type Group Tab",
+          "validFor": null,
+          "value": "Tab.WorkTypeGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Work Type Tab",
+          "validFor": null,
+          "value": "Tab.WorkType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Add Record Action",
+          "validFor": null,
+          "value": "QuickAction.CollaborationGroup.NewGroupRecord"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allow customers",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.CanHaveGuests"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Amount",
+          "validFor": null,
+          "value": "Field.Opportunity.Amount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assigned To",
+          "validFor": null,
+          "value": "Field.Task.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attachments",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.AttachmentIds.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attachments",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.ContentDocumentIds.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BCC",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.BccAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BCC",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.BccAddress.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BCC",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.BccAddress.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Case Owner",
+          "validFor": null,
+          "value": "Field.Case.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Category",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Category"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Category",
+          "validFor": null,
+          "value": "Field.Problem.Category"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CC",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.CcAddress.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CC",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.CcAddress.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CC",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.CcAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Date Action",
+          "validFor": null,
+          "value": "QuickAction.Task.Defer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Date Action",
+          "validFor": null,
+          "value": "QuickAction.Task.Defer_11"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Date Action",
+          "validFor": null,
+          "value": "QuickAction.Task.Defer_10"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Date Action",
+          "validFor": null,
+          "value": "QuickAction.Task.Defer_0"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Date Action",
+          "validFor": null,
+          "value": "QuickAction.Task.Defer_2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Date Action",
+          "validFor": null,
+          "value": "QuickAction.Task.Defer_1"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Date Action",
+          "validFor": null,
+          "value": "QuickAction.Task.Defer_4"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Date Action",
+          "validFor": null,
+          "value": "QuickAction.Task.Defer_3"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Date Action",
+          "validFor": null,
+          "value": "QuickAction.Task.Defer_6"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Date Action",
+          "validFor": null,
+          "value": "QuickAction.Task.Defer_5"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Date Action",
+          "validFor": null,
+          "value": "QuickAction.Task.Defer_8"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Date Action",
+          "validFor": null,
+          "value": "QuickAction.Task.Defer_7"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Date Action",
+          "validFor": null,
+          "value": "QuickAction.Task.Defer_9"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Priority Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdatePriority_8"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Priority Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdatePriority_9"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Priority Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdatePriority_4"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Priority Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdatePriority_5"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Priority Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdatePriority_6"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Priority Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdatePriority_7"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Priority Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdatePriority_0"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Priority Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdatePriority_1"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Priority Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdatePriority_2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Priority Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdatePriority_3"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Priority Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdatePriority"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Priority Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdatePriority_11"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Priority Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdatePriority_10"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Request Owner",
+          "validFor": null,
+          "value": "Field.ChangeRequest.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Status Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdateStatus_1"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Status Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdateStatus_0"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Status Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdateStatus_3"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Status Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdateStatus_2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Status Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdateStatus_5"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Status Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdateStatus_4"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Status Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdateStatus_7"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Status Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdateStatus_6"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Status Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdateStatus_9"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Status Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdateStatus_8"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Status Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdateStatus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Status Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdateStatus_10"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Status Action",
+          "validFor": null,
+          "value": "QuickAction.Task.UpdateStatus_11"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Close Date",
+          "validFor": null,
+          "value": "Field.Opportunity.CloseDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Comments",
+          "validFor": null,
+          "value": "Field.Task.Description.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Comments",
+          "validFor": null,
+          "value": "Field.Task.Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Comments",
+          "validFor": null,
+          "value": "Field.Task.Description.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Comments",
+          "validFor": null,
+          "value": "Field.Task.Description.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Company",
+          "validFor": null,
+          "value": "Field.Lead.Company.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Company",
+          "validFor": null,
+          "value": "Field.Lead.Company"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Company",
+          "validFor": null,
+          "value": "Field.Lead.Company.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact Name",
+          "validFor": null,
+          "value": "Field.Case.ContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Create New Task Action",
+          "validFor": null,
+          "value": "QuickAction.FeedItem.NewTaskFromFeedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.Event.Description.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.Event.Description.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.Event.Description.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.Description.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Description.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Description.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.Incident.Description.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.Case.Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Description.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.Incident.Description.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.Description.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.Problem.Description.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.Incident.Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.Problem.Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.Problem.Description.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.Problem.Description.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.Case.Description.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.Case.Description.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.Case.Description.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.Incident.Description.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.Description.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Field.Event.Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Due Date",
+          "validFor": null,
+          "value": "Field.Task.ActivityDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Edit Comments Action",
+          "validFor": null,
+          "value": "QuickAction.Task.EditDescription_0"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Edit Comments Action",
+          "validFor": null,
+          "value": "QuickAction.Task.EditDescription_2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Edit Comments Action",
+          "validFor": null,
+          "value": "QuickAction.Task.EditDescription_1"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Edit Comments Action",
+          "validFor": null,
+          "value": "QuickAction.Task.EditDescription_4"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Edit Comments Action",
+          "validFor": null,
+          "value": "QuickAction.Task.EditDescription_3"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Edit Comments Action",
+          "validFor": null,
+          "value": "QuickAction.Task.EditDescription_6"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Edit Comments Action",
+          "validFor": null,
+          "value": "QuickAction.Task.EditDescription_5"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Edit Comments Action",
+          "validFor": null,
+          "value": "QuickAction.Task.EditDescription_8"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Edit Comments Action",
+          "validFor": null,
+          "value": "QuickAction.Task.EditDescription_7"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Edit Comments Action",
+          "validFor": null,
+          "value": "QuickAction.Task.EditDescription_9"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Edit Comments Action",
+          "validFor": null,
+          "value": "QuickAction.Task.EditDescription_11"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Edit Comments Action",
+          "validFor": null,
+          "value": "QuickAction.Task.EditDescription_10"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Edit Comments Action",
+          "validFor": null,
+          "value": "QuickAction.Task.EditDescription"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email",
+          "validFor": null,
+          "value": "Field.Lead.Email"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email",
+          "validFor": null,
+          "value": "Field.Contact.Email"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Action",
+          "validFor": null,
+          "value": "QuickAction.ServiceAppointment.SendEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Action",
+          "validFor": null,
+          "value": "QuickAction.WorkOrderLineItem.SendEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Action",
+          "validFor": null,
+          "value": "QuickAction.vlocity_cmt__SendEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Action",
+          "validFor": null,
+          "value": "QuickAction.SendEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Action",
+          "validFor": null,
+          "value": "QuickAction.WorkOrder.SendEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Action",
+          "validFor": null,
+          "value": "QuickAction.Quote.SendEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Template",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.EmailTemplateId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "End",
+          "validFor": null,
+          "value": "Field.Event.EndDateTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "End Date Time",
+          "validFor": null,
+          "value": "Field.Incident.EndDateTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "First Name",
+          "validFor": null,
+          "value": "Field.Contact.FirstName.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "First Name",
+          "validFor": null,
+          "value": "Field.Lead.FirstName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "First Name",
+          "validFor": null,
+          "value": "Field.Contact.FirstName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "First Name",
+          "validFor": null,
+          "value": "Field.Contact.FirstName.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "First Name",
+          "validFor": null,
+          "value": "Field.Lead.FirstName.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "First Name",
+          "validFor": null,
+          "value": "Field.Lead.FirstName.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Follow Up Action",
+          "validFor": null,
+          "value": "QuickAction.Follow_Up"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "From",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.ValidatedFromAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Group",
+          "validFor": null,
+          "value": "Field.CollaborationGroupRecord.CollaborationGroupId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Group",
+          "validFor": null,
+          "value": "Field.CollaborationGroupMember.CollaborationGroupId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Group Member Role",
+          "validFor": null,
+          "value": "Field.CollaborationGroupMember.CollaborationRole"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HTML Body",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.HtmlBody.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HTML Body",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.HtmlBody"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HTML Body",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.HtmlBody.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HTML Body",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.HtmlBody.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Impact",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Impact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Impact",
+          "validFor": null,
+          "value": "Field.Problem.Impact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Impact",
+          "validFor": null,
+          "value": "Field.Incident.Impact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Incident Owner",
+          "validFor": null,
+          "value": "Field.Incident.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Name",
+          "validFor": null,
+          "value": "Field.Contact.LastName.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Name",
+          "validFor": null,
+          "value": "Field.Contact.LastName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Name",
+          "validFor": null,
+          "value": "Field.Lead.LastName.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Name",
+          "validFor": null,
+          "value": "Field.Contact.LastName.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Name",
+          "validFor": null,
+          "value": "Field.Lead.LastName.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Name",
+          "validFor": null,
+          "value": "Field.Lead.LastName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Location",
+          "validFor": null,
+          "value": "Field.Event.Location"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Location",
+          "validFor": null,
+          "value": "Field.Event.Location.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Location",
+          "validFor": null,
+          "value": "Field.Event.Location.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Log a Call Action",
+          "validFor": null,
+          "value": "QuickAction.LogACall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Log a Call Action",
+          "validFor": null,
+          "value": "QuickAction.FSL__LogACall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Major Incident",
+          "validFor": null,
+          "value": "Field.Incident.IsMajorIncident"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Member",
+          "validFor": null,
+          "value": "Field.CollaborationGroupMember.MemberId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Messaging Consent Status",
+          "validFor": null,
+          "value": "Field.MessagingEndUser.MessagingConsentStatus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Messaging User Name",
+          "validFor": null,
+          "value": "Field.MessagingEndUser.Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Messaging User Name",
+          "validFor": null,
+          "value": "Field.MessagingEndUser.Name.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Messaging User Name",
+          "validFor": null,
+          "value": "Field.MessagingEndUser.Name.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Middle Name",
+          "validFor": null,
+          "value": "Field.Contact.MiddleName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Middle Name",
+          "validFor": null,
+          "value": "Field.Contact.MiddleName.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Middle Name",
+          "validFor": null,
+          "value": "Field.Contact.MiddleName.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Middle Name",
+          "validFor": null,
+          "value": "Field.Lead.MiddleName.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Middle Name",
+          "validFor": null,
+          "value": "Field.Lead.MiddleName.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Middle Name",
+          "validFor": null,
+          "value": "Field.Lead.MiddleName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Name",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.Name.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Name",
+          "validFor": null,
+          "value": "Field.Task.WhoId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Name",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.Name.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Name",
+          "validFor": null,
+          "value": "Field.Event.WhoId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Name",
+          "validFor": null,
+          "value": "Field.CollaborationGroup.Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Case Action",
+          "validFor": null,
+          "value": "QuickAction.FSL__NewCase"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Case Action",
+          "validFor": null,
+          "value": "QuickAction.NewCase"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Child Case Action",
+          "validFor": null,
+          "value": "QuickAction.Case.NewChildCase"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Contact Action",
+          "validFor": null,
+          "value": "QuickAction.NewContact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Event Action",
+          "validFor": null,
+          "value": "QuickAction.FSL__NewEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Event Action",
+          "validFor": null,
+          "value": "QuickAction.NewEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Group Action",
+          "validFor": null,
+          "value": "QuickAction.NewGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Group Member Action",
+          "validFor": null,
+          "value": "QuickAction.CollaborationGroup.NewGroupMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Lead Action",
+          "validFor": null,
+          "value": "QuickAction.NewLead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Opportunity Action",
+          "validFor": null,
+          "value": "QuickAction.NewOpportunity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Task Action",
+          "validFor": null,
+          "value": "QuickAction.NewTask"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "New Task Action",
+          "validFor": null,
+          "value": "QuickAction.FSL__NewTask"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity Name",
+          "validFor": null,
+          "value": "Field.Opportunity.Name.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity Name",
+          "validFor": null,
+          "value": "Field.Opportunity.Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity Name",
+          "validFor": null,
+          "value": "Field.Opportunity.Name.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Parent Case",
+          "validFor": null,
+          "value": "Field.Case.ParentId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Phone",
+          "validFor": null,
+          "value": "Field.Contact.Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Phone",
+          "validFor": null,
+          "value": "Field.Lead.Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Priority",
+          "validFor": null,
+          "value": "Field.Incident.Priority"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Priority",
+          "validFor": null,
+          "value": "Field.Task.Priority"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Priority",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Priority"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Priority",
+          "validFor": null,
+          "value": "Field.Case.Priority"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Priority",
+          "validFor": null,
+          "value": "Field.Problem.Priority"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Problem Owner",
+          "validFor": null,
+          "value": "Field.Problem.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record",
+          "validFor": null,
+          "value": "Field.CollaborationGroupRecord.RecordId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Related To",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.RelatedToId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Related To",
+          "validFor": null,
+          "value": "Field.Task.WhatId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Related To",
+          "validFor": null,
+          "value": "Field.Event.WhatId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Resolution Date",
+          "validFor": null,
+          "value": "Field.Problem.ResolutionDateTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Resolved By",
+          "validFor": null,
+          "value": "Field.Problem.ResolvedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Risk Level",
+          "validFor": null,
+          "value": "Field.ChangeRequest.RiskLevel"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Salutation",
+          "validFor": null,
+          "value": "Field.Contact.Salutation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Salutation",
+          "validFor": null,
+          "value": "Field.Lead.Salutation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Send Message Action",
+          "validFor": null,
+          "value": "QuickAction._SendConversationMessage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Stage",
+          "validFor": null,
+          "value": "Field.Opportunity.StageName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Start",
+          "validFor": null,
+          "value": "Field.Event.StartDateTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Start Date Time",
+          "validFor": null,
+          "value": "Field.Incident.StartDateTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Field.Case.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Field.Problem.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Field.Task.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Field.Incident.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.Subject.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.Problem.Subject.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.Incident.Subject.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.Case.Subject.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.Problem.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Subject.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.Case.Subject.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.Task.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.Incident.Subject.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.Case.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.Problem.Subject.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.ChangeRequest.Subject.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.Event.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.Subject.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.Incident.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Suffix",
+          "validFor": null,
+          "value": "Field.Contact.Suffix"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Suffix",
+          "validFor": null,
+          "value": "Field.Contact.Suffix.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Suffix",
+          "validFor": null,
+          "value": "Field.Contact.Suffix.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Suffix",
+          "validFor": null,
+          "value": "Field.Lead.Suffix.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Suffix",
+          "validFor": null,
+          "value": "Field.Lead.Suffix"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Suffix",
+          "validFor": null,
+          "value": "Field.Lead.Suffix.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Task Subtype",
+          "validFor": null,
+          "value": "Field.Task.TaskSubtype"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Title",
+          "validFor": null,
+          "value": "Field.Lead.Title.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Title",
+          "validFor": null,
+          "value": "Field.Contact.Title"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Title",
+          "validFor": null,
+          "value": "Field.Contact.Title.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Title",
+          "validFor": null,
+          "value": "Field.Contact.Title.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Title",
+          "validFor": null,
+          "value": "Field.Lead.Title.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Title",
+          "validFor": null,
+          "value": "Field.Lead.Title"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "To",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.ToAddress.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "To",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.ToAddress.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "To",
+          "validFor": null,
+          "value": "Field.OutgoingEmail.ToAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Type of Change",
+          "validFor": null,
+          "value": "Field.ChangeRequest.ChangeType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Update Case Action",
+          "validFor": null,
+          "value": "QuickAction.Case._LightningUpdateCase"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Update Change Request Action",
+          "validFor": null,
+          "value": "QuickAction.ChangeRequest._LightningUpdateChangeRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Update Contact Action",
+          "validFor": null,
+          "value": "QuickAction.Contact._LightningRelatedContact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Update Incident Action",
+          "validFor": null,
+          "value": "QuickAction.Incident._LightningUpdateIncident"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Update Messaging User Action",
+          "validFor": null,
+          "value": "QuickAction.MessagingEndUser._UpdateMessagingEndUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Update Problem Action",
+          "validFor": null,
+          "value": "QuickAction.Problem._LightningUpdateProblem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Update Voice Call Action",
+          "validFor": null,
+          "value": "QuickAction.VoiceCall._LightningCallNotes"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Urgency",
+          "validFor": null,
+          "value": "Field.Problem.Urgency"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Urgency",
+          "validFor": null,
+          "value": "Field.Incident.Urgency"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Value",
+      "name": "Value",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Value Record ID",
+      "name": "ValueRecord",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Sort Order",
+      "name": "SortOrder",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    }
+  ],
+  "label": "Macro Instruction",
+  "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "ExpressionFilter",
+      "deprecatedAndHidden": false,
+      "field": "ContextId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowExecutionErrorEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowOrchestrationWorkItem",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FlowOrchestrationWorkItems",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "MacroInstruction",
+  "queryable": true
+}

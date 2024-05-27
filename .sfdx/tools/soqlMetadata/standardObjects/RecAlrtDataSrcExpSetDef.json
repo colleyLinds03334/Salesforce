@@ -1,0 +1,4684 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Record Alert Data Source Expression Set Definition ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Name",
+      "name": "DeveloperName",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Master Language",
+      "name": "Language",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "English",
+          "validFor": null,
+          "value": "en_US"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "German",
+          "validFor": null,
+          "value": "de"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spanish",
+          "validFor": null,
+          "value": "es"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "French",
+          "validFor": null,
+          "value": "fr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Italian",
+          "validFor": null,
+          "value": "it"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Japanese",
+          "validFor": null,
+          "value": "ja"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Swedish",
+          "validFor": null,
+          "value": "sv"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Korean",
+          "validFor": null,
+          "value": "ko"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinese (Traditional)",
+          "validFor": null,
+          "value": "zh_TW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinese (Simplified)",
+          "validFor": null,
+          "value": "zh_CN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portuguese (Brazil)",
+          "validFor": null,
+          "value": "pt_BR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dutch",
+          "validFor": null,
+          "value": "nl_NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Danish",
+          "validFor": null,
+          "value": "da"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Thai",
+          "validFor": null,
+          "value": "th"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finnish",
+          "validFor": null,
+          "value": "fi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Russian",
+          "validFor": null,
+          "value": "ru"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spanish (Mexico)",
+          "validFor": null,
+          "value": "es_MX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Norwegian",
+          "validFor": null,
+          "value": "no"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Label",
+      "name": "MasterLabel",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Namespace Prefix",
+      "name": "NamespacePrefix",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Record Alert Data Source ID",
+      "name": "RecordAlertDataSourceId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "RecordAlertDataSource"
+      ],
+      "relationshipName": "RecordAlertDataSource",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Expression Set Definition ID",
+      "name": "ExpressionSetDefinitionId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "ExpressionSetDefinition"
+      ],
+      "relationshipName": "ExpressionSetDefinition",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Expression Set Object",
+      "name": "ExpressionSetObject",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account",
+          "validFor": null,
+          "value": "Account"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account Ad Server",
+          "validFor": null,
+          "value": "vlocity_cmt__AccountAdServer__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account Balance",
+          "validFor": null,
+          "value": "vlocity_cmt__AccountBalance__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account Contact Relationship",
+          "validFor": null,
+          "value": "AccountContactRelation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account Discount",
+          "validFor": null,
+          "value": "vlocity_cmt__AccountDiscount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account Discount Item",
+          "validFor": null,
+          "value": "vlocity_cmt__AccountDiscountItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account Discount Pricing",
+          "validFor": null,
+          "value": "vlocity_cmt__AccountDiscountPricing__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account Hold",
+          "validFor": null,
+          "value": "vlocity_cmt__AccountHold__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account Offer",
+          "validFor": null,
+          "value": "vlocity_cmt__AccountOffer__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account Pricing",
+          "validFor": null,
+          "value": "vlocity_cmt__AccountPriceAdjustment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account Product Rollup",
+          "validFor": null,
+          "value": "vlocity_cmt__AccountProductRollup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activity",
+          "validFor": null,
+          "value": "Activity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activity Content Document",
+          "validFor": null,
+          "value": "vlocity_cmt__ActivityContentDocument__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activity Template",
+          "validFor": null,
+          "value": "vlocity_cmt__ActivityTemplate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ad Creative SizeType",
+          "validFor": null,
+          "value": "vlocity_cmt__AdCreativeSizeType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Address",
+          "validFor": null,
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Admin Tab Layout",
+          "validFor": null,
+          "value": "vlocity_cmt__AdminTabLayout__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ad Server",
+          "validFor": null,
+          "value": "vlocity_cmt__AdServer__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ad Space Creative SizeType",
+          "validFor": null,
+          "value": "vlocity_cmt__AdSpaceCreativeSizeType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ad Space Group Member",
+          "validFor": null,
+          "value": "vlocity_cmt__AdSpaceGroupMember__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ad Space Specification",
+          "validFor": null,
+          "value": "vlocity_cmt__AdSpaceSpecification__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "App Config",
+          "validFor": null,
+          "value": "sf_devops__App_Config__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Application",
+          "validFor": null,
+          "value": "vlocity_cmt__Application__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Application Party Relationship",
+          "validFor": null,
+          "value": "vlocity_cmt__ApplicationPartyRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Application Template",
+          "validFor": null,
+          "value": "vlocity_cmt__ApplicationTemplate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Applied Promotion",
+          "validFor": null,
+          "value": "vlocity_cmt__AccountAppliedPromotion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Applied Promotion Affected Asset",
+          "validFor": null,
+          "value": "vlocity_cmt__AccountAppliedPromotionItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Bundle Aggregation Duration Downscale",
+          "validFor": null,
+          "value": "ApptBundleAggrDurDnscale"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Bundle Aggregation Policy",
+          "validFor": null,
+          "value": "ApptBundleAggrPolicy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Bundle Config",
+          "validFor": null,
+          "value": "ApptBundleConfig"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Bundle Policy",
+          "validFor": null,
+          "value": "ApptBundlePolicy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Bundle Policy Service Territory",
+          "validFor": null,
+          "value": "ApptBundlePolicySvcTerr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Bundle Propagation Policy",
+          "validFor": null,
+          "value": "ApptBundlePropagatePolicy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Bundle Restriction Policy",
+          "validFor": null,
+          "value": "ApptBundleRestrictPolicy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Bundle Sort Policy",
+          "validFor": null,
+          "value": "ApptBundleSortPolicy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Dependency",
+          "validFor": null,
+          "value": "FSL__Time_Dependency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Topic Time Slot",
+          "validFor": null,
+          "value": "AppointmentTopicTimeSlot"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assessment",
+          "validFor": null,
+          "value": "vlocity_cmt__Assessment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assessment Answer",
+          "validFor": null,
+          "value": "vlocity_cmt__AssessmentAnswer__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assessment Question",
+          "validFor": null,
+          "value": "vlocity_cmt__AssessmentQuestion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset",
+          "validFor": null,
+          "value": "Asset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Downtime Period",
+          "validFor": null,
+          "value": "AssetDowntimePeriod"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Pricing Adjustment",
+          "validFor": null,
+          "value": "vlocity_cmt__AssetPricingAdjustment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Relationship",
+          "validFor": null,
+          "value": "AssetRelationship"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Warranty",
+          "validFor": null,
+          "value": "AssetWarranty"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assigned Resource",
+          "validFor": null,
+          "value": "AssignedResource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Associated Location",
+          "validFor": null,
+          "value": "AssociatedLocation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Async Operation Result",
+          "validFor": null,
+          "value": "sf_devops__Async_Operation_Result__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Async Process",
+          "validFor": null,
+          "value": "vlocity_cmt__AsyncProcess__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Async Process Job",
+          "validFor": null,
+          "value": "vlocity_cmt__AsyncProcessJob__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Async Process Step",
+          "validFor": null,
+          "value": "vlocity_cmt__AsyncProcessStep__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attribute Assignment",
+          "validFor": null,
+          "value": "vlocity_cmt__AttributeAssignment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attribute Assignment Export",
+          "validFor": null,
+          "value": "vlocity_cmt__AttributeAssignmentExport__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attribute Definition",
+          "validFor": null,
+          "value": "AttributeDefinition"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attribute Picklist",
+          "validFor": null,
+          "value": "AttributePicklist"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attribute Picklist Value",
+          "validFor": null,
+          "value": "AttributePicklistValue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Authorization Form",
+          "validFor": null,
+          "value": "AuthorizationForm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Authorization Form Consent",
+          "validFor": null,
+          "value": "AuthorizationFormConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Authorization Form Data Use",
+          "validFor": null,
+          "value": "AuthorizationFormDataUse"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Authorization Form Text",
+          "validFor": null,
+          "value": "AuthorizationFormText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Back Sync",
+          "validFor": null,
+          "value": "sf_devops__Back_Sync__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Badge",
+          "validFor": null,
+          "value": "WorkBadgeDefinition"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Badge Received",
+          "validFor": null,
+          "value": "WorkBadge"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Branch",
+          "validFor": null,
+          "value": "sf_devops__Branch__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Business Alert",
+          "validFor": null,
+          "value": "BusinessAlert"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Business Alert Status",
+          "validFor": null,
+          "value": "BusinessAlertStatus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Business Brand",
+          "validFor": null,
+          "value": "BusinessBrand"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CachedAPIChange",
+          "validFor": null,
+          "value": "vlocity_cmt__CachedAPIChange__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CachedAPIChangeEntry",
+          "validFor": null,
+          "value": "vlocity_cmt__CachedAPIChangeEntry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CachedAPIMigrate",
+          "validFor": null,
+          "value": "vlocity_cmt__CachedAPIMigrate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CachedAPIResponse",
+          "validFor": null,
+          "value": "vlocity_cmt__CachedAPIResponse__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CachedAPIResponseOffers",
+          "validFor": null,
+          "value": "vlocity_cmt__CachedAPIResponseOffers__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cached Data Set",
+          "validFor": null,
+          "value": "vlocity_cmt__CachedDataSet__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cached Filterable Attribute",
+          "validFor": null,
+          "value": "vlocity_cmt__CachedFilterableAttribute__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CachedKeyMapping",
+          "validFor": null,
+          "value": "vlocity_cmt__CachedKeyMapping__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cached Pricebook Entry Attribute Value",
+          "validFor": null,
+          "value": "vlocity_cmt__CachedPriceBookEntryAttributeValue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cached Product Translation",
+          "validFor": null,
+          "value": "vlocity_cmt__CachedProduct2Translation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cached Promotion Translation",
+          "validFor": null,
+          "value": "vlocity_cmt__CachedPromotionTranslation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Calculation Procedure",
+          "validFor": null,
+          "value": "CalculationProcedure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Calculation Procedure Step",
+          "validFor": null,
+          "value": "CalculationProcedureStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Calculation Procedure Variable",
+          "validFor": null,
+          "value": "CalculationProcedureVariable"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Calculation Procedure Version",
+          "validFor": null,
+          "value": "CalculationProcedureVersion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CallbackURI",
+          "validFor": null,
+          "value": "vlocity_cmt__CallbackURI__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Campaign",
+          "validFor": null,
+          "value": "Campaign"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Campaign Content Document",
+          "validFor": null,
+          "value": "vlocity_cmt__CampaignContentDocument__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Campaign Influence",
+          "validFor": null,
+          "value": "CampaignInfluence"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Campaign Member",
+          "validFor": null,
+          "value": "CampaignMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Campaign Member Action Log",
+          "validFor": null,
+          "value": "vlocity_cmt__CampaignMemberActionLog__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cart",
+          "validFor": null,
+          "value": "vlocity_cmt__Cart__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cart Item",
+          "validFor": null,
+          "value": "vlocity_cmt__CartItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Case",
+          "validFor": null,
+          "value": "Case"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Case Related Issue",
+          "validFor": null,
+          "value": "CaseRelatedIssue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Case Service Process",
+          "validFor": null,
+          "value": "CaseServiceProcess"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Catalog",
+          "validFor": null,
+          "value": "vlocity_cmt__Catalog__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Catalog Product Relationship",
+          "validFor": null,
+          "value": "vlocity_cmt__CatalogProductRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Catalog Relationship",
+          "validFor": null,
+          "value": "vlocity_cmt__CatalogRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Bundle",
+          "validFor": null,
+          "value": "sf_devops__Change_Bundle__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Bundle Install",
+          "validFor": null,
+          "value": "sf_devops__Change_Bundle_Install__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Request",
+          "validFor": null,
+          "value": "ChangeRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Request Related Issue",
+          "validFor": null,
+          "value": "ChangeRequestRelatedIssue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Request Related Item",
+          "validFor": null,
+          "value": "ChangeRequestRelatedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Submission",
+          "validFor": null,
+          "value": "sf_devops__Change_Submission__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Charge Measurement",
+          "validFor": null,
+          "value": "vlocity_cmt__ChargeMeasurement__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Collections Activity",
+          "validFor": null,
+          "value": "vlocity_cmt__Dunning__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Communication Subscription",
+          "validFor": null,
+          "value": "CommSubscription"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Communication Subscription Channel Type",
+          "validFor": null,
+          "value": "CommSubscriptionChannelType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Communication Subscription Consent",
+          "validFor": null,
+          "value": "CommSubscriptionConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Communication Subscription Timing",
+          "validFor": null,
+          "value": "CommSubscriptionTiming"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Compiled Attribute Override",
+          "validFor": null,
+          "value": "vlocity_cmt__CompiledAttributeOverride__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Configuration Snapshot",
+          "validFor": null,
+          "value": "vlocity_cmt__ConfigurationSnapshot__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Console Action Log",
+          "validFor": null,
+          "value": "vlocity_cmt__ConsoleActionLog__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact",
+          "validFor": null,
+          "value": "Contact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact Point Address",
+          "validFor": null,
+          "value": "ContactPointAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact Point Consent",
+          "validFor": null,
+          "value": "ContactPointConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact Point Email",
+          "validFor": null,
+          "value": "ContactPointEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact Point Phone",
+          "validFor": null,
+          "value": "ContactPointPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact Point Type Consent",
+          "validFor": null,
+          "value": "ContactPointTypeConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact Request",
+          "validFor": null,
+          "value": "ContactRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Content Version",
+          "validFor": null,
+          "value": "ContentVersion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Context Action",
+          "validFor": null,
+          "value": "vlocity_cmt__ContextAction__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Context Scope",
+          "validFor": null,
+          "value": "vlocity_cmt__ContextScope__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract",
+          "validFor": null,
+          "value": "Contract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Document",
+          "validFor": null,
+          "value": "vlocity_cmt__ContractVersion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Document Discount",
+          "validFor": null,
+          "value": "vlocity_cmt__ContractVersionDiscount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Document Discount Item",
+          "validFor": null,
+          "value": "vlocity_cmt__ContractVersionDiscountItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Document Discount Pricing",
+          "validFor": null,
+          "value": "vlocity_cmt__ContractVersionDiscountPricing__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Document Element",
+          "validFor": null,
+          "value": "vlocity_cmt__ContractDocumentCollection__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Document Envelope",
+          "validFor": null,
+          "value": "vlocity_cmt__ContractEnvelope__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Document Section",
+          "validFor": null,
+          "value": "vlocity_cmt__ContractSection__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Group",
+          "validFor": null,
+          "value": "vlocity_cmt__ContractGroup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Line",
+          "validFor": null,
+          "value": "vlocity_cmt__ContractLineItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Line Item",
+          "validFor": null,
+          "value": "ContractLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Line Outcome",
+          "validFor": null,
+          "value": "ContractLineOutcome"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Line Outcome Data",
+          "validFor": null,
+          "value": "ContractLineOutcomeData"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Recipient",
+          "validFor": null,
+          "value": "vlocity_cmt__ContractRecipient__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Term",
+          "validFor": null,
+          "value": "vlocity_cmt__ContractTerm__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Type",
+          "validFor": null,
+          "value": "vlocity_cmt__ContractType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Type Setting",
+          "validFor": null,
+          "value": "vlocity_cmt__ContractTypeSetting__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Type Term",
+          "validFor": null,
+          "value": "vlocity_cmt__ContractTypeTerm__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CPQ Group Member Type",
+          "validFor": null,
+          "value": "vlocity_cmt__CpqMemberType__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Crew Management User Settings",
+          "validFor": null,
+          "value": "FSL__Crew_Management_User_Settings__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Crew Management User Settings Territory",
+          "validFor": null,
+          "value": "FSL__Crew_Management_User_Settings_Territory__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Criteria",
+          "validFor": null,
+          "value": "FSL__Criteria__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Customer",
+          "validFor": null,
+          "value": "Customer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Customer Interaction",
+          "validFor": null,
+          "value": "vlocity_cmt__CustomerInteraction__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Customer Interaction Topic",
+          "validFor": null,
+          "value": "vlocity_cmt__CustomerInteractionTopic__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DataRaptor Bulk Data",
+          "validFor": null,
+          "value": "vlocity_cmt__DRBulkData__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Data Use Legal Basis",
+          "validFor": null,
+          "value": "DataUseLegalBasis"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Data Use Purpose",
+          "validFor": null,
+          "value": "DataUsePurpose"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Decision Matrix",
+          "validFor": null,
+          "value": "CalculationMatrix"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Decision Matrix Column",
+          "validFor": null,
+          "value": "CalculationMatrixColumn"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Decision Matrix Column Range",
+          "validFor": null,
+          "value": "CalcMatrixColumnRange"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Decision Matrix Row",
+          "validFor": null,
+          "value": "CalculationMatrixRow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Decision Matrix Version",
+          "validFor": null,
+          "value": "CalculationMatrixVersion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Decomposition Relationship",
+          "validFor": null,
+          "value": "vlocity_cmt__DecompositionRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Deploy Component",
+          "validFor": null,
+          "value": "sf_devops__Deploy_Component__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Deployment Result",
+          "validFor": null,
+          "value": "sf_devops__Deployment_Result__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document",
+          "validFor": null,
+          "value": "vlocity_cmt__Document__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document Clause",
+          "validFor": null,
+          "value": "vlocity_cmt__DocumentClause__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document Generation Process",
+          "validFor": null,
+          "value": "DocumentGenerationProcess"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document Section",
+          "validFor": null,
+          "value": "vlocity_cmt__DocumentSection__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document Template",
+          "validFor": null,
+          "value": "vlocity_cmt__DocumentTemplate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document Template Element",
+          "validFor": null,
+          "value": "vlocity_cmt__DocumentTemplateElement__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document Template Section",
+          "validFor": null,
+          "value": "vlocity_cmt__DocumentTemplateSection__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document Template Section Condition",
+          "validFor": null,
+          "value": "vlocity_cmt__DocumentTemplateSectionCondition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document Template Setting",
+          "validFor": null,
+          "value": "vlocity_cmt__DocumentTemplateSetting__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document Token",
+          "validFor": null,
+          "value": "vlocity_cmt__DocumentToken__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duplicate Record Item",
+          "validFor": null,
+          "value": "DuplicateRecordItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duplicate Record Set",
+          "validFor": null,
+          "value": "DuplicateRecordSet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Message",
+          "validFor": null,
+          "value": "EmailMessage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Employee",
+          "validFor": null,
+          "value": "Employee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Endorsement",
+          "validFor": null,
+          "value": "ProfileSkillEndorsement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Engagement Attendee",
+          "validFor": null,
+          "value": "EngagementAttendee"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Engagement Channel Type",
+          "validFor": null,
+          "value": "EngagementChannelType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Engagement Interaction",
+          "validFor": null,
+          "value": "EngagementInteraction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Engagement Topic",
+          "validFor": null,
+          "value": "EngagementTopic"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Entitlement",
+          "validFor": null,
+          "value": "Entitlement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Environment",
+          "validFor": null,
+          "value": "sf_devops__Environment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Error Code",
+          "validFor": null,
+          "value": "vlocity_cmt__ErrorCode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Error Code",
+          "validFor": null,
+          "value": "vlocity_cmt__Error_Code__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Error Code Namespace",
+          "validFor": null,
+          "value": "vlocity_cmt__ErrorCodeNamespace__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Error Code Namespace",
+          "validFor": null,
+          "value": "vlocity_cmt__Error_Code_Namespace__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Event",
+          "validFor": null,
+          "value": "Event"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Event During Interaction",
+          "validFor": null,
+          "value": "vlocity_cmt__EventDuringInteraction__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Expanded Interaction Log",
+          "validFor": null,
+          "value": "vlocity_cmt__ExpandedInteractionLog__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Expense",
+          "validFor": null,
+          "value": "Expense"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Expense Report",
+          "validFor": null,
+          "value": "ExpenseReport"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Expense Report Entry",
+          "validFor": null,
+          "value": "ExpenseReportEntry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Expression Set",
+          "validFor": null,
+          "value": "ExpressionSet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Expression Set Step Relationship",
+          "validFor": null,
+          "value": "CalcProcStepRelationship"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Expression Set Version",
+          "validFor": null,
+          "value": "ExpressionSetVersion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Forecasting Custom Data",
+          "validFor": null,
+          "value": "ForecastingCustomData"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Forecasting Item (Historical)",
+          "validFor": null,
+          "value": "ForecastingItem__hd"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "FRL Source Bundle Relationship",
+          "validFor": null,
+          "value": "vlocity_cmt__FulfilmentRequestLineSourceRootOrderItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "FSL Operation",
+          "validFor": null,
+          "value": "FSL__FSL_Operation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fulfilment Diagram",
+          "validFor": null,
+          "value": "vlocity_cmt__FulfilmentDiagram__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fulfilment Diagram OPD",
+          "validFor": null,
+          "value": "vlocity_cmt__FulfilmentDiagramOPD__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fulfilment Request",
+          "validFor": null,
+          "value": "vlocity_cmt__FulfilmentRequest__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fulfilment Request Decomposition Rel",
+          "validFor": null,
+          "value": "vlocity_cmt__FulfilmentRequestDecompRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fulfilment Request Line",
+          "validFor": null,
+          "value": "vlocity_cmt__FulfilmentRequestLine__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "FulfilmentRequestLineDecompRelationship",
+          "validFor": null,
+          "value": "vlocity_cmt__FulfilmentRequestLineDecompRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fulfilment Request Line Relationship",
+          "validFor": null,
+          "value": "vlocity_cmt__FulfilmentRequestLineRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Function Definition",
+          "validFor": null,
+          "value": "vlocity_cmt__FunctionDefinition__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Filter",
+          "validFor": null,
+          "value": "FSL__Gantt_Filter__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Palette",
+          "validFor": null,
+          "value": "FSL__GanttPalette__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Generic DocuSign Document",
+          "validFor": null,
+          "value": "vlocity_cmt__GenericDocument__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Generic DocuSign Envelope",
+          "validFor": null,
+          "value": "vlocity_cmt__GenericEnvelope__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Generic DocuSign Recipient",
+          "validFor": null,
+          "value": "vlocity_cmt__GenericRecipient__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Geocode Pulling Settings",
+          "validFor": null,
+          "value": "FSL__Geocode_Pulling_Settings__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Graph Clone",
+          "validFor": null,
+          "value": "vlocity_cmt__GraphClone__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hidden Remote Change",
+          "validFor": null,
+          "value": "sf_devops__Hidden_Remote_Change__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Household",
+          "validFor": null,
+          "value": "vlocity_cmt__Household__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Idea",
+          "validFor": null,
+          "value": "Idea"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Image",
+          "validFor": null,
+          "value": "Image"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inbound REST Interface",
+          "validFor": null,
+          "value": "vlocity_cmt__InboundRESTInterface__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Incident",
+          "validFor": null,
+          "value": "Incident"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Incident Related Item",
+          "validFor": null,
+          "value": "IncidentRelatedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individual",
+          "validFor": null,
+          "value": "Individual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Integration Retry Policy",
+          "validFor": null,
+          "value": "vlocity_cmt__IntegrationRetryPolicy__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Interface_BillingInfo",
+          "validFor": null,
+          "value": "vlocity_cmt__Interface_BillingInfo__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Interface Implementation",
+          "validFor": null,
+          "value": "vlocity_cmt__InterfaceImplementation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Interface Implementation Detail",
+          "validFor": null,
+          "value": "vlocity_cmt__InterfaceImplementationDetail__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal Organization Unit",
+          "validFor": null,
+          "value": "InternalOrganizationUnit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inventory Item",
+          "validFor": null,
+          "value": "vlocity_cmt__InventoryItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inventory Item DecompositionRelationship",
+          "validFor": null,
+          "value": "vlocity_cmt__InventoryItemDecompositionRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Item Implementation",
+          "validFor": null,
+          "value": "vlocity_cmt__ItemImplementation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Job Profile",
+          "validFor": null,
+          "value": "JobProfile"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Jurisdiction",
+          "validFor": null,
+          "value": "vlocity_cmt__Jurisdiction__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Large Data Store",
+          "validFor": null,
+          "value": "vlocity_cmt__LargeDataStore__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lead",
+          "validFor": null,
+          "value": "Lead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Line Item Schedule",
+          "validFor": null,
+          "value": "OpportunityLineItemSchedule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Line of Business",
+          "validFor": null,
+          "value": "vlocity_cmt__LineOfBusiness__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Location",
+          "validFor": null,
+          "value": "Location"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Location Trust Measure",
+          "validFor": null,
+          "value": "LocationTrustMeasure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Macro",
+          "validFor": null,
+          "value": "Macro"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maintenance Asset",
+          "validFor": null,
+          "value": "MaintenanceAsset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maintenance Plan",
+          "validFor": null,
+          "value": "MaintenancePlan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maintenance Work Rule",
+          "validFor": null,
+          "value": "MaintenanceWorkRule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Manual Queue",
+          "validFor": null,
+          "value": "vlocity_cmt__ManualQueue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Manual Queue Assignment Rule",
+          "validFor": null,
+          "value": "vlocity_cmt__AssignmentRule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Manual Queue Member",
+          "validFor": null,
+          "value": "vlocity_cmt__ManualQueueMember__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Map Polygon",
+          "validFor": null,
+          "value": "FSL__Polygon__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Media Content Title",
+          "validFor": null,
+          "value": "vlocity_cmt__MediaContentTitle__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Media Plan Placement",
+          "validFor": null,
+          "value": "vlocity_cmt__QuoteLineItemAdPlacement__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Media Property",
+          "validFor": null,
+          "value": "vlocity_cmt__MediaProperty__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Merge Result",
+          "validFor": null,
+          "value": "sf_devops__Merge_Result__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Messaging Session",
+          "validFor": null,
+          "value": "MessagingSession"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Messaging User",
+          "validFor": null,
+          "value": "MessagingEndUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Notification",
+          "validFor": null,
+          "value": "vlocity_cmt__UserNotification__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "O2 Authorization Info",
+          "validFor": null,
+          "value": "FSL__O2_Authorization_Info__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "O2 Settings",
+          "validFor": null,
+          "value": "FSL__O2_Settings__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "O2 Settings",
+          "validFor": null,
+          "value": "FSL__O2_Toggle_Settings__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Object Activity",
+          "validFor": null,
+          "value": "sf_devops__Object_Activity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Object Applied Result",
+          "validFor": null,
+          "value": "vlocity_cmt__ObjectAppliedResult__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Object Milestone",
+          "validFor": null,
+          "value": "EntityMilestone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Offer Migration Component Mapping",
+          "validFor": null,
+          "value": "vlocity_cmt__OfferMigrationComponentMapping__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Offer Migration Plan",
+          "validFor": null,
+          "value": "vlocity_cmt__OfferMigrationPlan__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Offer Pricing Component",
+          "validFor": null,
+          "value": "vlocity_cmt__OfferPricingComponent__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Omni DataPack",
+          "validFor": null,
+          "value": "OmniDataPack"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Omni Data Transformation",
+          "validFor": null,
+          "value": "OmniDataTransform"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Omni Data Transformation Item",
+          "validFor": null,
+          "value": "OmniDataTransformItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Omni Electronic Signature Template",
+          "validFor": null,
+          "value": "OmniESignatureTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Omni Process",
+          "validFor": null,
+          "value": "OmniProcess"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Omni Process Compilation",
+          "validFor": null,
+          "value": "OmniProcessCompilation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Omni Process Element",
+          "validFor": null,
+          "value": "OmniProcessElement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Omni Process Transient Data",
+          "validFor": null,
+          "value": "OmniProcessTransientData"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "OmniScript Saved Session",
+          "validFor": null,
+          "value": "OmniScriptSavedSession"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Omni UI Card",
+          "validFor": null,
+          "value": "OmniUiCard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Omni User Session",
+          "validFor": null,
+          "value": "vlocity_cmt__OmniUserSession__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Operating Hours",
+          "validFor": null,
+          "value": "OperatingHours"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Operating Hours",
+          "validFor": null,
+          "value": "vlocity_cmt__OperatingHours__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Operating Hours and Exceptions",
+          "validFor": null,
+          "value": "vlocity_cmt__OperatingHoursEntry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Operating Hours Holiday",
+          "validFor": null,
+          "value": "OperatingHoursHoliday"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity",
+          "validFor": null,
+          "value": "Opportunity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity (Historical)",
+          "validFor": null,
+          "value": "Opportunity__hd"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity Applied Promotion",
+          "validFor": null,
+          "value": "vlocity_cmt__OpportunityAppliedPromotion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity Applied Promotion Item",
+          "validFor": null,
+          "value": "vlocity_cmt__OpportunityAppliedPromotionItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity Contact Role",
+          "validFor": null,
+          "value": "OpportunityContactRole"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity Discount",
+          "validFor": null,
+          "value": "vlocity_cmt__OpportunityDiscount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity Discount Item",
+          "validFor": null,
+          "value": "vlocity_cmt__OpportunityDiscountItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity Discount Pricing",
+          "validFor": null,
+          "value": "vlocity_cmt__OpportunityDiscountPricing__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity Group",
+          "validFor": null,
+          "value": "vlocity_cmt__OpportunityGroup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity Member",
+          "validFor": null,
+          "value": "vlocity_cmt__OpportunityMember__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity Pricing",
+          "validFor": null,
+          "value": "vlocity_cmt__OpportunityPriceAdjustment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity Product",
+          "validFor": null,
+          "value": "OpportunityLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity Product Relationship",
+          "validFor": null,
+          "value": "vlocity_cmt__OpportunityLineItemRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Optimization Data",
+          "validFor": null,
+          "value": "FSL__Optimization_Data__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Optimization Request",
+          "validFor": null,
+          "value": "FSL__Optimization_Request__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Optimization Request Queue",
+          "validFor": null,
+          "value": "FSL__Optimization_Request_Queue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Dependency",
+          "validFor": null,
+          "value": "vlocity_cmt__OrchestrationDependency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Dependency Definition",
+          "validFor": null,
+          "value": "vlocity_cmt__OrchestrationDependencyDefinition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Item",
+          "validFor": null,
+          "value": "vlocity_cmt__OrchestrationItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Item Definition",
+          "validFor": null,
+          "value": "vlocity_cmt__OrchestrationItemDefinition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Item Relationship",
+          "validFor": null,
+          "value": "vlocity_cmt__OrchestrationItemRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Item Source",
+          "validFor": null,
+          "value": "vlocity_cmt__OrchestrationItemSource__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Plan",
+          "validFor": null,
+          "value": "vlocity_cmt__OrchestrationPlan__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Plan Definition",
+          "validFor": null,
+          "value": "vlocity_cmt__OrchestrationPlanDefinition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Queue",
+          "validFor": null,
+          "value": "vlocity_cmt__OrchestrationQueue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Queue Assignment Rule",
+          "validFor": null,
+          "value": "vlocity_cmt__OrchestrationQueueAssignmentRule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Run",
+          "validFor": null,
+          "value": "FlowOrchestrationInstance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Scenario",
+          "validFor": null,
+          "value": "vlocity_cmt__OrchestrationScenario__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Scheduler Implementation",
+          "validFor": null,
+          "value": "vlocity_cmt__OrchestrationSchedulerImplementation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Stage Run",
+          "validFor": null,
+          "value": "FlowOrchestrationStageInstance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Step Run",
+          "validFor": null,
+          "value": "FlowOrchestrationStepInstance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Orchestration Work Item",
+          "validFor": null,
+          "value": "FlowOrchestrationWorkItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order",
+          "validFor": null,
+          "value": "Order"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Ad Placement",
+          "validFor": null,
+          "value": "vlocity_cmt__OrderItemAdPlacement__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Applied Promotion",
+          "validFor": null,
+          "value": "vlocity_cmt__OrderAppliedPromotion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Applied Promotion Affected Item",
+          "validFor": null,
+          "value": "vlocity_cmt__OrderAppliedPromotionItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Discount",
+          "validFor": null,
+          "value": "vlocity_cmt__OrderDiscount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Discount Item",
+          "validFor": null,
+          "value": "vlocity_cmt__OrderDiscountItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Discount Pricing",
+          "validFor": null,
+          "value": "vlocity_cmt__OrderDiscountPricing__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Group",
+          "validFor": null,
+          "value": "vlocity_cmt__OrderGroup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Item Pricing Adjustment",
+          "validFor": null,
+          "value": "vlocity_cmt__OrderItemPriceAdjustment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Member",
+          "validFor": null,
+          "value": "vlocity_cmt__OrderMember__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Payment",
+          "validFor": null,
+          "value": "vlocity_cmt__OrderPayment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Pricing",
+          "validFor": null,
+          "value": "vlocity_cmt__OrderPriceAdjustment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Product",
+          "validFor": null,
+          "value": "OrderItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Product Relationship",
+          "validFor": null,
+          "value": "vlocity_cmt__OrderItemRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Product Rollup",
+          "validFor": null,
+          "value": "vlocity_cmt__OrderProductRollup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Relationship",
+          "validFor": null,
+          "value": "vlocity_cmt__OrderRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Party",
+          "validFor": null,
+          "value": "vlocity_cmt__Party__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Party Association",
+          "validFor": null,
+          "value": "vlocity_cmt__Party_Association__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Party Consent",
+          "validFor": null,
+          "value": "PartyConsent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Party Merge Request",
+          "validFor": null,
+          "value": "vlocity_cmt__PartyMergeRequest__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Party Relationship",
+          "validFor": null,
+          "value": "vlocity_cmt__PartyRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Payment Adjustment",
+          "validFor": null,
+          "value": "vlocity_cmt__PaymentAdjustment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Payment Method",
+          "validFor": null,
+          "value": "vlocity_cmt__PaymentMethod__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Payment Plan",
+          "validFor": null,
+          "value": "vlocity_cmt__PaymentPlan__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PDFTron Encryption Key",
+          "validFor": null,
+          "value": "vlocity_cmt__PDFTronEncryptionKey__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Picklist Selection Entry",
+          "validFor": null,
+          "value": "vlocity_cmt__PicklistSelectionEntry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pipeline",
+          "validFor": null,
+          "value": "sf_devops__Pipeline__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pipeline Stage",
+          "validFor": null,
+          "value": "sf_devops__Pipeline_Stage__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Premises",
+          "validFor": null,
+          "value": "vlocity_cmt__Premises__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PremisesPartyRelationship",
+          "validFor": null,
+          "value": "vlocity_cmt__PremisesPartyRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Price Book",
+          "validFor": null,
+          "value": "Pricebook2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Price Book Entry",
+          "validFor": null,
+          "value": "PricebookEntry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PriceList",
+          "validFor": null,
+          "value": "vlocity_cmt__PriceList__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Price List Entry",
+          "validFor": null,
+          "value": "vlocity_cmt__PriceListEntry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pricing Component",
+          "validFor": null,
+          "value": "vlocity_cmt__PricingComponent__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pricing Component Relationship",
+          "validFor": null,
+          "value": "vlocity_cmt__PricingComponentRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pricing Element",
+          "validFor": null,
+          "value": "vlocity_cmt__PricingElement__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pricing Plan",
+          "validFor": null,
+          "value": "vlocity_cmt__PricingPlan__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pricing Plan Step",
+          "validFor": null,
+          "value": "vlocity_cmt__PricingPlanStep__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pricing Variable",
+          "validFor": null,
+          "value": "vlocity_cmt__PricingVariable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pricing Variable Binding",
+          "validFor": null,
+          "value": "vlocity_cmt__PricingVariableBinding__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Problem",
+          "validFor": null,
+          "value": "Problem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Problem Related Item",
+          "validFor": null,
+          "value": "ProblemRelatedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Process Exception",
+          "validFor": null,
+          "value": "ProcessException"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product",
+          "validFor": null,
+          "value": "Product2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Attribute Interface",
+          "validFor": null,
+          "value": "vlocity_cmt__Interface_ProductAttribute__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ProductAttribXN",
+          "validFor": null,
+          "value": "vlocity_cmt__ProductAttribXN__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Child Item",
+          "validFor": null,
+          "value": "vlocity_cmt__ProductChildItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Configuration Procedure",
+          "validFor": null,
+          "value": "vlocity_cmt__ProductConfigurationProcedure__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Consumed",
+          "validFor": null,
+          "value": "ProductConsumed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Consumed State",
+          "validFor": null,
+          "value": "ProductConsumedState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Item",
+          "validFor": null,
+          "value": "ProductItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Item Transaction",
+          "validFor": null,
+          "value": "ProductItemTransaction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Not Available",
+          "validFor": null,
+          "value": "vlocity_cmt__ProductAvailability__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Not Eligible",
+          "validFor": null,
+          "value": "vlocity_cmt__ProductEligibility__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Override Definition",
+          "validFor": null,
+          "value": "vlocity_cmt__OverrideDefinition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Related Service Process",
+          "validFor": null,
+          "value": "ProductRelatedServiceProcess"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Relationship",
+          "validFor": null,
+          "value": "vlocity_cmt__ProductRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Relationship Type",
+          "validFor": null,
+          "value": "vlocity_cmt__ProductRelationshipType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Request",
+          "validFor": null,
+          "value": "ProductRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Request Line Item",
+          "validFor": null,
+          "value": "ProductRequestLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Required",
+          "validFor": null,
+          "value": "ProductRequired"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Service Campaign",
+          "validFor": null,
+          "value": "ProductServiceCampaign"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Service Campaign Item",
+          "validFor": null,
+          "value": "ProductServiceCampaignItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Template",
+          "validFor": null,
+          "value": "vlocity_cmt__ProductTemplate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Template Assignment",
+          "validFor": null,
+          "value": "vlocity_cmt__ProfileCategoryAssignment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Transfer",
+          "validFor": null,
+          "value": "ProductTransfer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Transfer State",
+          "validFor": null,
+          "value": "ProductTransferState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Warranty Term",
+          "validFor": null,
+          "value": "ProductWarrantyTerm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Profiling Segment",
+          "validFor": null,
+          "value": "vlocity_cmt__ProfilingSegment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Profiling Segment Category",
+          "validFor": null,
+          "value": "vlocity_cmt__ProfilingSegmentCategory__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Project",
+          "validFor": null,
+          "value": "sf_devops__Project__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Project",
+          "validFor": null,
+          "value": "vlocity_cmt__Project__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Project Item",
+          "validFor": null,
+          "value": "vlocity_cmt__ProjectItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Promotion",
+          "validFor": null,
+          "value": "vlocity_cmt__Promotion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Promotion Applicable Product",
+          "validFor": null,
+          "value": "vlocity_cmt__PromotionApplicableProduct__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Promotion Included Product",
+          "validFor": null,
+          "value": "vlocity_cmt__PromotionIncludedProduct__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Promotion Item",
+          "validFor": null,
+          "value": "vlocity_cmt__PromotionItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Promotion Pricing Alteration",
+          "validFor": null,
+          "value": "vlocity_cmt__PromotionPricingAlteration__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quick Text",
+          "validFor": null,
+          "value": "QuickText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quote",
+          "validFor": null,
+          "value": "Quote"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quote Applied Promotion",
+          "validFor": null,
+          "value": "vlocity_cmt__QuoteAppliedPromotion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quote Applied Promotion Affected Item",
+          "validFor": null,
+          "value": "vlocity_cmt__QuoteAppliedPromotionItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quote Discount",
+          "validFor": null,
+          "value": "vlocity_cmt__QuoteDiscount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quote Discount Item",
+          "validFor": null,
+          "value": "vlocity_cmt__QuoteDiscountItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quote Discount Pricing",
+          "validFor": null,
+          "value": "vlocity_cmt__QuoteDiscountPricing__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quote Group",
+          "validFor": null,
+          "value": "vlocity_cmt__QuoteGroup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quote Line Item",
+          "validFor": null,
+          "value": "QuoteLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quote Line Item Pricing Adjustment",
+          "validFor": null,
+          "value": "vlocity_cmt__QuoteLineItemPricingAdjustment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quote Member",
+          "validFor": null,
+          "value": "vlocity_cmt__QuoteMember__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quote Pricing",
+          "validFor": null,
+          "value": "vlocity_cmt__QuotePricingAdjustment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quote Product Relationship",
+          "validFor": null,
+          "value": "vlocity_cmt__QuoteLineItemRelationship__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quote Product Rollup",
+          "validFor": null,
+          "value": "vlocity_cmt__QuoteProductRollup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recommendation",
+          "validFor": null,
+          "value": "Recommendation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RecordAction",
+          "validFor": null,
+          "value": "RecordAction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record Alert",
+          "validFor": null,
+          "value": "RecordAlert"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record Collection",
+          "validFor": null,
+          "value": "SharingRecordCollection"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recordset Filter Criteria",
+          "validFor": null,
+          "value": "RecordsetFilterCriteria"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recordset Filter Criteria Monitor",
+          "validFor": null,
+          "value": "RecordsetFltrCritMonitor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recordset Filter Criteria Rule",
+          "validFor": null,
+          "value": "RecordsetFilterCriteriaRule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Related Problem and Incident",
+          "validFor": null,
+          "value": "ProblemIncident"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relationship Graph",
+          "validFor": null,
+          "value": "vlocity_cmt__RelationshipGraph__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relationship Graph Node Type",
+          "validFor": null,
+          "value": "vlocity_cmt__RelationshipGraphNodeType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Relationship Graph Traversal",
+          "validFor": null,
+          "value": "vlocity_cmt__RelationshipGraphTraversal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Remote Change",
+          "validFor": null,
+          "value": "sf_devops__Remote_Change__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Repository",
+          "validFor": null,
+          "value": "sf_devops__Repository__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Resource Absence",
+          "validFor": null,
+          "value": "ResourceAbsence"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Resource Capacity",
+          "validFor": null,
+          "value": "ServiceResourceCapacity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Resource Preference",
+          "validFor": null,
+          "value": "ResourcePreference"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Return Order",
+          "validFor": null,
+          "value": "ReturnOrder"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Return Order Line Item",
+          "validFor": null,
+          "value": "ReturnOrderLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Saved OmniScript",
+          "validFor": null,
+          "value": "vlocity_cmt__OmniScriptInstance__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduling Constraint",
+          "validFor": null,
+          "value": "SchedulingConstraint"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduling Policy",
+          "validFor": null,
+          "value": "FSL__Scheduling_Policy__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduling Policy Objective",
+          "validFor": null,
+          "value": "FSL__Scheduling_Policy_Goal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduling Policy Work Rule",
+          "validFor": null,
+          "value": "FSL__Scheduling_Policy_Work_Rule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduling Recipe",
+          "validFor": null,
+          "value": "FSL__SchedulingRecipe__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduling Workspace",
+          "validFor": null,
+          "value": "SchedulingWorkspace"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduling Workspace Territory",
+          "validFor": null,
+          "value": "SchedulingWorkspaceTerritory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scorecard",
+          "validFor": null,
+          "value": "Scorecard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scorecard Association",
+          "validFor": null,
+          "value": "ScorecardAssociation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scorecard Metric",
+          "validFor": null,
+          "value": "ScorecardMetric"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Screening Rule",
+          "validFor": null,
+          "value": "vlocity_cmt__ScreeningRule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Screening Rule Group",
+          "validFor": null,
+          "value": "vlocity_cmt__ScreeningRuleGroup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Screening Rule Property",
+          "validFor": null,
+          "value": "vlocity_cmt__RuleProperty__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Security Deposit",
+          "validFor": null,
+          "value": "vlocity_cmt__SecurityDeposit__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Seller",
+          "validFor": null,
+          "value": "Seller"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serialized Product",
+          "validFor": null,
+          "value": "SerializedProduct"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serialized Product Transaction",
+          "validFor": null,
+          "value": "SerializedProductTransaction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service",
+          "validFor": null,
+          "value": "sf_devops__Service__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Appointment",
+          "validFor": null,
+          "value": "ServiceAppointment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Appointment Capacity Usage",
+          "validFor": null,
+          "value": "ServiceAppointmentCapacityUsage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Catalog Request",
+          "validFor": null,
+          "value": "SvcCatalogRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Catalog Request Related Item",
+          "validFor": null,
+          "value": "SvcCatalogReqRelatedItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Contract",
+          "validFor": null,
+          "value": "ServiceContract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Crew",
+          "validFor": null,
+          "value": "ServiceCrew"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Crew Member",
+          "validFor": null,
+          "value": "ServiceCrewMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Objective",
+          "validFor": null,
+          "value": "FSL__Service_Goal__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Point",
+          "validFor": null,
+          "value": "vlocity_cmt__ServicePoint__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Resource",
+          "validFor": null,
+          "value": "ServiceResource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Resource Preference",
+          "validFor": null,
+          "value": "ServiceResourcePreference"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Resource Skill",
+          "validFor": null,
+          "value": "ServiceResourceSkill"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Territory",
+          "validFor": null,
+          "value": "ServiceTerritory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Territory Location",
+          "validFor": null,
+          "value": "ServiceTerritoryLocation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Territory Member",
+          "validFor": null,
+          "value": "ServiceTerritoryMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shift",
+          "validFor": null,
+          "value": "Shift"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shift Pattern",
+          "validFor": null,
+          "value": "ShiftPattern"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shift Pattern Entry",
+          "validFor": null,
+          "value": "ShiftPatternEntry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shift Scheduling Operation",
+          "validFor": null,
+          "value": "ShiftSchedulingOperation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shift Template",
+          "validFor": null,
+          "value": "ShiftTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shipment",
+          "validFor": null,
+          "value": "Shipment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shipment Item",
+          "validFor": null,
+          "value": "ShipmentItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Skill",
+          "validFor": null,
+          "value": "ProfileSkill"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Skill Requirement",
+          "validFor": null,
+          "value": "SkillRequirement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Skill User",
+          "validFor": null,
+          "value": "ProfileSkillUser"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SLR Cache",
+          "validFor": null,
+          "value": "FSL__SLR_Cache__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Persona",
+          "validFor": null,
+          "value": "SocialPersona"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Social Post",
+          "validFor": null,
+          "value": "SocialPost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Solution",
+          "validFor": null,
+          "value": "Solution"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Source Member Reference",
+          "validFor": null,
+          "value": "sf_devops__Source_Member_Reference__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spec Template Attribute Mapping",
+          "validFor": null,
+          "value": "vlocity_cmt__SpecTemplateAttributeMapping__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spec Template Mapping",
+          "validFor": null,
+          "value": "vlocity_cmt__SpecTemplateMapping__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Statement",
+          "validFor": null,
+          "value": "vlocity_cmt__Statement__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Statement Line Item",
+          "validFor": null,
+          "value": "vlocity_cmt__StatementLineItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State Transition",
+          "validFor": null,
+          "value": "vlocity_cmt__StateTransition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Store Location",
+          "validFor": null,
+          "value": "vlocity_cmt__BusinessSite__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Store Offering",
+          "validFor": null,
+          "value": "vlocity_cmt__BusinessSiteOffering__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Submit Component",
+          "validFor": null,
+          "value": "sf_devops__Submit_Component__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subscription",
+          "validFor": null,
+          "value": "vlocity_cmt__Subscription__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Swarm",
+          "validFor": null,
+          "value": "Swarm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Swarm Member",
+          "validFor": null,
+          "value": "SwarmMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sync Delta Object",
+          "validFor": null,
+          "value": "vlocity_cmt__SyncDeltaObject__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sync Delta Snapshot",
+          "validFor": null,
+          "value": "vlocity_cmt__SyncDeltaSnapshot__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "System",
+          "validFor": null,
+          "value": "vlocity_cmt__System__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "System Interface",
+          "validFor": null,
+          "value": "vlocity_cmt__SystemInterface__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Task",
+          "validFor": null,
+          "value": "Task"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Territory Optimization Request",
+          "validFor": null,
+          "value": "FSL__Territory_Optimization_Request__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Test Result",
+          "validFor": null,
+          "value": "vlocity_cmt__TestResult__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Thanks",
+          "validFor": null,
+          "value": "WorkThanks"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Thor Orchestration Queue",
+          "validFor": null,
+          "value": "vlocity_cmt__ThorOrchestrationQueue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Time Plan",
+          "validFor": null,
+          "value": "vlocity_cmt__TimePlan__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Time Policy",
+          "validFor": null,
+          "value": "vlocity_cmt__TimePolicy__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Time Sheet",
+          "validFor": null,
+          "value": "TimeSheet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Time Sheet Entry",
+          "validFor": null,
+          "value": "TimeSheetEntry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Time Slot",
+          "validFor": null,
+          "value": "TimeSlot"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Travel Mode",
+          "validFor": null,
+          "value": "TravelMode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Trigger Listener",
+          "validFor": null,
+          "value": "vlocity_cmt__TriggerListener__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Unit of Measure",
+          "validFor": null,
+          "value": "UnitOfMeasure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User",
+          "validFor": null,
+          "value": "User"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User Ad Server",
+          "validFor": null,
+          "value": "vlocity_cmt__UserAdServer__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User Calendar",
+          "validFor": null,
+          "value": "vlocity_cmt__UserCalendar__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User Provisioning Request",
+          "validFor": null,
+          "value": "UserProvisioningRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User Setting",
+          "validFor": null,
+          "value": "FSL__UserSetting__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User Setting Territory",
+          "validFor": null,
+          "value": "FSL__User_Setting_Territory__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User Territory",
+          "validFor": null,
+          "value": "FSL__User_Territory__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VCS Event",
+          "validFor": null,
+          "value": "sf_devops__Vcs_Event__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version",
+          "validFor": null,
+          "value": "sf_devops__Version__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version Aware Object Relationship",
+          "validFor": null,
+          "value": "vlocity_cmt__VersionAwareObjectRelationship__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Video Call",
+          "validFor": null,
+          "value": "VideoCall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Video Call Participant",
+          "validFor": null,
+          "value": "VideoCallParticipant"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Action",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityAction__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity API Metadata",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityAPIMetadata__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Attachment",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityAttachment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Attribute",
+          "validFor": null,
+          "value": "vlocity_cmt__Attribute__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Attribute Assignment Rule",
+          "validFor": null,
+          "value": "vlocity_cmt__AttributeAssignmentRule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Attribute Binding",
+          "validFor": null,
+          "value": "vlocity_cmt__AttributeBinding__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Attribute Category",
+          "validFor": null,
+          "value": "vlocity_cmt__AttributeCategory__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Calculation Matrix",
+          "validFor": null,
+          "value": "vlocity_cmt__CalculationMatrix__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Calculation Matrix Column",
+          "validFor": null,
+          "value": "vlocity_cmt__CalculationMatrixColumn__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Calculation Matrix Dimension",
+          "validFor": null,
+          "value": "vlocity_cmt__CalculationMatrixDimension__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Calculation Matrix Row",
+          "validFor": null,
+          "value": "vlocity_cmt__CalculationMatrixRow__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Calculation Matrix Version",
+          "validFor": null,
+          "value": "vlocity_cmt__CalculationMatrixVersion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Calculation Procedure",
+          "validFor": null,
+          "value": "vlocity_cmt__CalculationProcedure__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Calculation Procedure Step",
+          "validFor": null,
+          "value": "vlocity_cmt__CalculationProcedureStep__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Calculation Procedure Variable",
+          "validFor": null,
+          "value": "vlocity_cmt__CalculationProcedureVariable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Calculation Procedure Version",
+          "validFor": null,
+          "value": "vlocity_cmt__CalculationProcedureVersion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Card",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityCard__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Context Dimension",
+          "validFor": null,
+          "value": "vlocity_cmt__ContextDimension__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Context Mapping",
+          "validFor": null,
+          "value": "vlocity_cmt__ContextMapping__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Context Mapping Argument",
+          "validFor": null,
+          "value": "vlocity_cmt__ContextMappingArgument__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Context Rule",
+          "validFor": null,
+          "value": "vlocity_cmt__ContextRule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Context Ruleset",
+          "validFor": null,
+          "value": "vlocity_cmt__ContextRuleset__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Contract Service Log",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityContractServiceLog__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Data Pack Configuration",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityDataPackConfiguration__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity DataPack Object",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityDataPack__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity DataRaptor Batch Queue",
+          "validFor": null,
+          "value": "vlocity_cmt__DRBatchQueue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity DataRaptor Bundle",
+          "validFor": null,
+          "value": "vlocity_cmt__DRBundle__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity DataRaptor Map Item",
+          "validFor": null,
+          "value": "vlocity_cmt__DRMapItem__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity DataRaptor Object Interface",
+          "validFor": null,
+          "value": "vlocity_cmt__Interface_DRGeneric__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity DataRaptor Staged Data",
+          "validFor": null,
+          "value": "vlocity_cmt__Stage__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Data Store",
+          "validFor": null,
+          "value": "vlocity_cmt__Datastore__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity DocuSign Branding",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityDocuSignBranding__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity DocuSign Template",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityDocuSignTemplate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Entity Filter",
+          "validFor": null,
+          "value": "vlocity_cmt__EntityFilter__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Entity Filter Condition",
+          "validFor": null,
+          "value": "vlocity_cmt__EntityFilterCondition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Entity Filter Condition Argument",
+          "validFor": null,
+          "value": "vlocity_cmt__EntityFilterConditionArgument__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Entity Filter Member",
+          "validFor": null,
+          "value": "vlocity_cmt__EntityFilterMember__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Error Log Entry",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityErrorLogEntry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Event Message",
+          "validFor": null,
+          "value": "vlocity_cmt__EventMessage__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Function",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityFunction__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Function Argument",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityFunctionArgument__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Integration Setting",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityIntegrationSetting__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Intelligence Machine",
+          "validFor": null,
+          "value": "vlocity_cmt__VqMachine__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Intelligence Machine Resource",
+          "validFor": null,
+          "value": "vlocity_cmt__VqMachineResource__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Intelligence Resource",
+          "validFor": null,
+          "value": "vlocity_cmt__VqResource__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Interaction Launcher",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocitySearchWidgetSetup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Interaction Launcher Action",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocitySearchWidgetActionsSetup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Matching Key",
+          "validFor": null,
+          "value": "vlocity_cmt__DRMatchingKey__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Object Facet",
+          "validFor": null,
+          "value": "vlocity_cmt__ObjectFacet__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Object Field Attribute",
+          "validFor": null,
+          "value": "vlocity_cmt__ObjectFieldAttribute__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Object Layout",
+          "validFor": null,
+          "value": "vlocity_cmt__ObjectLayout__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Object or Object Type",
+          "validFor": null,
+          "value": "vlocity_cmt__ObjectClass__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Object Rule Assignment",
+          "validFor": null,
+          "value": "vlocity_cmt__ObjectRuleAssignment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Object Section",
+          "validFor": null,
+          "value": "vlocity_cmt__ObjectSection__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Object Section Element",
+          "validFor": null,
+          "value": "vlocity_cmt__ObjectElement__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Offering Procedure",
+          "validFor": null,
+          "value": "vlocity_cmt__OfferingProcedure__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity OmniScript",
+          "validFor": null,
+          "value": "vlocity_cmt__OmniScript__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity OmniScript Compiled Definition",
+          "validFor": null,
+          "value": "vlocity_cmt__OmniScriptDefinition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity OmniScript Element",
+          "validFor": null,
+          "value": "vlocity_cmt__Element__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Outbound Configuration",
+          "validFor": null,
+          "value": "vlocity_cmt__OutboundConfiguration__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Party Record Type Setting",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityPartyRecordTypeSetting__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Party Relationship Type",
+          "validFor": null,
+          "value": "vlocity_cmt__PartyRelationshipType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Picklist",
+          "validFor": null,
+          "value": "vlocity_cmt__Picklist__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Picklist Value",
+          "validFor": null,
+          "value": "vlocity_cmt__PicklistValue__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Rule",
+          "validFor": null,
+          "value": "vlocity_cmt__Rule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Rule Action",
+          "validFor": null,
+          "value": "vlocity_cmt__RuleAction__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Rule Assignment",
+          "validFor": null,
+          "value": "vlocity_cmt__RuleAssignment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Rule Filter",
+          "validFor": null,
+          "value": "vlocity_cmt__RuleFilter__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Rule Variable",
+          "validFor": null,
+          "value": "vlocity_cmt__RuleVariable__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Scheduled Job",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityScheduledJob__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity State",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityState__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity State Model",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityStateModel__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity State Model Version",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityStateModelVersion__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity State Transition",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityStateTransition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity State Transition Rule",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityStateTransitionRule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity String",
+          "validFor": null,
+          "value": "vlocity_cmt__String__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity String Translation",
+          "validFor": null,
+          "value": "vlocity_cmt__StringTranslation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity System Log",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocitySystemLog__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Tracking Component",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityTrackingComponent__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Tracking Entry",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityTrackingEntry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Tracking Group",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityTrackingGroup__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity UI Facet",
+          "validFor": null,
+          "value": "vlocity_cmt__UIFacet__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity UI Layout",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityUILayout__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity UI Section",
+          "validFor": null,
+          "value": "vlocity_cmt__UISection__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity UI Template",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityUITemplate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Web Tracking Configuration",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityWebTrackingConfiguration__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vlocity Web Tracking Event Type",
+          "validFor": null,
+          "value": "vlocity_cmt__VlocityWebTrackingEventType__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voice Call",
+          "validFor": null,
+          "value": "VoiceCall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VPLAbstractionLayerSetup",
+          "validFor": null,
+          "value": "vlocity_cmt__VPLAbstractionLayerSetup__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VPLExpress",
+          "validFor": null,
+          "value": "vlocity_cmt__VPLExpress__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Warranty Term",
+          "validFor": null,
+          "value": "WarrantyTerm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Item",
+          "validFor": null,
+          "value": "sf_devops__Work_Item__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Item Promote",
+          "validFor": null,
+          "value": "sf_devops__Work_Item_Promote__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Order",
+          "validFor": null,
+          "value": "WorkOrder"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Order Line Item",
+          "validFor": null,
+          "value": "WorkOrderLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Plan",
+          "validFor": null,
+          "value": "WorkPlan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Plan Selection Rule",
+          "validFor": null,
+          "value": "WorkPlanSelectionRule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Plan Template",
+          "validFor": null,
+          "value": "WorkPlanTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Plan Template Entry",
+          "validFor": null,
+          "value": "WorkPlanTemplateEntry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Rule",
+          "validFor": null,
+          "value": "FSL__Work_Rule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Rule Entry",
+          "validFor": null,
+          "value": "FSL__Work_Rule_Entry__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Step",
+          "validFor": null,
+          "value": "WorkStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Step Template",
+          "validFor": null,
+          "value": "WorkStepTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Type",
+          "validFor": null,
+          "value": "WorkType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Type Group",
+          "validFor": null,
+          "value": "WorkTypeGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Type Group Member",
+          "validFor": null,
+          "value": "WorkTypeGroupMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "XOM Event Listener",
+          "validFor": null,
+          "value": "vlocity_cmt__XOMEventListener__mdt"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Active",
+      "name": "IsActive",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    }
+  ],
+  "label": "Record Alert Data Source Expression Set Definition",
+  "childRelationships": [],
+  "custom": false,
+  "name": "RecAlrtDataSrcExpSetDef",
+  "queryable": true
+}

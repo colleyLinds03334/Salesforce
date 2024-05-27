@@ -1,0 +1,2606 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Voice Call ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Viewed Date",
+      "name": "LastViewedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Referenced Date",
+      "name": "LastReferencedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Owner ID",
+      "name": "OwnerId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Group",
+        "User"
+      ],
+      "relationshipName": "Owner",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Call Started",
+      "name": "CallStartDateTime",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Call Ended",
+      "name": "CallEndDateTime",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Caller Number",
+      "name": "FromPhoneNumber",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "phone"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Recipient Number",
+      "name": "ToPhoneNumber",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "phone"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Call Duration",
+      "name": "CallDurationInSeconds",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Vendor Call Key",
+      "name": "VendorCallKey",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Price",
+      "name": "Price",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Currency Code",
+      "name": "CurrencyCode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AED - UAE Dirham",
+          "validFor": null,
+          "value": "AED"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AFN - Afghanistan Afghani (New)",
+          "validFor": null,
+          "value": "AFN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ALL - Albanian Lek",
+          "validFor": null,
+          "value": "ALL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AMD - Armenian Dram",
+          "validFor": null,
+          "value": "AMD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ANG - Neth Antilles Guilder",
+          "validFor": null,
+          "value": "ANG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AOA - Angola Kwanza",
+          "validFor": null,
+          "value": "AOA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ARS - Argentine Peso",
+          "validFor": null,
+          "value": "ARS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AUD - Australian Dollar",
+          "validFor": null,
+          "value": "AUD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AWG - Aruba Florin",
+          "validFor": null,
+          "value": "AWG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AZN - Azerbaijan Manat",
+          "validFor": null,
+          "value": "AZN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BAM - Convertible Marks",
+          "validFor": null,
+          "value": "BAM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BBD - Barbados Dollar",
+          "validFor": null,
+          "value": "BBD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BDT - Bangladesh Taka",
+          "validFor": null,
+          "value": "BDT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BGN - Bulgarian Lev",
+          "validFor": null,
+          "value": "BGN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BHD - Bahraini Dinar",
+          "validFor": null,
+          "value": "BHD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BIF - Burundi Franc",
+          "validFor": null,
+          "value": "BIF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BMD - Bermuda Dollar",
+          "validFor": null,
+          "value": "BMD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BND - Brunei Dollar",
+          "validFor": null,
+          "value": "BND"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BOB - Bolivian Boliviano",
+          "validFor": null,
+          "value": "BOB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BOV - Bolivia Mvdol",
+          "validFor": null,
+          "value": "BOV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BRL - Brazilian Real",
+          "validFor": null,
+          "value": "BRL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BSD - Bahamian Dollar",
+          "validFor": null,
+          "value": "BSD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BTN - Bhutan Ngultrum",
+          "validFor": null,
+          "value": "BTN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BWP - Botswana Pula",
+          "validFor": null,
+          "value": "BWP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BYN - Belarusian Ruble",
+          "validFor": null,
+          "value": "BYN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BYR - Belarusian Ruble",
+          "validFor": null,
+          "value": "BYR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BZD - Belize Dollar",
+          "validFor": null,
+          "value": "BZD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CAD - Canadian Dollar",
+          "validFor": null,
+          "value": "CAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CDF - Franc Congolais",
+          "validFor": null,
+          "value": "CDF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CHF - Swiss Franc",
+          "validFor": null,
+          "value": "CHF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CLF - Unidades de fomento",
+          "validFor": null,
+          "value": "CLF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CLP - Chilean Peso",
+          "validFor": null,
+          "value": "CLP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CNH - Chinese Yuan (Offshore)",
+          "validFor": null,
+          "value": "CNH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CNY - Chinese Yuan",
+          "validFor": null,
+          "value": "CNY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "COP - Colombian Peso",
+          "validFor": null,
+          "value": "COP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CRC - Costa Rica Colon",
+          "validFor": null,
+          "value": "CRC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CUC - Cuban Peso Convertible",
+          "validFor": null,
+          "value": "CUC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CVE - Cape Verde Escudo",
+          "validFor": null,
+          "value": "CVE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CZK - Czech Koruna",
+          "validFor": null,
+          "value": "CZK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DJF - Dijibouti Franc",
+          "validFor": null,
+          "value": "DJF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DKK - Danish Krone",
+          "validFor": null,
+          "value": "DKK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DOP - Dominican Peso",
+          "validFor": null,
+          "value": "DOP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DZD - Algerian Dinar",
+          "validFor": null,
+          "value": "DZD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "EEK - Estonian Kroon",
+          "validFor": null,
+          "value": "EEK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "EGP - Egyptian Pound",
+          "validFor": null,
+          "value": "EGP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ERN - Eritrea Nakfa",
+          "validFor": null,
+          "value": "ERN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ETB - Ethiopian Birr",
+          "validFor": null,
+          "value": "ETB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "EUR - Euro",
+          "validFor": null,
+          "value": "EUR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "FJD - Fiji Dollar",
+          "validFor": null,
+          "value": "FJD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "FKP - Falkland Islands Pound",
+          "validFor": null,
+          "value": "FKP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GBP - British Pound",
+          "validFor": null,
+          "value": "GBP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GEL - Georgia Lari",
+          "validFor": null,
+          "value": "GEL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GHS - Ghanaian Cedi",
+          "validFor": null,
+          "value": "GHS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GIP - Gibraltar Pound",
+          "validFor": null,
+          "value": "GIP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GMD - Gambian Dalasi",
+          "validFor": null,
+          "value": "GMD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GNF - Guinean Franc",
+          "validFor": null,
+          "value": "GNF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GTQ - Guatemala Quetzal",
+          "validFor": null,
+          "value": "GTQ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GYD - Guyana Dollar",
+          "validFor": null,
+          "value": "GYD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HKD - Hong Kong Dollar",
+          "validFor": null,
+          "value": "HKD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HNL - Honduras Lempira",
+          "validFor": null,
+          "value": "HNL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HRK - Kuna",
+          "validFor": null,
+          "value": "HRK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HTG - Haiti Gourde",
+          "validFor": null,
+          "value": "HTG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HUF - Hungarian Forint",
+          "validFor": null,
+          "value": "HUF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "IDR - Indonesian Rupiah",
+          "validFor": null,
+          "value": "IDR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ILS - Israeli Shekel",
+          "validFor": null,
+          "value": "ILS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "INR - Indian Rupee",
+          "validFor": null,
+          "value": "INR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "IQD - Iraqi Dinar",
+          "validFor": null,
+          "value": "IQD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ISK - Iceland Krona",
+          "validFor": null,
+          "value": "ISK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "JMD - Jamaican Dollar",
+          "validFor": null,
+          "value": "JMD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "JOD - Jordanian Dinar",
+          "validFor": null,
+          "value": "JOD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "JPY - Japanese Yen",
+          "validFor": null,
+          "value": "JPY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KES - Kenyan Shilling",
+          "validFor": null,
+          "value": "KES"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KGS - Kyrgyzstan Som",
+          "validFor": null,
+          "value": "KGS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KHR - Cambodia Riel",
+          "validFor": null,
+          "value": "KHR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KMF - Comorian Franc",
+          "validFor": null,
+          "value": "KMF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KRW - Korean Won",
+          "validFor": null,
+          "value": "KRW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KWD - Kuwaiti Dinar",
+          "validFor": null,
+          "value": "KWD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KYD - Cayman Islands Dollar",
+          "validFor": null,
+          "value": "KYD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KZT - Kazakhstan Tenge",
+          "validFor": null,
+          "value": "KZT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LAK - Lao Kip",
+          "validFor": null,
+          "value": "LAK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LBP - Lebanese Pound",
+          "validFor": null,
+          "value": "LBP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LKR - Sri Lanka Rupee",
+          "validFor": null,
+          "value": "LKR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LRD - Liberian Dollar",
+          "validFor": null,
+          "value": "LRD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LSL - Lesotho Loti",
+          "validFor": null,
+          "value": "LSL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LYD - Libyan Dinar",
+          "validFor": null,
+          "value": "LYD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MAD - Moroccan Dirham",
+          "validFor": null,
+          "value": "MAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MDL - Moldovan Leu",
+          "validFor": null,
+          "value": "MDL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MGA - Malagasy Ariary",
+          "validFor": null,
+          "value": "MGA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MKD - Macedonian Denar",
+          "validFor": null,
+          "value": "MKD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MMK - Myanmar Kyat",
+          "validFor": null,
+          "value": "MMK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MNT - Mongolian Tugrik",
+          "validFor": null,
+          "value": "MNT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MOP - Macau Pataca",
+          "validFor": null,
+          "value": "MOP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MRO - Mauritanian Ougulya",
+          "validFor": null,
+          "value": "MRO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MRU - Mauritanian Ougulya",
+          "validFor": null,
+          "value": "MRU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MUR - Mauritius Rupee",
+          "validFor": null,
+          "value": "MUR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MVR - Maldives Rufiyaa",
+          "validFor": null,
+          "value": "MVR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MWK - Malawi Kwacha",
+          "validFor": null,
+          "value": "MWK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MXN - Mexican Peso",
+          "validFor": null,
+          "value": "MXN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MXV - Mexican Unidad de Inversion (UDI)",
+          "validFor": null,
+          "value": "MXV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MYR - Malaysian Ringgit",
+          "validFor": null,
+          "value": "MYR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MZN - Mozambique New Metical",
+          "validFor": null,
+          "value": "MZN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NAD - Namibian Dollar",
+          "validFor": null,
+          "value": "NAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NGN - Nigerian Naira",
+          "validFor": null,
+          "value": "NGN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NIO - Nicaragua Cordoba",
+          "validFor": null,
+          "value": "NIO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NOK - Norwegian Krone",
+          "validFor": null,
+          "value": "NOK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NPR - Nepalese Rupee",
+          "validFor": null,
+          "value": "NPR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NZD - New Zealand Dollar",
+          "validFor": null,
+          "value": "NZD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "OMR - Omani Rial",
+          "validFor": null,
+          "value": "OMR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PAB - Panama Balboa",
+          "validFor": null,
+          "value": "PAB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PEN - Peruvian Sol",
+          "validFor": null,
+          "value": "PEN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PGK - Papua New Guinea Kina",
+          "validFor": null,
+          "value": "PGK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PHP - Philippine Peso",
+          "validFor": null,
+          "value": "PHP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PKR - Pakistani Rupee",
+          "validFor": null,
+          "value": "PKR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PLN - Polish Zloty",
+          "validFor": null,
+          "value": "PLN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PYG - Paraguayan Guarani",
+          "validFor": null,
+          "value": "PYG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "QAR - Qatar Rial",
+          "validFor": null,
+          "value": "QAR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RON - Romanian Leu",
+          "validFor": null,
+          "value": "RON"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RSD - Serbian Dinar",
+          "validFor": null,
+          "value": "RSD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RUB - Russian Rouble",
+          "validFor": null,
+          "value": "RUB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RWF - Rwanda Franc",
+          "validFor": null,
+          "value": "RWF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SAR - Saudi Arabian Riyal",
+          "validFor": null,
+          "value": "SAR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SBD - Solomon Islands Dollar",
+          "validFor": null,
+          "value": "SBD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SCR - Seychelles Rupee",
+          "validFor": null,
+          "value": "SCR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SEK - Swedish Krona",
+          "validFor": null,
+          "value": "SEK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SGD - Singapore Dollar",
+          "validFor": null,
+          "value": "SGD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SHP - St Helena Pound",
+          "validFor": null,
+          "value": "SHP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SLE - Sierra Leone Leone",
+          "validFor": null,
+          "value": "SLE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SLL - Sierra Leone Leone",
+          "validFor": null,
+          "value": "SLL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SOS - Somali Shilling",
+          "validFor": null,
+          "value": "SOS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SRD - Surinam Dollar",
+          "validFor": null,
+          "value": "SRD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SSP - South Sudan Pound",
+          "validFor": null,
+          "value": "SSP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "STD - São Tomé and Príncipe Dobra",
+          "validFor": null,
+          "value": "STD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "STN - São Tomé and Príncipe Dobra",
+          "validFor": null,
+          "value": "STN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SZL - Eswatini Lilageni",
+          "validFor": null,
+          "value": "SZL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "THB - Thai Baht",
+          "validFor": null,
+          "value": "THB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TJS - Tajik Somoni",
+          "validFor": null,
+          "value": "TJS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TMT - Turkmenistan New Manat",
+          "validFor": null,
+          "value": "TMT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TND - Tunisian Dinar",
+          "validFor": null,
+          "value": "TND"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TOP - Tonga Pa'anga",
+          "validFor": null,
+          "value": "TOP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TRY - Turkish Lira (New)",
+          "validFor": null,
+          "value": "TRY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TTD - Trinidad&Tobago Dollar",
+          "validFor": null,
+          "value": "TTD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TWD - Taiwan Dollar",
+          "validFor": null,
+          "value": "TWD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TZS - Tanzanian Shilling",
+          "validFor": null,
+          "value": "TZS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UAH - Ukraine Hryvnia",
+          "validFor": null,
+          "value": "UAH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UGX - Ugandan Shilling",
+          "validFor": null,
+          "value": "UGX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "USD - U.S. Dollar",
+          "validFor": null,
+          "value": "USD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UYU - Uruguayan Peso",
+          "validFor": null,
+          "value": "UYU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UZS - Uzbekistan Sum",
+          "validFor": null,
+          "value": "UZS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VEF - Venezuelan Bolivar Fuerte",
+          "validFor": null,
+          "value": "VEF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VES - Venezuelan Bolívar Soberano",
+          "validFor": null,
+          "value": "VES"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VND - Vietnam Dong",
+          "validFor": null,
+          "value": "VND"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VUV - Vanuatu Vatu",
+          "validFor": null,
+          "value": "VUV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "WST - Samoa Tala",
+          "validFor": null,
+          "value": "WST"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "XAF - CFA Franc (BEAC)",
+          "validFor": null,
+          "value": "XAF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "XCD - East Caribbean Dollar",
+          "validFor": null,
+          "value": "XCD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "XOF - CFA Franc (BCEAO)",
+          "validFor": null,
+          "value": "XOF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "XPF - Pacific Franc",
+          "validFor": null,
+          "value": "XPF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "YER - Yemen Riyal",
+          "validFor": null,
+          "value": "YER"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ZAR - South African Rand",
+          "validFor": null,
+          "value": "ZAR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ZMW - Zambian Kwacha (New)",
+          "validFor": null,
+          "value": "ZMW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ZWL - Zimbabwe Dollar",
+          "validFor": null,
+          "value": "ZWL"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Call Status",
+      "name": "CallDisposition",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Call Type",
+      "name": "CallType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal",
+          "validFor": null,
+          "value": "Internal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inbound",
+          "validFor": null,
+          "value": "Inbound"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Outbound",
+          "validFor": null,
+          "value": "Outbound"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coach",
+          "validFor": null,
+          "value": "Coach"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bridge",
+          "validFor": null,
+          "value": "Bridge"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transfer",
+          "validFor": null,
+          "value": "Transfer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Callback",
+          "validFor": null,
+          "value": "Callback"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal Call",
+          "validFor": null,
+          "value": "InternalCall"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Vendor Parent Call Key",
+      "name": "VendorParentCallKey",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "User ID",
+      "name": "UserId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "User",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "RelatedRecord ID",
+      "name": "RelatedRecordId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Account",
+        "Case",
+        "Contact",
+        "FSL__Crew_Management_User_Settings_Territory__c",
+        "FSL__Crew_Management_User_Settings__c",
+        "FSL__Criteria__c",
+        "FSL__FSL_Operation__c",
+        "FSL__GanttPalette__c",
+        "FSL__Gantt_Filter__c",
+        "FSL__Optimization_Data__c",
+        "FSL__Optimization_Request_Queue__c",
+        "FSL__Optimization_Request__c",
+        "FSL__Polygon__c",
+        "FSL__SLR_Cache__c",
+        "FSL__SchedulingRecipe__c",
+        "FSL__Scheduling_Policy_Goal__c",
+        "FSL__Scheduling_Policy_Work_Rule__c",
+        "FSL__Scheduling_Policy__c",
+        "FSL__Service_Goal__c",
+        "FSL__Territory_Optimization_Request__c",
+        "FSL__Time_Dependency__c",
+        "FSL__UserSetting__c",
+        "FSL__User_Setting_Territory__c",
+        "FSL__User_Territory__c",
+        "FSL__Work_Rule_Entry__c",
+        "FSL__Work_Rule__c",
+        "In_App_Checklist_Settings__c",
+        "Lead",
+        "Opportunity",
+        "sf_devops__Async_Operation_Result__c",
+        "sf_devops__Back_Sync__c",
+        "sf_devops__Branch__c",
+        "sf_devops__Change_Bundle_Install__c",
+        "sf_devops__Change_Bundle__c",
+        "sf_devops__Change_Submission__c",
+        "sf_devops__Deploy_Component__c",
+        "sf_devops__Deployment_Result__c",
+        "sf_devops__Environment__c",
+        "sf_devops__Hidden_Remote_Change__c",
+        "sf_devops__Merge_Result__c",
+        "sf_devops__Object_Activity__c",
+        "sf_devops__Pipeline_Stage__c",
+        "sf_devops__Pipeline__c",
+        "sf_devops__Project__c",
+        "sf_devops__Remote_Change__c",
+        "sf_devops__Repository__c",
+        "sf_devops__Source_Member_Reference__c",
+        "sf_devops__Submit_Component__c",
+        "sf_devops__Vcs_Event__c",
+        "sf_devops__Work_Item_Promote__c",
+        "sf_devops__Work_Item__c",
+        "vlocity_cmt__AccountAdServer__c",
+        "vlocity_cmt__AccountAppliedPromotionItem__c",
+        "vlocity_cmt__AccountAppliedPromotion__c",
+        "vlocity_cmt__AccountBalance__c",
+        "vlocity_cmt__AccountDiscountItem__c",
+        "vlocity_cmt__AccountDiscountPricing__c",
+        "vlocity_cmt__AccountDiscount__c",
+        "vlocity_cmt__AccountHold__c",
+        "vlocity_cmt__AccountOffer__c",
+        "vlocity_cmt__AccountPriceAdjustment__c",
+        "vlocity_cmt__AccountProductRollup__c",
+        "vlocity_cmt__ActivityContentDocument__c",
+        "vlocity_cmt__ActivityTemplate__c",
+        "vlocity_cmt__AdCreativeSizeType__c",
+        "vlocity_cmt__AdServer__c",
+        "vlocity_cmt__AdSpaceCreativeSizeType__c",
+        "vlocity_cmt__AdSpaceGroupMember__c",
+        "vlocity_cmt__AdSpaceSpecification__c",
+        "vlocity_cmt__AdminTabLayout__c",
+        "vlocity_cmt__ApplicationPartyRelationship__c",
+        "vlocity_cmt__ApplicationTemplate__c",
+        "vlocity_cmt__Application__c",
+        "vlocity_cmt__AssessmentAnswer__c",
+        "vlocity_cmt__AssessmentQuestion__c",
+        "vlocity_cmt__Assessment__c",
+        "vlocity_cmt__AssetPricingAdjustment__c",
+        "vlocity_cmt__AssignmentRule__c",
+        "vlocity_cmt__AsyncProcessJob__c",
+        "vlocity_cmt__AsyncProcessStep__c",
+        "vlocity_cmt__AsyncProcess__c",
+        "vlocity_cmt__AttributeAssignmentExport__c",
+        "vlocity_cmt__AttributeAssignmentRule__c",
+        "vlocity_cmt__AttributeAssignment__c",
+        "vlocity_cmt__AttributeBinding__c",
+        "vlocity_cmt__AttributeCategory__c",
+        "vlocity_cmt__Attribute__c",
+        "vlocity_cmt__BillingDataTrim__c",
+        "vlocity_cmt__BusinessSiteOffering__c",
+        "vlocity_cmt__BusinessSite__c",
+        "vlocity_cmt__CachedAPIChangeEntry__c",
+        "vlocity_cmt__CachedAPIChange__c",
+        "vlocity_cmt__CachedAPIMigrate__c",
+        "vlocity_cmt__CachedAPIResponseOffers__c",
+        "vlocity_cmt__CachedAPIResponse__c",
+        "vlocity_cmt__CachedDataSet__c",
+        "vlocity_cmt__CachedFilterableAttribute__c",
+        "vlocity_cmt__CachedKeyMapping__c",
+        "vlocity_cmt__CachedPriceBookEntryAttributeValue__c",
+        "vlocity_cmt__CachedProduct2Translation__c",
+        "vlocity_cmt__CachedPromotionTranslation__c",
+        "vlocity_cmt__CalculationMatrixColumn__c",
+        "vlocity_cmt__CalculationMatrixDimension__c",
+        "vlocity_cmt__CalculationMatrixRow__c",
+        "vlocity_cmt__CalculationMatrixVersion__c",
+        "vlocity_cmt__CalculationMatrix__c",
+        "vlocity_cmt__CalculationProcedureStep__c",
+        "vlocity_cmt__CalculationProcedureVariable__c",
+        "vlocity_cmt__CalculationProcedureVersion__c",
+        "vlocity_cmt__CalculationProcedure__c",
+        "vlocity_cmt__CallbackURI__c",
+        "vlocity_cmt__CampaignContentDocument__c",
+        "vlocity_cmt__CampaignMemberActionLog__c",
+        "vlocity_cmt__CardFrameworkConfiguration__c",
+        "vlocity_cmt__CartItem__c",
+        "vlocity_cmt__Cart__c",
+        "vlocity_cmt__CatalogProductRelationship__c",
+        "vlocity_cmt__CatalogRelationship__c",
+        "vlocity_cmt__Catalog__c",
+        "vlocity_cmt__ChargeMeasurement__c",
+        "vlocity_cmt__CompiledAttributeOverride__c",
+        "vlocity_cmt__ConfigurationSnapshot__c",
+        "vlocity_cmt__ConsoleActionLog__c",
+        "vlocity_cmt__ContextAction__c",
+        "vlocity_cmt__ContextDimension__c",
+        "vlocity_cmt__ContextMappingArgument__c",
+        "vlocity_cmt__ContextMapping__c",
+        "vlocity_cmt__ContextRule__c",
+        "vlocity_cmt__ContextRuleset__c",
+        "vlocity_cmt__ContextScope__c",
+        "vlocity_cmt__ContractDocumentAccessControl__c",
+        "vlocity_cmt__ContractDocumentCollection__c",
+        "vlocity_cmt__ContractEnvelope__c",
+        "vlocity_cmt__ContractGroup__c",
+        "vlocity_cmt__ContractLineItem__c",
+        "vlocity_cmt__ContractManagementConfigurationSetup__c",
+        "vlocity_cmt__ContractRecipient__c",
+        "vlocity_cmt__ContractSection__c",
+        "vlocity_cmt__ContractTerm__c",
+        "vlocity_cmt__ContractTypeSetting__c",
+        "vlocity_cmt__ContractTypeTerm__c",
+        "vlocity_cmt__ContractType__c",
+        "vlocity_cmt__ContractVersionDiscountItem__c",
+        "vlocity_cmt__ContractVersionDiscountPricing__c",
+        "vlocity_cmt__ContractVersionDiscount__c",
+        "vlocity_cmt__ContractVersion__c",
+        "vlocity_cmt__CpqConfigurationSetup__c",
+        "vlocity_cmt__CustomClassImplementation__c",
+        "vlocity_cmt__CustomFieldMap__c",
+        "vlocity_cmt__CustomFilterFormula__c",
+        "vlocity_cmt__CustomFilter__c",
+        "vlocity_cmt__CustomObjectMap__c",
+        "vlocity_cmt__CustomerInteractionTopic__c",
+        "vlocity_cmt__CustomerInteraction__c",
+        "vlocity_cmt__DRBatchQueue__c",
+        "vlocity_cmt__DRBulkData__c",
+        "vlocity_cmt__DRBundle__c",
+        "vlocity_cmt__DREncryption__c",
+        "vlocity_cmt__DRMapItem__c",
+        "vlocity_cmt__DRWorker__c",
+        "vlocity_cmt__Datastore__c",
+        "vlocity_cmt__DecompositionRelationship__c",
+        "vlocity_cmt__DocuSignAnchorTabSetting__c",
+        "vlocity_cmt__DocuSignCalloutConfigurationSetup__c",
+        "vlocity_cmt__DocuSignEnvelopeObjectLimits__c",
+        "vlocity_cmt__DocuSignEnvelopeObjectSetting__c",
+        "vlocity_cmt__DocumentClause__c",
+        "vlocity_cmt__DocumentSection__c",
+        "vlocity_cmt__DocumentTemplateElement__c",
+        "vlocity_cmt__DocumentTemplateSectionCondition__c",
+        "vlocity_cmt__DocumentTemplateSection__c",
+        "vlocity_cmt__DocumentTemplate__c",
+        "vlocity_cmt__DocumentToken__c",
+        "vlocity_cmt__Document__c",
+        "vlocity_cmt__Dunning__c",
+        "vlocity_cmt__ESMQuoteCloneBatchJobIds__c",
+        "vlocity_cmt__Element__c",
+        "vlocity_cmt__EntityFilterConditionArgument__c",
+        "vlocity_cmt__EntityFilterCondition__c",
+        "vlocity_cmt__EntityFilterMember__c",
+        "vlocity_cmt__EntityFilter__c",
+        "vlocity_cmt__ErrorCodeNamespace__c",
+        "vlocity_cmt__ErrorCode__c",
+        "vlocity_cmt__Error_Code_Namespace__c",
+        "vlocity_cmt__Error_Code__c",
+        "vlocity_cmt__EventDuringInteraction__c",
+        "vlocity_cmt__EventMessage__c",
+        "vlocity_cmt__ExpandedInteractionLog__c",
+        "vlocity_cmt__FieldSettings__c",
+        "vlocity_cmt__FieldsConfiguration__c",
+        "vlocity_cmt__FieldsLookupConfiguration__c",
+        "vlocity_cmt__FlowStepFields__c",
+        "vlocity_cmt__FulfilmentDiagramOPD__c",
+        "vlocity_cmt__FulfilmentDiagram__c",
+        "vlocity_cmt__FulfilmentRequestDecompRelationship__c",
+        "vlocity_cmt__FulfilmentRequestLineDecompRelationship__c",
+        "vlocity_cmt__FulfilmentRequestLineRelationship__c",
+        "vlocity_cmt__FulfilmentRequestLineSourceRootOrderItem__c",
+        "vlocity_cmt__FulfilmentRequestLine__c",
+        "vlocity_cmt__FulfilmentRequest__c",
+        "vlocity_cmt__GeneralSettings__c",
+        "vlocity_cmt__GenericDocument__c",
+        "vlocity_cmt__GenericEnvelope__c",
+        "vlocity_cmt__GenericRecipient__c",
+        "vlocity_cmt__GlobalAutoNumberSetting__c",
+        "vlocity_cmt__GraphCloneSpecial__c",
+        "vlocity_cmt__GraphClone__c",
+        "vlocity_cmt__HouseholdAddressMatch__c",
+        "vlocity_cmt__Household__c",
+        "vlocity_cmt__InboundRESTInterface__c",
+        "vlocity_cmt__IntegrationRetryPolicy__c",
+        "vlocity_cmt__InteractionLauncherConfiguration__c",
+        "vlocity_cmt__InterfaceImplementationDetail__c",
+        "vlocity_cmt__InterfaceImplementation__c",
+        "vlocity_cmt__Interface_BillingInfo__c",
+        "vlocity_cmt__Interface_DRGeneric__c",
+        "vlocity_cmt__Interface_ProductAttribute__c",
+        "vlocity_cmt__InventoryItemDecompositionRelationship__c",
+        "vlocity_cmt__InventoryItem__c",
+        "vlocity_cmt__ItemImplementation__c",
+        "vlocity_cmt__Jurisdiction__c",
+        "vlocity_cmt__LargeDataStore__c",
+        "vlocity_cmt__LineOfBusiness__c",
+        "vlocity_cmt__ManualQueueMember__c",
+        "vlocity_cmt__ManualQueue__c",
+        "vlocity_cmt__MediaConfiguration__c",
+        "vlocity_cmt__MediaContentTitle__c",
+        "vlocity_cmt__MediaProperty__c",
+        "vlocity_cmt__MobileConfiguration__c",
+        "vlocity_cmt__ObjectAppliedResult__c",
+        "vlocity_cmt__ObjectClass__c",
+        "vlocity_cmt__ObjectElement__c",
+        "vlocity_cmt__ObjectFacet__c",
+        "vlocity_cmt__ObjectFieldAttribute__c",
+        "vlocity_cmt__ObjectLayout__c",
+        "vlocity_cmt__ObjectRuleAssignment__c",
+        "vlocity_cmt__ObjectSection__c",
+        "vlocity_cmt__OfferMigrationComponentMapping__c",
+        "vlocity_cmt__OfferMigrationPlan__c",
+        "vlocity_cmt__OfferPricingComponent__c",
+        "vlocity_cmt__OfferingProcedure__c",
+        "vlocity_cmt__OmniScriptDefinition__c",
+        "vlocity_cmt__OmniScriptInstance__c",
+        "vlocity_cmt__OmniScript__c",
+        "vlocity_cmt__OmniUserSession__c",
+        "vlocity_cmt__OperatingHoursEntry__c",
+        "vlocity_cmt__OperatingHours__c",
+        "vlocity_cmt__OpportunityAppliedPromotionItem__c",
+        "vlocity_cmt__OpportunityAppliedPromotion__c",
+        "vlocity_cmt__OpportunityDiscountItem__c",
+        "vlocity_cmt__OpportunityDiscountPricing__c",
+        "vlocity_cmt__OpportunityDiscount__c",
+        "vlocity_cmt__OpportunityGroup__c",
+        "vlocity_cmt__OpportunityLineItemRelationship__c",
+        "vlocity_cmt__OpportunityMember__c",
+        "vlocity_cmt__OpportunityPriceAdjustment__c",
+        "vlocity_cmt__OrchestrationDependencyDefinition__c",
+        "vlocity_cmt__OrchestrationDependency__c",
+        "vlocity_cmt__OrchestrationItemDefinition__c",
+        "vlocity_cmt__OrchestrationItemRelationship__c",
+        "vlocity_cmt__OrchestrationItemSource__c",
+        "vlocity_cmt__OrchestrationItem__c",
+        "vlocity_cmt__OrchestrationPlanDefinition__c",
+        "vlocity_cmt__OrchestrationPlan__c",
+        "vlocity_cmt__OrchestrationQueueAssignmentRule__c",
+        "vlocity_cmt__OrchestrationQueue__c",
+        "vlocity_cmt__OrchestrationScenario__c",
+        "vlocity_cmt__OrchestrationSchedulerImplementation__c",
+        "vlocity_cmt__OrderAppliedPromotionItem__c",
+        "vlocity_cmt__OrderAppliedPromotion__c",
+        "vlocity_cmt__OrderDiscountItem__c",
+        "vlocity_cmt__OrderDiscountPricing__c",
+        "vlocity_cmt__OrderDiscount__c",
+        "vlocity_cmt__OrderGroup__c",
+        "vlocity_cmt__OrderItemAdPlacement__c",
+        "vlocity_cmt__OrderItemPriceAdjustment__c",
+        "vlocity_cmt__OrderItemRelationship__c",
+        "vlocity_cmt__OrderMember__c",
+        "vlocity_cmt__OrderPayment__c",
+        "vlocity_cmt__OrderPriceAdjustment__c",
+        "vlocity_cmt__OrderProductRollup__c",
+        "vlocity_cmt__OrderRelationship__c",
+        "vlocity_cmt__OutboundConfiguration__c",
+        "vlocity_cmt__OverrideDefinition__c",
+        "vlocity_cmt__PDFDocumentTemplate__c",
+        "vlocity_cmt__PartyMaintenanceJobConfiguration__c",
+        "vlocity_cmt__PartyMergeMetadata__c",
+        "vlocity_cmt__PartyMergeRequest__c",
+        "vlocity_cmt__PartyRelationshipType__c",
+        "vlocity_cmt__PartyRelationship__c",
+        "vlocity_cmt__Party_Association__c",
+        "vlocity_cmt__Party__c",
+        "vlocity_cmt__PaymentAdjustment__c",
+        "vlocity_cmt__PaymentMethod__c",
+        "vlocity_cmt__PaymentPlan__c",
+        "vlocity_cmt__PersonAccountSettings__c",
+        "vlocity_cmt__PicklistSelectionEntry__c",
+        "vlocity_cmt__PicklistValue__c",
+        "vlocity_cmt__Picklist__c",
+        "vlocity_cmt__PremisesPartyRelationship__c",
+        "vlocity_cmt__Premises__c",
+        "vlocity_cmt__PriceListEntry__c",
+        "vlocity_cmt__PriceList__c",
+        "vlocity_cmt__PricingComponentRelationship__c",
+        "vlocity_cmt__PricingComponent__c",
+        "vlocity_cmt__PricingElement__c",
+        "vlocity_cmt__PricingPlanStep__c",
+        "vlocity_cmt__PricingPlan__c",
+        "vlocity_cmt__PricingVariableBinding__c",
+        "vlocity_cmt__PricingVariable__c",
+        "vlocity_cmt__ProductAttribXN__c",
+        "vlocity_cmt__ProductAvailability__c",
+        "vlocity_cmt__ProductChildItem__c",
+        "vlocity_cmt__ProductConfigurationProcedure__c",
+        "vlocity_cmt__ProductEligibility__c",
+        "vlocity_cmt__ProductManagementConfiguration__c",
+        "vlocity_cmt__ProductRelationshipType__c",
+        "vlocity_cmt__ProductRelationship__c",
+        "vlocity_cmt__ProductTemplate__c",
+        "vlocity_cmt__ProfileCategoryAssignment__c",
+        "vlocity_cmt__ProfilingSegmentCategory__c",
+        "vlocity_cmt__ProfilingSegment__c",
+        "vlocity_cmt__ProjectItem__c",
+        "vlocity_cmt__Project__c",
+        "vlocity_cmt__PromotionApplicableProduct__c",
+        "vlocity_cmt__PromotionIncludedProduct__c",
+        "vlocity_cmt__PromotionItem__c",
+        "vlocity_cmt__PromotionPricingAlteration__c",
+        "vlocity_cmt__Promotion__c",
+        "vlocity_cmt__QuoteAppliedPromotionItem__c",
+        "vlocity_cmt__QuoteAppliedPromotion__c",
+        "vlocity_cmt__QuoteDiscountItem__c",
+        "vlocity_cmt__QuoteDiscountPricing__c",
+        "vlocity_cmt__QuoteDiscount__c",
+        "vlocity_cmt__QuoteGroup__c",
+        "vlocity_cmt__QuoteLineItemAdPlacement__c",
+        "vlocity_cmt__QuoteLineItemPricingAdjustment__c",
+        "vlocity_cmt__QuoteLineItemRelationship__c",
+        "vlocity_cmt__QuoteMember__c",
+        "vlocity_cmt__QuotePricingAdjustment__c",
+        "vlocity_cmt__QuoteProductRollup__c",
+        "vlocity_cmt__RelationshipGraphConfigurationSetup__c",
+        "vlocity_cmt__RelationshipGraphDetails__c",
+        "vlocity_cmt__RelationshipGraphNodeType__c",
+        "vlocity_cmt__RelationshipGraphTraversal__c",
+        "vlocity_cmt__RelationshipGraph__c",
+        "vlocity_cmt__RemoteUrlTemplate__c",
+        "vlocity_cmt__RuleAction__c",
+        "vlocity_cmt__RuleAssignment__c",
+        "vlocity_cmt__RuleFilter__c",
+        "vlocity_cmt__RuleProperty__c",
+        "vlocity_cmt__RuleVariable__c",
+        "vlocity_cmt__Rule__c",
+        "vlocity_cmt__RunTriggerAndWorkFlow__c",
+        "vlocity_cmt__ScreeningRuleGroup__c",
+        "vlocity_cmt__ScreeningRule__c",
+        "vlocity_cmt__SecurityDeposit__c",
+        "vlocity_cmt__ServicePoint__c",
+        "vlocity_cmt__SfiAdsTargetingConfiguration__c",
+        "vlocity_cmt__SpecTemplateAttributeMapping__c",
+        "vlocity_cmt__SpecTemplateMapping__c",
+        "vlocity_cmt__Stage__c",
+        "vlocity_cmt__StateTransition__c",
+        "vlocity_cmt__StatementLineItem__c",
+        "vlocity_cmt__Statement__c",
+        "vlocity_cmt__StoryListPageLimit__c",
+        "vlocity_cmt__StoryObjectConfiguration__c",
+        "vlocity_cmt__StringTranslation__c",
+        "vlocity_cmt__String__c",
+        "vlocity_cmt__Subscription__c",
+        "vlocity_cmt__SyncDeltaControl__c",
+        "vlocity_cmt__SyncDeltaObject__c",
+        "vlocity_cmt__SyncDeltaSnapshot__c",
+        "vlocity_cmt__SystemInterface__c",
+        "vlocity_cmt__System__c",
+        "vlocity_cmt__TargetCategoryNameToClassName__c",
+        "vlocity_cmt__TemplateDesignerConfiguration__c",
+        "vlocity_cmt__TestResult__c",
+        "vlocity_cmt__ThorOrchestrationQueue__c",
+        "vlocity_cmt__TimePlan__c",
+        "vlocity_cmt__TimePolicy__c",
+        "vlocity_cmt__TriggerSetup__c",
+        "vlocity_cmt__UICustomization__c",
+        "vlocity_cmt__UIFacet__c",
+        "vlocity_cmt__UISection__c",
+        "vlocity_cmt__UISettings__c",
+        "vlocity_cmt__UserAdServer__c",
+        "vlocity_cmt__UserCalendar__c",
+        "vlocity_cmt__UserNotification__c",
+        "vlocity_cmt__VlocityAPIMetadata__c",
+        "vlocity_cmt__VlocityAction__c",
+        "vlocity_cmt__VlocityAttachment__c",
+        "vlocity_cmt__VlocityCard__c",
+        "vlocity_cmt__VlocityContractServiceLog__c",
+        "vlocity_cmt__VlocityDataCache__c",
+        "vlocity_cmt__VlocityDataPack__c",
+        "vlocity_cmt__VlocityDocuSignBranding__c",
+        "vlocity_cmt__VlocityDocuSignTemplate__c",
+        "vlocity_cmt__VlocityErrorLogEntry__c",
+        "vlocity_cmt__VlocityFunctionArgument__c",
+        "vlocity_cmt__VlocityFunction__c",
+        "vlocity_cmt__VlocityLibraryOrganization__c",
+        "vlocity_cmt__VlocityScheduledJob__c",
+        "vlocity_cmt__VlocitySearchWidgetActionsSetup__c",
+        "vlocity_cmt__VlocitySearchWidgetSetup__c",
+        "vlocity_cmt__VlocityStateModelVersion__c",
+        "vlocity_cmt__VlocityStateModel__c",
+        "vlocity_cmt__VlocityStateTransitionRule__c",
+        "vlocity_cmt__VlocityStateTransition__c",
+        "vlocity_cmt__VlocityState__c",
+        "vlocity_cmt__VlocitySystemLog__c",
+        "vlocity_cmt__VlocityTrackingComponent__c",
+        "vlocity_cmt__VlocityTrackingEntry__c",
+        "vlocity_cmt__VlocityTrackingGroup__c",
+        "vlocity_cmt__VlocityUILayout__c",
+        "vlocity_cmt__VlocityUITemplate__c",
+        "vlocity_cmt__VlocityWebTrackingConfiguration__c",
+        "vlocity_cmt__VlocityWebTrackingEventType__c",
+        "vlocity_cmt__VqMachineResource__c",
+        "vlocity_cmt__VqMachine__c",
+        "vlocity_cmt__VqResource__c",
+        "vlocity_cmt__WorkSetSettings__c",
+        "vlocity_cmt__XLIBatchValidationSetting__c",
+        "vlocity_cmt__XOMCustomLabelsCache__c",
+        "vlocity_cmt__XOMParameter__c",
+        "vlocity_cmt__XOMSetup__c"
+      ],
+      "relationshipName": "RelatedRecord",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Vendor Type",
+      "name": "VendorType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Twilio",
+          "validFor": null,
+          "value": "Twilio"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Custom",
+          "validFor": null,
+          "value": "Custom"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TwilioTrial",
+          "validFor": null,
+          "value": "TwilioTrial"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ContactCenter",
+          "validFor": null,
+          "value": "ContactCenter"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RingCentral",
+          "validFor": null,
+          "value": "RingCentral"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DialPad",
+          "validFor": null,
+          "value": "DialPad"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AmazonConnect",
+          "validFor": null,
+          "value": "AmazonConnect"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AirCall",
+          "validFor": null,
+          "value": "AirCall"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Conference Key",
+      "name": "ConferenceKey",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "VoiceCallRecording ID",
+      "name": "CallRecordingId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "VoiceCallRecording"
+      ],
+      "relationshipName": "CallRecording",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Caller Id",
+      "name": "CallerIdType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User",
+          "validFor": null,
+          "value": "VendorLine"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Company",
+          "validFor": null,
+          "value": "CompanyNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Local Presence",
+          "validFor": null,
+          "value": "LocalPresence"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Custom Caller Id",
+          "validFor": null,
+          "value": "CustomCallerId"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Call Recorded",
+      "name": "IsRecorded",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Activity ID",
+      "name": "ActivityId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Task"
+      ],
+      "relationshipName": "Activity",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Call Connected",
+      "name": "CallConnectDateTime",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "CallCoachingMediaProvider ID",
+      "name": "MediaProviderId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "CallCoachingMediaProvider"
+      ],
+      "relationshipName": "MediaProvider",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Source Type",
+      "name": "SourceType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Sales"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Service"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Diarization Opted In",
+      "name": "IsDiarizationOptIn",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Language",
+      "name": "TranscribedLanguage",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    }
+  ],
+  "label": "Voice Call",
+  "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIInsightValue",
+      "deprecatedAndHidden": false,
+      "field": "SobjectLookupValueId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AIRecordInsight",
+      "deprecatedAndHidden": false,
+      "field": "TargetId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AttachedContentDocument",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AttachedContentDocuments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AttachedContentNote",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AttachedContentNotes",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "CombinedAttachment",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "CombinedAttachments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ContentDocumentLink",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ContentDocumentLinks",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentDocumentLinkChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentVersion",
+      "deprecatedAndHidden": false,
+      "field": "FirstPublishLocationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentVersionChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "FirstPublishLocationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ConversationEntry",
+      "deprecatedAndHidden": false,
+      "field": "ConversationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ConversationEntries",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "DialerCallUsage",
+      "deprecatedAndHidden": false,
+      "field": "VoiceCallId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EngagementAttendee",
+      "deprecatedAndHidden": false,
+      "field": "EngagementId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "EngagementAttendees",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EngagementAttendeeChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "EngagementId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EngagementTopic",
+      "deprecatedAndHidden": false,
+      "field": "EngagementId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "EngagementTopics",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EngagementTopicChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "EngagementId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "EntitySubscription",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FeedSubscriptionsForEntity",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FeedComment",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "FeedItem",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowExecutionErrorEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "RecordAction",
+      "deprecatedAndHidden": false,
+      "field": "RecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RecordActions",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "RecordActionHistory",
+      "deprecatedAndHidden": false,
+      "field": "ParentRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RecordActionHistories",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "SharingRecordCollectionItem",
+      "deprecatedAndHidden": false,
+      "field": "ItemId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "SharingRecordCollectionItems",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "SvcCatalogReqExtdAttrVal",
+      "deprecatedAndHidden": false,
+      "field": "ReferenceRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "SvcCatalogReqRelatedItem",
+      "deprecatedAndHidden": false,
+      "field": "RelatedInternalRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "VoiceCallFeed",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Feeds",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "VoiceCallRecording",
+      "deprecatedAndHidden": false,
+      "field": "VoiceCallId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCallRecordingChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "VoiceCallId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "VoiceCallShare",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Shares",
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "VoiceCall",
+  "queryable": true
+}

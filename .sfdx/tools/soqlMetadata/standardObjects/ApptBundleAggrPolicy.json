@@ -1,0 +1,2237 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Appointment Bundle Aggregation Policy ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Enter a unique name.",
+      "label": "Name",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Viewed Date",
+      "name": "LastViewedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Referenced Date",
+      "name": "LastReferencedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Appointment Bundle Policy ID",
+      "name": "BundlePolicyId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "ApptBundlePolicy"
+      ],
+      "relationshipName": "BundlePolicy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Select a bundle service appointment field. The value is pulled from the bundle member service appointment.",
+      "label": "Bundle’s Target Field",
+      "name": "BundleFieldName",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Duration (Minutes)",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualDuration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual End",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Booking URL",
+          "validFor": null,
+          "value": "ServiceAppointment.ApptBookingInfoUrl"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Grade",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Appointment_Grade__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window End",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Auto Schedule",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Auto_Schedule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "ServiceAppointment.City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Country",
+          "validFor": null,
+          "value": "ServiceAppointment.Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created Date",
+          "validFor": null,
+          "value": "ServiceAppointment.CreatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "ServiceAppointment.Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Due Date",
+          "validFor": null,
+          "value": "ServiceAppointment.DueDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration",
+          "validFor": null,
+          "value": "ServiceAppointment.Duration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration in Minutes",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationInMinutes"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration Type",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Earliest Start Permitted",
+          "validFor": null,
+          "value": "ServiceAppointment.EarliestStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Emergency",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Emergency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Color",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__GanttColor__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Display Date",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Gantt_Display_Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Icon",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__GanttIcon__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Label",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__GanttLabel__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Geocode Accuracy",
+          "validFor": null,
+          "value": "ServiceAppointment.GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In Jeopardy",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InJeopardy__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In Jeopardy Reason",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InJeopardyReason__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is Fill In Candidate",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__IsFillInCandidate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is MultiDay",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__IsMultiDay__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified Date",
+          "validFor": null,
+          "value": "ServiceAppointment.LastModifiedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Updated Epoch",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Last_Updated_Epoch__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Multiday Work Calculated length",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__MDS_Calculated_length__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Multiday Work Operational Time",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__MDT_Operational_Time__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Offsite Appointment",
+          "validFor": null,
+          "value": "ServiceAppointment.IsOffsiteAppointment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pinned",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Pinned__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prevent Geocoding For Chatter Actions",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Prevent_Geocoding_For_Chatter_Actions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Related Service",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Related_Service__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Same Day",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Same_Day__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Same Resource",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Same_Resource__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled Duration",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Duration_In_Minutes__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled End",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled Start",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Schedule Mode",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Schedule_Mode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Schedule Over Lower Priority Appointment",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Schedule_over_lower_priority_appointment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduling Policy Used",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Scheduling_Policy_Used__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Note",
+          "validFor": null,
+          "value": "ServiceAppointment.ServiceNote"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Skill Requirements",
+          "validFor": null,
+          "value": "SkillRequirements"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State/Province",
+          "validFor": null,
+          "value": "ServiceAppointment.State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "ServiceAppointment.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status Category",
+          "validFor": null,
+          "value": "ServiceAppointment.StatusCategory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "ServiceAppointment.Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "ServiceAppointment.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Territory ID",
+          "validFor": null,
+          "value": "ServiceAppointment.ServiceTerritoryId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Time Dependency",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Time_Dependency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UpdatedByOptimization",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__UpdatedByOptimization__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Use Async Logic",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Use_Async_Logic__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Virtual Service For Chatter Action (SLR)",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Virtual_Service_For_Chatter_Action__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zip/Postal Code",
+          "validFor": null,
+          "value": "ServiceAppointment.PostalCode"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "The source field comes from the bundle member service appointment. If you select the aggregation action Sum Based on Bundle Fields or Subtract Based on Bundle Fields, the source field comes from the bundle service appointment.",
+      "label": "Source Field",
+      "name": "BundleMemberFieldName",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Duration (Minutes)",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualDuration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual End",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Booking URL",
+          "validFor": null,
+          "value": "ServiceAppointment.ApptBookingInfoUrl"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Grade",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Appointment_Grade__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window End",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Auto Schedule",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Auto_Schedule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "ServiceAppointment.City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Country",
+          "validFor": null,
+          "value": "ServiceAppointment.Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created Date",
+          "validFor": null,
+          "value": "ServiceAppointment.CreatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "ServiceAppointment.Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Due Date",
+          "validFor": null,
+          "value": "ServiceAppointment.DueDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration",
+          "validFor": null,
+          "value": "ServiceAppointment.Duration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration in Minutes",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationInMinutes"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration Type",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Earliest Start Permitted",
+          "validFor": null,
+          "value": "ServiceAppointment.EarliestStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Emergency",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Emergency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Color",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__GanttColor__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Display Date",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Gantt_Display_Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Icon",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__GanttIcon__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Label",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__GanttLabel__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Geocode Accuracy",
+          "validFor": null,
+          "value": "ServiceAppointment.GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In Jeopardy",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InJeopardy__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In Jeopardy Reason",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InJeopardyReason__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is Fill In Candidate",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__IsFillInCandidate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is MultiDay",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__IsMultiDay__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified Date",
+          "validFor": null,
+          "value": "ServiceAppointment.LastModifiedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Updated Epoch",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Last_Updated_Epoch__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Multiday Work Calculated length",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__MDS_Calculated_length__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Multiday Work Operational Time",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__MDT_Operational_Time__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Offsite Appointment",
+          "validFor": null,
+          "value": "ServiceAppointment.IsOffsiteAppointment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pinned",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Pinned__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prevent Geocoding For Chatter Actions",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Prevent_Geocoding_For_Chatter_Actions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Related Service",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Related_Service__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Same Day",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Same_Day__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Same Resource",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Same_Resource__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled Duration",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Duration_In_Minutes__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled End",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled Start",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Schedule Mode",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Schedule_Mode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Schedule Over Lower Priority Appointment",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Schedule_over_lower_priority_appointment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduling Policy Used",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Scheduling_Policy_Used__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Note",
+          "validFor": null,
+          "value": "ServiceAppointment.ServiceNote"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State/Province",
+          "validFor": null,
+          "value": "ServiceAppointment.State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "ServiceAppointment.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status Category",
+          "validFor": null,
+          "value": "ServiceAppointment.StatusCategory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "ServiceAppointment.Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "ServiceAppointment.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Territory ID",
+          "validFor": null,
+          "value": "ServiceAppointment.ServiceTerritoryId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Time Dependency",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Time_Dependency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UpdatedByOptimization",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__UpdatedByOptimization__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Use Async Logic",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Use_Async_Logic__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Virtual Service For Chatter Action (SLR)",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Virtual_Service_For_Chatter_Action__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zip/Postal Code",
+          "validFor": null,
+          "value": "ServiceAppointment.PostalCode"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "The additional source field comes from the bundle member service appointment. If you select the aggregation action Sum Based on Bundle Fields or Subtract Based on Bundle Fields, the additional source field comes from the bundle service appointment.",
+      "label": "Additional Source Field",
+      "name": "BundleMemberAddiFieldName",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Duration (Minutes)",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualDuration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual End",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Booking URL",
+          "validFor": null,
+          "value": "ServiceAppointment.ApptBookingInfoUrl"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Grade",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Appointment_Grade__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window End",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Auto Schedule",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Auto_Schedule__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "ServiceAppointment.City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Country",
+          "validFor": null,
+          "value": "ServiceAppointment.Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created Date",
+          "validFor": null,
+          "value": "ServiceAppointment.CreatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "ServiceAppointment.Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Due Date",
+          "validFor": null,
+          "value": "ServiceAppointment.DueDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration",
+          "validFor": null,
+          "value": "ServiceAppointment.Duration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration in Minutes",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationInMinutes"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration Type",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Earliest Start Permitted",
+          "validFor": null,
+          "value": "ServiceAppointment.EarliestStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Emergency",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Emergency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Color",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__GanttColor__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Display Date",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Gantt_Display_Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Icon",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__GanttIcon__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gantt Label",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__GanttLabel__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Geocode Accuracy",
+          "validFor": null,
+          "value": "ServiceAppointment.GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In Jeopardy",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InJeopardy__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In Jeopardy Reason",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__InJeopardyReason__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is Fill In Candidate",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__IsFillInCandidate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Is MultiDay",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__IsMultiDay__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified Date",
+          "validFor": null,
+          "value": "ServiceAppointment.LastModifiedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Updated Epoch",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Last_Updated_Epoch__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Multiday Work Calculated length",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__MDS_Calculated_length__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Multiday Work Operational Time",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__MDT_Operational_Time__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Offsite Appointment",
+          "validFor": null,
+          "value": "ServiceAppointment.IsOffsiteAppointment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pinned",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Pinned__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prevent Geocoding For Chatter Actions",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Prevent_Geocoding_For_Chatter_Actions__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Related Service",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Related_Service__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Same Day",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Same_Day__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Same Resource",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Same_Resource__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled Duration",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Duration_In_Minutes__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled End",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled Start",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Schedule Mode",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Schedule_Mode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Schedule Over Lower Priority Appointment",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Schedule_over_lower_priority_appointment__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduling Policy Used",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Scheduling_Policy_Used__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Note",
+          "validFor": null,
+          "value": "ServiceAppointment.ServiceNote"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State/Province",
+          "validFor": null,
+          "value": "ServiceAppointment.State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "ServiceAppointment.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status Category",
+          "validFor": null,
+          "value": "ServiceAppointment.StatusCategory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "ServiceAppointment.Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "ServiceAppointment.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Territory ID",
+          "validFor": null,
+          "value": "ServiceAppointment.ServiceTerritoryId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Time Dependency",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Time_Dependency__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UpdatedByOptimization",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__UpdatedByOptimization__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Use Async Logic",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Use_Async_Logic__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Virtual Service For Chatter Action (SLR)",
+          "validFor": null,
+          "value": "ServiceAppointment.FSL__Virtual_Service_For_Chatter_Action__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zip/Postal Code",
+          "validFor": null,
+          "value": "ServiceAppointment.PostalCode"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Aggregate only when the bundle is created",
+      "name": "ShouldUpdateOnCreationOnly",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Enter the recordset filter criteria used to aggregate the bundle members. You can aggregate only service appointments that meet this criteria.",
+      "label": "Recordset Filter Criteria ID",
+      "name": "FilterCriteriaId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "RecordsetFilterCriteria"
+      ],
+      "relationshipName": "FilterCriteria",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Applies only if the Set Downscaled Duration action is set. Select the downscaling sorting direction of the bundle member service appointments, according to their duration.",
+      "label": "Downscale Sorting Direction",
+      "name": "DownscaleSortDirection",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ascending",
+          "validFor": null,
+          "value": "Ascending"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Descending",
+          "validFor": null,
+          "value": "Descending"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Set the order to trigger the aggregation. For example, enter 1 to trigger this policy first.",
+      "label": "Aggregation Order",
+      "name": "AggregationOrder",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Constant Value",
+      "name": "ConstantValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Applies only if date aggregations require a constant date value.",
+      "label": "Constant Date Value",
+      "name": "DateValue",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Null",
+          "validFor": null,
+          "value": "Null"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "End of Day",
+          "validFor": null,
+          "value": "End of Day"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Now",
+          "validFor": null,
+          "value": "Now"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Start of Day",
+          "validFor": null,
+          "value": "Start of Day"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Applies to downscaling aggregations only. Enter the maximum bundle duration, in minutes, calculated from the sum of bundle members after downscaling.",
+      "label": "Maximum Bundle Duration",
+      "name": "MaxBundleDuration",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Valid only if Sum Based on Bundle Members is selected for the Aggregation Action.",
+      "label": "Allow the same value to appear more than once",
+      "name": "DoesAllowDuplicateStrings",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Select the bundle service appointment’s field type. The value is filled via the aggregation. ",
+      "label": "Aggregation Field Type",
+      "name": "AggregationFieldType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Boolean",
+          "validFor": null,
+          "value": "Boolean"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date",
+          "validFor": null,
+          "value": "Date"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Numeric",
+          "validFor": null,
+          "value": "Numeric"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Picklist",
+          "validFor": null,
+          "value": "Picklist"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Picklist-Multi",
+          "validFor": null,
+          "value": "Picklist-Multi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Skills",
+          "validFor": null,
+          "value": "Skills"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "String",
+          "validFor": null,
+          "value": "String"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lookup",
+          "validFor": null,
+          "value": "Lookup"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Select an action that can be used with the Bundle Field Name. For help, check the documentation.",
+      "label": "Aggregation Action",
+      "name": "AggregationAction",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Apply AND operation",
+          "validFor": null,
+          "value": "Apply AND operation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Apply OR operation",
+          "validFor": null,
+          "value": "Apply OR operation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Clear value",
+          "validFor": null,
+          "value": "Clear value"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Count Bundle Members in Filter Criteria",
+          "validFor": null,
+          "value": "Count Bundle Members in Filter Criteria"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Find earliest",
+          "validFor": null,
+          "value": "Find earliest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Find latest",
+          "validFor": null,
+          "value": "Find latest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Find maximum",
+          "validFor": null,
+          "value": "Find maximum"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Find minimum",
+          "validFor": null,
+          "value": "Find minimum"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Has at least one Bundle Member in Filter Criteria",
+          "validFor": null,
+          "value": "Has at least one Bundle Member in Filter Criteria"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Intersect",
+          "validFor": null,
+          "value": "Intersect"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Set constant value",
+          "validFor": null,
+          "value": "Set constant value"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Set downscaled duration",
+          "validFor": null,
+          "value": "Set downscaled duration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subtract based on Bundle fields",
+          "validFor": null,
+          "value": "Subtract based on Bundle fields"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sum based on Bundle fields",
+          "validFor": null,
+          "value": "Sum based on Bundle fields"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sum based on Bundle Members",
+          "validFor": null,
+          "value": "Sum based on Bundle Members"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Unite",
+          "validFor": null,
+          "value": "Unite"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "label": "Appointment Bundle Aggregation Policy",
+  "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIInsightValue",
+      "deprecatedAndHidden": false,
+      "field": "SobjectLookupValueId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AIRecordInsight",
+      "deprecatedAndHidden": false,
+      "field": "TargetId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ActivityHistory",
+      "deprecatedAndHidden": false,
+      "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ActivityHistories",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ApptBundleAggrDurDnscale",
+      "deprecatedAndHidden": false,
+      "field": "BundleAggregationPolicyId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ApptBundleAggrDurDnscales",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ApptBundleAggrPolicyFeed",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Feeds",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AttachedContentDocument",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AttachedContentDocuments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AttachedContentNote",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AttachedContentNotes",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Attachment",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Attachments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "BusinessAlert",
+      "deprecatedAndHidden": false,
+      "field": "AlertRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "CombinedAttachment",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "CombinedAttachments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ContentDocumentLink",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ContentDocumentLinks",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentDocumentLinkChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentVersion",
+      "deprecatedAndHidden": false,
+      "field": "FirstPublishLocationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentVersionChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "FirstPublishLocationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EmailMessage",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Emails",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EmailMessageChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "EntitySubscription",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FeedSubscriptionsForEntity",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Event",
+      "deprecatedAndHidden": false,
+      "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Events",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EventChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "EventRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "EventRelations",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EventRelationChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FeedComment",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "FeedItem",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowExecutionErrorEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowOrchestrationWorkItem",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FlowOrchestrationWorkItems",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Note",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Notes",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "NoteAndAttachment",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "NotesAndAttachments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "OpenActivity",
+      "deprecatedAndHidden": false,
+      "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "OpenActivities",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmail",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ProcessInstance",
+      "deprecatedAndHidden": false,
+      "field": "TargetObjectId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProcessInstances",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProcessInstanceHistory",
+      "deprecatedAndHidden": false,
+      "field": "TargetObjectId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProcessSteps",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "SvcCatalogReqExtdAttrVal",
+      "deprecatedAndHidden": false,
+      "field": "ReferenceRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "SvcCatalogReqRelatedItem",
+      "deprecatedAndHidden": false,
+      "field": "RelatedInternalRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "Task",
+      "deprecatedAndHidden": false,
+      "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Tasks",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "TaskChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "WhatId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "TaskRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "TaskRelations",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "TaskRelationChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "TopicAssignment",
+      "deprecatedAndHidden": false,
+      "field": "EntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "TopicAssignments",
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "ApptBundleAggrPolicy",
+  "queryable": true
+}
